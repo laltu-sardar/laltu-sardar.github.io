@@ -23,21 +23,27 @@
     <script src="src/scripts.js"></script>
     <link rel="stylesheet" href="src/styles.css">
   </head>
+  
+  <style>
+      tr:nth-child(even) {  
+      background-color:  #e6ffff;  
+      } 
+    </style>
   <!-- END HEAD -->
   <!-- BODY -->
   <body id="body" data-spy="scroll" data-target=".header" class="page-on-scroll">
-    <div class="parallax-mirror" style="visibility: hidden; z-index: -100; position: fixed; top: 0px; left: 0px; overflow: hidden;"><img class="parallax-slider" src="./Laltu Sardar_files/undefined"></div>
+    <div class="parallax-mirror"  style="visibility: hidden; z-index: -100; position: fixed; top: 0px; left: 0px; overflow: hidden;"><img class="parallax-slider" src="./Laltu Sardar_files/undefined"></div>
     <!--========== HEADER ==========-->
     <header class="header navbar-fixed-top top-nav-collapse">
       <!-- Navbar -->
       <nav class="navbar" role="navigation" >
         <div class="container">
           <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="menu-container js_nav-item">
+          <div class="menu-container js_nav-item" >
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
             <span class="sr-only">Toggle navigation</span>	<span class="toggle-icon"></span>	</button>
             <!-- Logo -->
-            <div class="logo">
+            <div class="logo" >
               <a class="logo-wrap" href="#body">
               <img class="logo-img logo-img-main" src="./img/LaltuSardarPP.jpg" alt="Laltu Sardar isilogo">
               <img class="logo-img logo-img-active" src="./img/LaltuSardarPP.jpg" alt="Laltu Sardar Logo">
@@ -46,23 +52,23 @@
             <!-- End Logo -->
           </div>
           <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse nav-collapse" >
-            <div class="menu-container" id ="navText">
-              <ul class="nav navbar-nav navbar-nav-right">
-                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="index.html#body" id ="navText">Home</a></li>
+          <div class="collapse navbar-collapse nav-collapse bg-info" style=" background-color: #006666;">
+            <div class="menu-container" id ="navText" >
+              <ul class="nav navbar-nav navbar-nav-right" >
+                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="index.html#body" id ="navText" style="color:white;" >Home</a></li>
                 <li class="js_nav-item nav-item active">
-                  <a class="nav-item-child nav-item-hover" data-toggle="dropdown" href="index.html#" id ="navText">About<span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li class="active"><a href="index.html#about" id ="navText">Introduction</a></li>
-                    <li class=""><a href="index.html#education" id ="navText">Education</a></li>
-                    <li class=""><a href="index.html#awards" id ="navText">Achievements</a></li>
+                  <a class="nav-item-child nav-item-hover" data-toggle="dropdown" href="index.html#" id ="navText" style="color:white;">About<span class="caret"></span></a>
+                  <ul class="dropdown-menu" style=" background-color: #006666;">
+                    <li class=""><a href="index.html#about" id ="navText" ">Introduction</a></li>
+                    <li class=""><a href="index.html#education" id ="navText" >Education</a></li>
+                    <li class=""><a href="index.html#awards" id ="navText" >Achievements</a></li>
                   </ul>
                 </li>
-                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="index.html#activities" id ="navText">Activities</a></li>
-                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="index.html#teaching" id ="navText">Teaching</a></li>
-                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="index.html#publications" id ="navText">Publications</a></li>
-                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="index.html#projects" id ="navText">Project Works</a></li>
-                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="index.html#contact" id ="navText">Contact</a></li>
+                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="index.html#activities" id ="navText" style="color:white;">Activities</a></li>
+                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="index.html#teaching" id ="navText" style="color:white;">Teaching</a></li>
+                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="index.html#publications" id ="navText" style="color:white;">Research</a></li>
+                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="index.html#projects" id ="navText" style="color:white;">Project Works</a></li>
+                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="index.html#contact" id ="navText" style="color:white;">Contact &nbsp &nbsp &nbsp &nbsp &nbsp</a> </li>
               </ul>
             </div>
           </div>
@@ -81,30 +87,42 @@
           <div class="col-sm-10 col-sm-offset-1" >
             <div id="contentContainer" style = "color: black">
               <div class="text-left sm-text-left ">
+              
+              
+              
                 <br>
-                <h2 class="margin-b-0" style="color: blue; text-shadow: 5px 5px 5px white;">Introduction to Computer Programming and  Data Structure</h2>
+                <h2 class="margin-b-0" style="color: #800000; text-shadow: 5px 5px 5px white;">Introduction to Computer Programming and  Data Structure</h2>
                 <hr style="border: 1px solid #001f4d">
-                <h4 class="margin-b-0" style=" text-shadow: 5px 5px 5px white; text-align:center;">Course offered at: </h4>
-                
-                <table class="table table-dark">
+  
+  <table class="table table-dark">
                 <thead>
-                  <tr>
-                    <th scope="col"> <h3 class="margin-b-0" style="color: black; text-shadow: 5px 5px 5px white;">Institute for Advancing Intelligence (IAI), TCG Centres for Research and Education in Science and Technology (TCG Crest), Kolkata, India</h3></th>
+                  <tr  style  = "color: black; ">
+                    <th scope="col">Course offered at</th>
+                    <th scope="col">Instructors</th>
                   </tr>
                 </thead>
-                </table>
-                
-                <h4 style  = "color: black">Instructors: <a href = "#" target="_blank" >Laltu Sardar</a>, <a href = "#" target="_blank" >Ritankar Mondal</a></h4>
-                <h5 style  = "color: black">Guest Instructor: <a href = "#" target="_blank" >Subhamoy Maitra</a></h5>
+                <thead>
+                  <tr  >
+                    <td scope="col">🏫 Institute for Advancing Intelligence (IAI),
+                    <br>&nbsp &nbsp &nbsp  TCG Centres for Research and Education in Science and Technology (TCG Crest),
+                    <br>&nbsp &nbsp &nbsp  Kolkata, India</td>
+                    <td scope="col"><a href = "https://laltu-sardar.github.io" target="_blank" style="color:#800000;" >👤 Laltu Sardar</a><br>
+                    <a href = "#" target="_blank" style="color:#800000;">👤 Ritankar Mondal</a><br>
+                    <a href = "#" target="_blank" style  = "color: #800000">👤 Subhamoy Maitra</a>
+                    </td>
+                  </tr>
+                </thead>
+              </table>  
+              
                 <hr style="border: 1px solid #001f4d">
-                <p  style  = "color:black;">Class Timing: Monday & Thursday; 4.00 pm onwards</p>
-                <p style  = "color:black;">Quick Links:
-                <a href = "https://1drv.ms/b/s!AixHe1a6Ssr1ghhJEFD4LXCsNrjT?e=xjvBQs" target="_blank" >Syllabus</a>,
-                <a href = "#Schedule:Mid-sem" >Classes:Mid-Sem</a>,
-                <a href = "#Schedule:End-sem" >Classes:End-Sem</a>,
-                <a href = "#Announcements" >News</a>,
-                <a href = "#Guidelines"  >Submission Guidelines</a>,
-                <a href = "#References"  >References</a>
+                <p  style  = "color:black;">&#10022 Class Timing: Monday & Thursday; 4.00 pm onwards</p>
+                <p style  = "color:black;">&#10022  Quick Links:
+                <a style="color:#800000;" href = "https://1drv.ms/b/s!AixHe1a6Ssr1ghhJEFD4LXCsNrjT?e=xjvBQs" target="_blank" >Syllabus</a>,
+                <a style="color:#800000;" href = "#Schedule:Mid-sem" >Classes:Mid-Sem</a>,
+                <a style="color:#800000;" href = "#Schedule:End-sem" >Classes:End-Sem</a>,
+                <a style="color:#800000;" href = "#Announcements" >Announcements</a>,
+                <a style="color:#800000;" href = "#Guidelines"  >Submission Guidelines</a>,
+                <a style="color:#800000;" href = "#References"  >References</a>
                 </p>
           
                 
@@ -122,14 +140,15 @@
           <div class="col-sm-10 col-sm-offset-1" >
             <div id="contentContainer" style = "color: black">            
               <div class="text-left sm-text-left " id = "Schedule:Mid-sem">
-                <h4 style  = "color: blue">Class Schedule: Mid-sem</h4>
+                <h4 style  = "color:  #800000;">Class Schedule: Mid-sem </h4>
                  <hr style="border: 1px solid #001f4d">
               </div>
               
               <!-- Masonry Grid -->
               <table class="table table-dark">
+              
                 <thead>
-                  <tr>
+                  <tr  style  = "color: white; background-color: #006666;">
                     <th scope="col">#</th>
                     <th scope="col">Date</th>
                     <th scope="col">Topic</th>
@@ -147,7 +166,7 @@
                     <br>Assignments, Tests</td>
                   </tr>
                   <tr>
-                    <th scope="row"></th>
+                    <th scope="row" ></th>
                     <td>2022-Aug-18</td>
                     <td>to be decided</td>
                     <td>Slides<br>Assignments, Tests</td>
@@ -158,8 +177,8 @@
                     <td>to be decided</td>
                     <td>Slides<br>Assignments, Tests</td>
                   </tr>
-                  <tr>
-                    <th scope="row"></th>
+                  <tr s>
+                    <th scope="row" ></th>
                     <td>2022-Aug-25</td>
                     <td>to be decided</td>
                     <td>Slides<br>Assignments, Tests</td>
@@ -256,13 +275,15 @@
           <div class="col-sm-10 col-sm-offset-1">
             <div id="contentContainer" style = "color: black">            
               <div class="text-left sm-text-left " id = "Schedule:End-sem">
-                <h4 style  = "color: blue">Class Schedule: End-sem</h4>
+                <h4 style  = "color:  #800000;">Class Schedule: End-sem</h4>
                  <hr style="border: 1px solid #001f4d">
               </div>
               
-              <table class="table table-dark">
+              <table class="table table-dark" >
+         
+                
                 <thead>
-                  <tr>
+                  <tr  style  = "color: white; background-color: #006666;">
                     <th scope="col">#</th>
                     <th scope="col">Date</th>
                     <th scope="col">Topic</th>
@@ -379,22 +400,22 @@
     <!--div  id ="education"-->
     <div  id ="Announcements">
       <div class="container content-lg">
-        <div class="row">
+        <div class="row" >
           <div class="col-sm-10 col-sm-offset-1" id="contentContainerBox">
-            <div id="contentContainer">
-              <h4 style  = "color: blue">Announcements</h4>
+            <div id="contentContainer"  >
+              <h4 style  = "color:  #800000;">&#128483; Announcements</h4>
                <hr style="border: 1px solid #001f4d">
             </div>
             <!-- Masonry Grid -->
-            <ol class="list-group  list-group-numbered">
+            <ol class="list-group  list-group-numbered" >
               <li class="list-group-item ">
-                <p id="parLi">The classes will be start from <strong>Aug 11, 2022</strong></p>
+                <p id="parLi">&#9745 The classes will be start from <strong>Aug 11, 2022</strong></p>
               </li>
               <li class="list-group-item ">
-                <p id="parLi">Exam weight: Mid-Sem- 30% -- End-Sem 50% -- Project 20%</strong></p>
+                <p id="parLi">&#9745 Exam weight: Mid-Sem- 30% -- End-Sem 50% -- Project 20%</strong></p>
               </li>
               <li class="list-group-item ">
-                <p id="parLi">Each Semestral Exam: Lab Tests 40% and Assignment 60%</strong></p>
+                <p id="parLi">&#9745 Each Semestral Exam: Lab Tests 40% and Assignment 60%</strong></p>
               </li>
             </ol>
             <!-- End Masonry Grid -->
@@ -415,23 +436,23 @@
         <div class="row">
           <div class="col-sm-10 col-sm-offset-1" id="contentContainerBox">
             <div id="contentContainer">
-              <h4 style  = "color: black">Assignment Submission Guidelines </h4>
+              <h4 style  = "color: #800000">Assignment Submission Guidelines </h4>
                <hr style="border: 1px solid #001f4d">
             </div>
             
             <!-- Masonry Grid -->
             <ol class="list-group  list-group-numbered">
               <li class="list-group-item ">
-                <p id="parLi">Assignment must be sent as zip format</strong></p>
+                <p id="parLi">&#9755 Assignment must be sent as zip format</strong></p>
               </li>
               <li class="list-group-item ">
-                <p id="parLi">Filename must be <strong>assignment_xyz_abc.zip</strong> where <strong>xyz = assignment id</strong> and <strong> abc = your student id</strong></p>
+                <p id="parLi">&#9755 Filename must be <strong>assignment_xyz_abc.zip</strong> where <strong>xyz = assignment id</strong> and <strong> abc = your student id</strong></p>
               </li>
               <li class="list-group-item ">
-                <p id="parLi">Destination mail id will be notified soon.</p>
+                <p id="parLi">&#9755 Destination mail id will be notified soon.</p>
               </li>
               <li class="list-group-item ">
-                <p id="parLi">Discussion with friends is allowed. However, <strong>copying others' codes is strictly prohibited.</strong></p>
+                <p id="parLi">&#9755 Discussion with friends is allowed. However, <strong>copying others' codes is strictly prohibited.</strong></p>
               </li>
             </ol>
             <!-- End Masonry Grid -->
@@ -456,7 +477,7 @@
 
               <div class="text-left sm-text-left ">
                 <br>
-                <h2 class="margin-b-0" style="color: blue; text-shadow: 5px 5px 5px white;">References</h2>
+                <h2 class="margin-b-0" style="color: #800000; text-shadow: 5px 5px 5px white;">References</h2>
                 
               </div>
              <hr style="border: 1px solid #001f4d">
