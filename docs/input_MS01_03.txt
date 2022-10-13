@@ -1,0 +1,33 @@
+A. Description: This course is aimed at introducing students a thorough and practical introduction to
+    data structures and enabling them to develop computer programs for problem solving at a basic level.
+B. Pre-requisites: None.
+C. Outline of the syllabus:
+    . The Evolution of Programming Languages
+    . Compiler, Interpreter, Assembler
+    . Imperative languages: Introduction to imperative language; syntax and constructs of a specific
+    language (preferably C);
+        (a) Variables, assignments
+        (b) Basic input/output, Main program, If-statement, Logical operators, Loops, Output formatting,
+    Parameters, return values, Debugger
+        (c) Arrays, Pointers, Dynamic Memory Allocation, Structures
+        (d) Basic structures: Lists, Strings, Dictionary, Values and references
+        (e) Basics of program design, Programming style, Exceptions
+        (f) Functions and Recursion: Parameter passing, procedure call, call by value, call by reference,
+    recursion, scope of variables.
+        (g) Linked lists: Implementation of linked lists, inserting, deleting, and inverting a linked list,
+    Stacks and Queues.
+        (h) Matrix Algorithms: Matrix addition, multiplication, and inverse calculation. Finding Eigen
+    values and Eigen vectors. Efficient Algorithms for large/sparse matrices.
+        (i) Algorithm for Polynomials: Polynomial addition and multiplication, division.
+        (j) File handling: principles of data storage and manipulation
+        (k) Matrix Algorithms: Finding Eigen values and Eigen vectors of a large Matrix. Polynomial
+    addition and multiplication.
+        (l) Object-oriented programming: Classes and objects (Python)
+        (m) Trees: Recursive and non-recursive traversal of trees; Balanced binary search trees (AVL tree
+    implementation); Hashing.
+    . In addition, the following concepts need to be covered during the course of the lab session:
+        (a) testing the program, developing test-plan, developing tests.
+        (b) version management.
+        (c) concept of debugging using gdb.
+        (d) concept of writing shell scripts, using bash/tcsh.
+        (e) concept of makefiles.
