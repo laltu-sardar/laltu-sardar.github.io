@@ -1,10 +1,10 @@
-Bikash Santra, ST22001
-Debanjan Dutta, ST22003
-Hrithik Nandi, ST22010
-Krishnakanta Barik, ST22008
-Mriganka Dey, ST22004
-Prabal Das, ST22009
-Pratap Polley, ST22006
-Sajani Kundu, ST22005
-Sayantan Ganguly, ST22007
-Soumya Kanti Saha, ST22002
+ST22001 Bikash Santra
+ST22003 Debanjan Dutta
+ST22010 Hrithik Nandi
+ST22008 Krishnakanta Barik
+ST22004 Mriganka Dey
+ST22009 Prabal Das
+ST22006 Pratap Polley
+ST22005 Sajani Kundu
+ST22007 Sayantan Ganguly
+ST22002 Soumya Saha
