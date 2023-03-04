@@ -14,4 +14,4 @@ Given the head of a linked list, it relinks the nodes in such a way that the ord
 
 5. Make a proper menu to give a choice of linked list functions. Preferably use switch case. Keep the show_list function as default so that after every operation, it shows an error.
 
-Happy Bosonto Utsab!!!
+Happy Basanta Utsav!!!
