@@ -1,3 +1,5 @@
+
+
 #parLi{
 	color:black;
 	
@@ -6,8 +8,8 @@
 
 
 #parContent{
-color: black; 
-text-shadow: 5px 5px 10px white;	
+color: white; 
+text-shadow: 5px 5px 10px black;	
 }
 
 #linkType1{
@@ -36,7 +38,7 @@ text-shadow: 5px 5px 10px white;
 }
 
 #contentContainerBox{
-	background: linear-gradient(to top, #b5b5b5 0%, #ffffff 78%);
+	background: linear-gradient(to top, #001f4d 0%, #006666 78%);
 
 	box-shadow: 0px -8px 10px 10px rgba(255,255,255,0.2); 
 
@@ -73,4 +75,10 @@ text-shadow: 5px 5px 10px white;
 }
 #aText{
 	color:black;
+}
+#h2Text{
+	color:white;
+}
+#a2Text{
+	color:white;
 }
