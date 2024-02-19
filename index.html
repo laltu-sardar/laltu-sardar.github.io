@@ -1,667 +1,138 @@
 <!DOCTYPE html>
-<!-- saved from url=(0033) https://laltu-sardar.github.io-->
-<html lang="en" class="no-js">
-<!-- BEGIN HEAD -->
-
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laltu Sardar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: black; /* Teal color */
+        }
+        p {
+            color: black;
+        }
 
-  <title>Laltu Sardar</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta content="width=device-width, initial-scale=0.7" name="viewport">
-  <meta content="Official Website" name="description">
-  <meta content="Laltu Sardar" name="author">
-
-  <!-- GLOBAL MANDATORY STYLES -->
-  <link href="./Laltu Sardar_files/css" rel="stylesheet" type="text/css">
-  <link href="./Laltu Sardar_files/simple-line-icons.css" rel="stylesheet" type="text/css">
-  <link href="./Laltu Sardar_files/bootstrap.min.css" rel="stylesheet" type="text/css">
-
-  <!-- PAGE LEVEL PLUGIN STYLES -->
-  <link href="./Laltu Sardar_files/animate.css" rel="stylesheet">
-
-  <!-- THEME STYLES -->
-  <link href="./Laltu Sardar_files/layout.min.css" rel="stylesheet" type="text/css">
-
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="http://www.isical.ac.in/~laltu_r/favicon.ico">
-
-
-  <!-- My Scripts -->
-  <script src="src/scripts.js"></script>
-  <link rel="stylesheet" href="src/styles.css">
-
+        nav {
+              position: fixed;
+              top: 0; /* Or "bottom: 0;" for fixed bottom navigation */
+              left: 0;
+              width: 100%;
+              z-index: 100; /* To ensure navigation stays on top of content */
+              background-color: white;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+            background-color: #008080; /* Teal color */
+            margin-top: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #fff; /* White color */
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        nav ul li a:hover {
+            background-color: #00796b; /* Darker teal color */
+        }
+        
+        section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        .column {
+            flex: 1;
+            padding: 20px;
+        }
+        .image-column {
+            text-align: center;
+        }
+        .image-column img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 50%;
+        }
+        .text-column {
+            padding-left: 20px;
+        }
+    </style>
 </head>
-<!-- END HEAD -->
-
-<!-- BODY -->
-
-
-
-
-
-<body id="body" data-spy="scroll" data-target=".header" class="page-on-scroll">
-  <div class="parallax-mirror" style="visibility: hidden; z-index: -100; position: fixed; top: 0px; left: 0px; overflow: hidden;"><img class="parallax-slider" src="./Laltu Sardar_files/undefined"></div>
-
-  <!--========== HEADER ==========-->
-  <header class="header navbar-fixed-top top-nav-collapse">
-    <!-- Navbar -->
-    <nav class="navbar" role="navigation" >
-      <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="menu-container js_nav-item">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
-                                <span class="sr-only">Toggle navigation</span>	<span class="toggle-icon"></span>	</button>
-
-          <!-- Logo -->
-          <div class="logo">
-            <a class="logo-wrap" href="#body">
-                                                                <img class="logo-img logo-img-main" src="./img/LaltuSardarPP.jpg" alt="Laltu Sardar isilogo">
-                                                                <img class="logo-img logo-img-active" src="./img/LaltuSardarPP.jpg" alt="Laltu Sardar Logo">
-                                                        </a>
-          </div>
-          <!-- End Logo -->
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse nav-collapse" >
-          <div class="menu-container" id ="navText">
-
-            <ul class="nav navbar-nav navbar-nav-right">
-              <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#body" id ="navText">Home</a></li>
-              <li class="js_nav-item nav-item active"><a class="nav-item-child nav-item-hover" data-toggle="dropdown" href="#" id ="navText">About<span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li class="active"><a href="#about" id ="navText">Introduction</a></li>
-                  <li class=""><a href="#education" id ="navText">Education</a></li>
-                  <li class=""><a href="#awards" id ="navText">Achievements</a></li>
-                  <li class=""><a href="index_books.html" id ="navText">Collection of Books</a></li>
-                </ul>
-              </li>
-              <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#activities" id ="navText">Activities</a></li>
-              <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#teaching" id ="navText">Teaching</a></li>
-              <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#publications" id ="navText">Publications</a></li>
-              
-              <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#contact" id ="navText">Contact</a></li>
+<body>
+<header>
+        
+        <nav>
+        <h1>LALTU SARDAR</h1>
+        <p>Post-Doctoral Fellow, Institute for Advancing Intelligence, TCG CREST</p>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="sections/research_interests.html">Research Interests</a></li>
+                <li><a href="sections/publications.html">Publications</a></li>
+                <li><a href="sections/teaching.html">Teaching</a></li>
+                <li><a href="sections/implementations.html">Implementations</a></li>
+                <li><a href="sections/awards.html">Awards</a></li>
+                <li><a href="sections/talks.html">Talks</a></li>
+                <li><a href="sections/professional_activities.html">Professional Activities</a></li>
+                <li><a href="sections/hobbies.html">Hobbies</a></li>
             </ul>
-          </div>
+        </nav>
+    </header>
+    <div><br><br><br><br><br><br></div>
+    <section>
+        <div class="column image-column">
+            <img src="your_photo.jpg" alt="Your Photograph">
         </div>
-        <!-- End Navbar Collapse -->
-      </div>
-    </nav>
-    <!-- Navbar -->
-  </header>
-  <!--========== END HEADER ==========-->
+        <div class="column text-column">
+        
+            <h2>About Me</h2>
+            <p>As a post-doctoral research fellow at the Institute of Advancing Intelligence, I bring a wealth of experience from my tenure as a senior research fellow at the esteemed Cryptology and Security Research Unit within the Indian Statistical Institute. My academic journey culminated in a joint supervision under the mentorship of Assoc. Prof. Sushmita Ruj and the renowned Prof. Bimal Kumar Roy.</p>
 
-  <!--========== SLIDER ==========-->
-  <div class="promo-block parallax-window" data-parallax="scroll" data-image-src="img/me1.jpg">
-    <div class="container">
-      <div class="row">
 
-        <div class="col-sm-7">
-          <div class="promo-block-divider">
-            <h2 class="promo-block-title" style="color:black; text-shadow: 5px 5px 10px white;">Laltu Sardar</h2>
-            <p class="promo-block-text" style="color:black;text-shadow: 5px 5px 10px white;">Post-doctoral Fellow,
-              <br> Institute for Advancing Intelligence (IAI),
-              <br> TCG Crest, Kolkata
-        <br>
-        <br>
-      </p>
-          </div>
+            <p>I am deeply passionate about applied cryptography, channeling my expertise towards addressing pertinent challenges in data privacy and security. My research focus revolves around Secure Cloud Computing, particularly concerning the optimization of outsourced encrypted data. Beyond theoretical pursuits, I am driven by a hands-on approach, leveraging real-life datasets to assess scalability and efficiency in practical environments.</p>
 
+            <p>My scholarly interests extend to domains like Private Information Retrieval, Multi-party Computation, and Access Control, where I endeavor to delve into the intricacies of cryptographic protocols. Additionally, I am enthralled by the transformative potential of Blockchain Technology and its myriad real-world applications. My current endeavors center around enhancing the transparency of secure cloud services through innovative blockchain integration.</p>
+
+            <p>In essence, my academic journey embodies a relentless pursuit of cryptographic innovation, where theoretical prowess converges with practical application to pave the way for enhanced data security in the digital age.</p>
         </div>
-
-        <div class="col-sm-7">
-          <h3 class="text-right" id="parContent">The best and most beautiful things in the world cannot be seen or even touched - they must be felt with the heart.</h3>
-          <h5 class="text-right" id="parContent"> ---------- Helen Keller</h5>
-        </div>
-        <div class="col-sm-4 col-sm-offset-1 list-inline">
-          <li><a href="https://scholar.google.co.in/citations?user=v2UrKigAAAAJ&hl=en" target="_blank" class="social-icons"><img src="./img/gScholar.png" alt="Laltu Sardar google-scholar icon" width="200%" height="200%"></a></li>
-          <li><a href="https://dblp.uni-trier.de/pid/234/9071.html" target="_blank" class="social-icons"><img src="./img/dblp.png" alt="Laltu Sardar dblp icon" width="200%" height="200%"></a></li>
-          <li><a href="https://orcid.org/0000-0002-7433-0497" target="_blank" class="social-icons"><img src="./img/orcid-logo.png" alt="Laltu Sardar orcid icon" width="200%" height="200%"></a></li>
-          <li><a href="https://in.linkedin.com/in/laltusardar" target="_blank" class="social-icons"><img src="./img/linkedin.png" alt="Laltu Sardar linkedin icon" width="200%" height="200%"></a></li>
-        </div>
-      </div>
-      <!--// end row -->
-    </div>
-  </div>
-  <!--========== SLIDER ==========-->
-
-  <!--========== PAGE LAYOUT ==========-->
-  <!-- About--------------------------------------------------------------------------------------------- -->
-  <div  id ="about" >
-    <div class="container content-lg">
-      <div class="row">
-        <div class="col-sm-10 col-sm-offset-1" id="contentContainerBox" >
-          <div id="contentContainer">
-          <div class="text-left sm-text-left ">
-            <br>
-            <h2 class="margin-b-0" id="parContent" >Introduction</h2>
-            <hr style="border: 1px solid #001f4d">
-            <h6 id="parContent">
-                <i> Success is no accident. It is hard work, perseverance, learning, studying, sacrifice and most of all, love of what you are doing or learning to do.</i>
-                 <small id="parContent"> ---------- Pele</small></h3>
-            <hr style="border: 1px solid #001f4d">
-          </div>
-
-         <div class="margin-b-60 " id ="contentContainerBoxIntro" >
-
-            <ul class="list-group">
-            <li class="list-group-item" > <p style = "color:black">
-                I am a post-doctoral research fellow at Institute of Advancing Intelligence,
-                    I was a senior research fellow at Cryptology and Security Research Unit, <i>Indian Statistical Institute</i>. I graduated under joint supervision of <a href="http://www.isical.ac.in/~sush/" style="color: black;"> <b>Assoc. Prof. Sushmita Ruj</b></a> and <a href="http://www.isical.ac.in/~bimal/" style="color: black;"> <b>Prof. Bimal Kumar Roy</b></a>. Before joining here as a researcher, I did my M. Tech. in computer science from here and M.Sc. in Pure Mathematics from the University of Calcutta.<br><br>
-                     My research is in applied cryptography and is driven by real-world problems in data privacy and security.  My focus area of research is in <b>Secure Cloud Computing</b> over outsourced encrypted data. Besides theoretical aspects, I like to implement with real-life data to check scalability and efficiency in real environments.<br><br>
-
-                  Besides, I maintain great interest in <i>Private Information Retrieval, Multi-party Computation, Access Control,</i> etc.
-                  I am very keen to explore <strong style="color: black;">Blockchain</strong > Technology and its real world applications. I work on transparency of secure cloud services via blockchain technology.
-                 </p></li>
-             <li class="list-group-item" > <p style = "color:black"><p style ="color: black">
-                  Here is my <a href="img/Laltu_Sardar_cv.pdf" target="_blank" style="color: black;">CV</a> (Last Updated: December 2020).
-                 </p></li>
-          </ul>
-          
-            
-                
-
-          </div>
-         </div>  <!--contentContainer-->
-        </div>  <!--contentContainerBox-->
-      </div>   <!--// end row -->
-    </div>
-  </div>
-  <!-- End About -->
-
-  <!-- Education --------------------------------------------------------------------------------------------- -->
-  <!--div  id ="education"-->
-  <div  id ="education">
-    <div class="container content-lg">
+    </section>
     
-<div class="row">
-        <div class="col-sm-10 col-sm-offset-1" id="contentContainerBox">
-          <div id="contentContainer">
+    <div>
+    <hr>
+    <h4>Education</h4>
+    
+    <p>
+    I pursued my Doctor of Philosophy (Ph.D.) in Computer Science from the Indian Statistical Institute, Kolkata, India, between 2016 and 2021. During this time, I was under the supervision of Assoc. Prof. Sushmita Ruj and Prof. Bimal Kumar Roy.
 
-          <div class="text-left sm-text-left " >
-            <br>
-            <h2 class="margin-b-0" id="parContent" >Education</h2>
-            <hr style="border: 1px solid #001f4d">
-            <h6 id="parContent" >
-                <i>Develop a passion for learning. If you do, you will never cease to grow.</i>
-                 <small id="parContent"> ------- Anthony J. D'Angelo</small></h3>
-            <hr style="border: 1px solid #001f4d">
-          </div>
+Prior to my Ph.D., I completed my Master of Technology (M.Tech.) in Computer Science at the Indian Statistical Institute, Kolkata, India, from 2014 to 2016. I was supervised by Assoc. Prof. Sushmita Ruj during this period.
 
-        <!-- Masonry Grid -->
+My academic journey started with a Master of Science (M.Sc.) in Pure Mathematics at Ballygunge Science College, University of Calcutta, Kolkata, India, from 2012 to 2014. Prof. Avishek Adhikari supervised my studies during this time.
 
-          <ul class="list-group">
-            <li class="list-group-item" >
-              <p id="parLi">Doctor of Philosophy (2016-2021), in Computer Science,
-              <br> <a href="http://www.isical.ac.in/" target="_blank" id="linkAsP">Indian Statistical Institute, Kolkata</a>
-              <br> 203, B T Road, Kolkata, India- 700105</p>
-              <p id="parLi">Under supervision of <a href="https://www.isical.ac.in/~sush/" target="_blank"  style="color: blue;">Assoc. Prof. Sushmita Ruj</a> and <a href="https://www.isical.ac.in/~bimal" target="_blank"  style="color: blue;">Prof. Bimal Kumar Roy</a></p>
-            </li>
+Before my master's degree, I pursued a Bachelor of Science (B.Sc.) in Mathematics at Charuchandra College, University of Calcutta, Kolkata, India, from 2009 to 2012.
 
+My secondary education in Science was completed at Kasba Chittaranjan High School, Kolkata, India, from 2007 to 2009.
 
-            <li class="list-group-item" >
-              <p id="parLi">Master of Technology (2014-2016), in Computer Science,
-              <br><a href="http://www.isical.ac.in/" target="_blank" id="linkAsP">Indian Statistical Institute, Kolkata</a>
-              <br> 203, B T Road, Kolkata, India- 700105</p>
-              <p id="parLi">Under supervision of <a href="https://www.isical.ac.in/~sush/" target="_blank"  style="color: blue;">Assoc. Prof. Sushmita Ruj</a></p>
-            </li>
-
-
-            <li class="list-group-item">
-              <p id="parLi">Master of Science (2012-2014), in Pure Mathematics,
-              <br><a href="http://www.caluniv.ac.in/academic/department/Pure-Math.html" target="_blank" id="linkAsP">Ballygunge Science College</a>, <a href="http://www.caluniv.ac.in" target="_blank" id="linkAsP">University of Calcutta </a>
-              <br>35, Ballygunge Circular Rd, Ballygunge, Kolkata, India- 700019</p>
-              <p id="parLi">Under supervision of <a href="https://www.presiuniv.ac.in/web/staff.php?staffid=424" target="_blank"  style="color: blue;">Prof. Avishek Adhikari</a></p>
-            </li>
-
-
-            <li class="list-group-item" >
-              <p id="parLi">Bachelor of Science (2009-2012), in Mathematics,
-              <br><a href="https://www.charuchandracollege.ac.in" target="_blank" id="linkAsP">Charuchandra College</a>, <a href="http://www.caluniv.ac.in" target="_blank" id="linkAsP">University of Calcutta </a>
-              <br>22, Lake Place Road, Lake Market, Kalighat, Kolkata, India- 700029</p>
-            </li>
-
-
-            <li class="list-group-item">
-              <p id="parLi">Higher Secondary (2007-2009), in Science,
-              <br> <a href="https://kasbachittaranjanhighschool.justdial.com/" target="_blank" id="linkAsP">Kasba Chittaranjan High School</a>
-              <br>80 R K ghoshal Road, Kasba, Kolkata, India- 700042</p>
-            </li>
-            <li class="list-group-item" >
-              <p id="parLi">Secondary, (2007)
-              <br><a href="https://kasbachittaranjanhighschool.justdial.com/" target="_blank" id="linkAsP">Kasba Chittaranjan High School</a>
-              <br>80 R K ghoshal Road, Kasba, Kolkata, India- 700042</p>
-            </li>
-          </ul>
-          <!-- End Masonry Grid -->
-         </div>  <!--contentContainer-->
-        </div>  <!--contentContainerBox-->
-      </div>   <!--// end row -->
+I completed my secondary education at the same school in 2007.</p>
     </div>
-  </div>
-  <!-- End Education -->
-
-
-
-
-  <!-- Awards ---------------------------------------------------------------------------------------------  -->
-  <div  id ="awards">
-    <div class="container content-lg">
-    <div class="row">
-        <div class="col-sm-10 col-sm-offset-1" id="contentContainerBox">
-          <div id="contentContainer">
-
-          <div class="text-left sm-text-left ">
-            <br>
-            <h2 class="margin-b-0" id="parContent">Academic Achievements</h2>
-            <hr style="border: 1px solid #001f4d">
-            <h6 id="parContent">
-                <i>What you get by achieving your goals is not as important as what you become by achieving your goals.</i>
-                 <small id="parContent">-------- Henry David Thoreau</small></h3>
-            <hr style="border: 1px solid #001f4d">
-          </div>
-
-        <!-- Masonry Grid -->
-
-          <ul class="list-group">
-            <li class="list-group-item" > <p id="parLi">Qualified JEST in Computer Science in 2016</p> </li>
-            <li class="list-group-item" > <p id="parLi">Qualified GATE in Computer Science in 2016</p> </li>
-            <li class="list-group-item">  <p id="parLi">Qualified CSIR-UGC NET JRF in Mathematical Science in Dec, 2013</p> </li>
-            <li class="list-group-item" > <p id="parLi">Qualified NBHM (M.Sc) Scholarship for Mathematics in 2013</p> </li>
-            <li class="list-group-item" > <p id="parLi">Ranked 3rd in JECA-2012</p> </li>
-          </ul>
-          <!-- End Masonry Grid -->
-         </div>  <!--contentContainer-->
-        </div>  <!--contentContainerBox-->
-      </div>   <!--// end row -->
-    </div>
-  </div>
-  <!-- End Education -->
-
-
-  <!-- About--------------------------------------------------------------------------------------------- -->
-  <div id ="activities">
-    <div class="container content-lg" >
-
-    <div class="row" >
-        <div class="col-sm-10 col-sm-offset-1"  id="contentContainerBox">
-          <div id="contentContainer">
-          <div class="text-left sm-text-left ">
-            <br>
-            <h2 class="margin-b-0" id="parContent">Activities</h2>
-            <hr style="border: 1px solid #001f4d">
-            <h6 id="parContent">
-                <i> One of the extraordinary things about human events is that the unthinkable becomes thinkable.</i>
-                 <small id="parContent"> -------- Salman Rushdie</small></h3>
-            <hr style="border: 1px solid #001f4d">
-          </div>
-
-        <!-- Masonry Grid -->
-          <ul class="list-group ">
-            <li class="list-group-item ">
-               <p id="parLi"> Talk on "Securely Computing Clustering Coefficient for Outsourced Dynamic Encrypted Graph Data", on 7th Jan, 2021
-                <br> in 13th International Conference on COMmunication Systems & NETworkS (ComsNets 2021)
-                <br> Bengaluru, India</p>
-                <a href="./docs/Securely_Computing_Clustering_Coefficient_slides.pdf" target="_blank" style ="color: blue; ">Slides ↗</a>.
-             </li>
-            <li class="list-group-item ">
-               <p id="parLi">Talk on "FSPVDsse: A Forward Secure Publicly Verifiable Dynamic SSE scheme", on 3rd Sep, 2019
-                <br> in The 13th International Conference on Provable and Practical Security (ProvSec 2019)
-                <br> at James Cook University, Cairns, Australia</p>
-                <a href="./docs/FSPVDsse-slides.pdf" target="_blank" style ="color: blue; ">Slides ↗</a>
-             </li>
-             <li class="list-group-item ">
-               <p id="parLi">Visited to "<a href="http://itslab.inf.kyushu-u.ac.jp/~sakurai/index.html" target="_blank" id="linkAsP">Prof. Kouichi Sakurai</a>" in May, 2019
-                <br> at <a href="http://itslab.inf.kyushu-u.ac.jp/index.html" target="_blank" id="linkAsP">Sakurai Laboratory</a>, Faculty of Information Science and Electrical Engineering,
-                <br> <a href="https://www.kyushu-u.ac.jp/en/"  target="_blank" id="linkAsP">Kyushu University</a>, Fukuoka, Japan</p>
-             </li>
-            <li class="list-group-item ">
-               <p id="parLi">Talk on "Searchable Encryption" on 22-23 May, 2018
-               <br>	in "Summer Internship in Cryptology",
-                <br>at <a href="https://www.isical.ac.in/~rcbose/"  target="_blank" id="linkAsP">R. C. Bose Centre for Cryptology and Security</a>,
-                Indian Statistical Institute, Kolkata, India</p>
-                <a href="./docs/searchable-encryption.pdf" target="_blank" style ="color: blue; ">Slides ↗</a>
-             </li>
-                <li class="list-group-item " >
-                  <p id="parLi">Talk on "Searchable Encryption" in "ATMW Workshop on Cryptology (2018)", 13th April, 2018 <a href="https://www.atmschools.org/2018/atmw/cryptology" target="_blank">↗</a>
-                <br>Indian Statistical Institute, Kolkata, India </p>
-                </li>
-                <li class="list-group-item " >
-                  <p id="parLi">Attended "IISc-IACR School on Information-theoretic Cryptology", 4-8 January, 2018 <a href="http://www.csa.iisc.ac.in/~crysp/IACRSchool" target="_blank">↗</a>
-                <br>
-                Indian Institute of Science, Bangalore, India</p>
-                </li>
-                <li class="list-group-item " >
-                  <p id="parLi">Attended "MPC School and Workshop ", 27-31 March, 2017
-                <br>Indian Institute of Technology, Bombay, India </p>
-                </li>
-                <li class="list-group-item " >
-                  <p id="parLi">Attended "ACM India Anual Event, 2017 ", 21st January, 2017
-                <br>
-                Amity University, Kolkata, India</p>
-                </li>
-                <li class="list-group-item ">
-                  <p id="parLi">Attended "Indocrypt 2016 ", 11-14 December, 2016
-                  <br>Indian Statistical Institute, Kolkata, India</p>
-                </li>
-                <li class="list-group-item " >
-                  <p id="parLi">Attended "Recent Advances in Authenticated Encryption ", 19-22 September, 2016
-                  <br>Indian Statistical Institute, Kolkata, India</p>
-                </li>
-                <li class="list-group-item " >
-                  <p id="parLi">Presented Invited Paper "National Workshop on Crytology, NWC-2016 ", 11-13 Aug, 2016
-                <br>JNNCE, Shivamogga, Karnataka, India</p>
-                </li>
-          </ul>
-          <!-- End Masonry Grid -->
-         </div>  <!--contentContainer-->
-        </div>  <!--contentContainerBox-->
-      </div>   <!--// end row -->
-    </div>
-  </div>
-  <!-- End About -->
-
-
- <!--  Teaching--------------------------------------------------------------------------------------------- -->
-   <div id="teaching">
-    <div class="container content-lg " >
-      <div class="row">
-        <div class="col-sm-10 col-sm-offset-1" id="contentContainerBox">
-          <div id="contentContainer">
-
-          <div class="text-left sm-text-left "  >
-            <br>
-            <h2 class="margin-b-0" id="parContent">Teaching</h2>
-            <hr style="border: 1px solid #001f4d">
-            <h6 id="parContent">
-                <i>The teachers task is to initiate the learning process and then get out of the way.</i>
-                 <small id="parContent"> -------- John Warren</small></h3>
-            <hr style="border: 1px solid #001f4d">
-          </div>
-
-        <!-- Masonry Grid -->
-          <ul class="list-group ">
-          <li class="list-group-item ">
-              <p id="parLi">
-                <a href="courses_pds_2023_24.html" target="_blank " id="linkAsP"><strong style = "color: blue">Introduction to Programming and Data Structures</strong></a>, Semester-I, 2023-24
-                </strong>
-                <br>Offered to: Doctor of Philosophy (Ph.D.) in Computer Science at IAI, TCG Crest, Kolkata, India
-                <br>Co-Instructor:
-                <a href="https://www.tcgcrest.org/people/ritankar-mondal" target="_blank " id="linkAsP">Dr. Ritankar Mandal</a>,
-
-              </p>
-            </li>
-          <li class="list-group-item ">
-              <p id="parLi">
-                <a href="courses_pds_2023.html" target="_blank " id="linkAsP"><strong style = "color: blue">Introduction to Programming and Data Structures</strong></a>, Semester-II, 2022-23
-                </strong>
-                <br>Offered to: Doctor of Philosophy (Ph.D.) in Computer Science at IAI, TCG Crest, Kolkata, India
-                <br>Co-Instructor:
-                <a href="https://www.tcgcrest.org/people/ritankar-mondal" target="_blank " id="linkAsP">Dr. Ritankar Mandal</a>,
-
-              </p>
-            </li>
-              <li class="list-group-item ">
-                 <p id="parLi">
-                   <a href="https://www.tcgcrest.org/daca" target="_blank " id="linkAsP"><strong style = "color: blue">Design and Analysis of Combinatorial Algorithms</strong></a>, Semester-II, 2022-23
-                   </strong>
-                   <br>Offered to: Doctor of Philosophy (Ph.D.) in Computer Science at IAI, TCG Crest, Kolkata, India
-                   <br>Co-Instructors: <a href="https://www.tcgcrest.org/people/nilanjan-datta/" target="_blank " id="linkAsP">Dr. Nilanjan Datta</a> and 
-                   <a href="https://www.tcgcrest.org/people/ritankar-mondal" target="_blank " id="linkAsP">Dr. Ritankar Mandal</a>,
-
-                 </p>
-               </li>
-           <li class="list-group-item ">
-              <p id="parLi">
-                <a href="courses_pds_2022.html" target="_blank " id="linkAsP"><strong style = "color: blue">Introduction to Programming and Data Structures</strong></a>, Semester-I, 2022-23
-                </strong>
-                <br>Offered to: Doctor of Philosophy (Ph.D.) in Computer Science at IAI, TCG Crest, Kolkata, India
-                <br>Co-Instructor:
-                <a href="https://www.tcgcrest.org/people/ritankar-mondal" target="_blank " id="linkAsP">Dr. Ritankar Mandal</a>,
-
-              </p>
-            </li>
-
-            <li class="list-group-item ">
-              <p id="parLi">Teaching Assistantship (2017)
-                <br>
-                <a href="http://www.isical.ac.in/~pdslab/2017/" target="_blank " id="linkAsP"><strong style = "color: blue">Data and File structure Laboratory, 2017</strong></a>
-                </strong>
-                <br>Offered to: Master of Technology (M.Tech.) in Computer Science at Indian Staistical Institute, Kolkata, India
-                <br>Course Instructors:
-                <a href="https://www.isical.ac.in/~ansuman/" target="_blank " id="linkAsP">Dr. Ansuman Banerjee</a>,
-                <a href="https://www.isical.ac.in/~mandar/" target="_blank " id="linkAsP">Dr. Mandar Mitra</a>,
-                <a href="https://sites.google.com/site/panditsupantha/home" target="_blank " id="linkAsP">Dr. Supantha Pandit</a>.
-              </p>
-            </li>
-          </ul>
-          <!-- End Masonry Grid -->
-            </div>  <!--contentContainer-->
-        </div>  <!--contentContainerBox-->
-      </div>   <!--// end row -->
-    </div>
-  </div>
-  <!-- Teaching -->
-
-  <!-- Publications----------------------------------------------------------------------------------------------->
-   <div id = "publications">
-    <div class="container content-lg " >
-    <div class="row">
-        <div class="col-sm-10 col-sm-offset-1" id="contentContainerBox">
-          <div id="contentContainer">
-
-          <div class="text-left sm-text-left ">
-            <br>
-            <h2 class="margin-b-0" id="parContent">Publications</h2>
-            <hr style="border: 1px solid #001f4d">
-            <h6 id="parContent">
-                <i> A conclusion is the place where you got tired thinking.</i>
-                 <small id="parContent"> ------- Martin H. Fischer</small></h3>
-            <hr style="border: 1px solid #001f4d">
-          </div>
-
-
-        <!-- Masonry Grid -->
-          <ul class="list-group ">
-         <li class="list-group-item " >
-            <p id="parLi"> <b>Laltu Sardar</b> and Subhra Mazumdar
-                     <i>"Fidelis: Verifiable Keyword Search with No Trust Assumption."</i>,<br>
-                    In Proceedings of the 20th International Conference on Security and Cryptography
-                    [<a href="https://secrypt.scitevents.org/?y=2023" target="_blank" style ="color: blue; ">SeCRYPT 2023</a>], (Published, 2023)<br>
-                    ISBN: 978-989-758-666-8, ISSN: 2184-7711, pages 698-703.
-                    [<a href="https://doi.org/10.5220/0012082700003555" target="_blank" style ="color: blue; ">visit</a>]
-                    
-                </p>
-            </li>
-            <br>
-              <li class="list-group-item ">
-                <p id="parLi"> <b>Laltu Sardar,</b> Binanda Sengupta and Sushmita Ruj,
-                       <i>"Efficient Keyword Search on Encrypted Dynamic Cloud Data"</i>,<br>
-                      Advances in Mathematics of Communications
-                      [<a href="https://www.aimsciences.org/AMC" target="_blank" style ="color: blue; ">AMC 2023</a>], (Accepted, 2022)
-                      [<a href="https://www.aimsciences.org/article/doi/10.3934/amc.2022101" target="_blank" style ="color: blue; ">visit</a>]
-                      [<!--a href="https://arxiv.org/abs/1901.11308" target="_blank" style ="color: blue; ">arXiv</a-->]
-                      [<!--a href="https://eprint.iacr.org/2019/087" target="_blank" style ="color: blue; ">eprint</a-->]
-                  </p>
-              </li>
-              <br>
-          <li class="list-group-item ">
-              <p id="parLi"> <b>Laltu Sardar</b>,
-                     <i>"Queryable Encryption for Outsourced Dynamic Data"</i>,<br>
-                    Ph.D. Thesis, in ISI Kolkata repository
-                    [<a href="http://library.isical.ac.in:8080/jspui/handle/10263/7242" target="_blank" style ="color: blue; ">visit</a>],
-                    under joint supervision of Sushmita Ruj and Bimal Kumar Roy.
-                    (Issued, 2021)
-                </p>
-            </li>
-            <br>
-
-            <li class="list-group-item " >
-            <p id="parLi"> <b>Laltu Sardar</b>, Gaurav Bansal, Sushmita Ruj, Kouichi Sakurai
-                     <i>"Securely Computing Clustering Coefficient for Outsourced Dynamic Encrypted Graph Data"</i>,<br>
-                    13th International Conference on COMmunication Systems & NETworkS
-                    [<a href="https://www.comsnets.org" target="_blank" style ="color: blue; ">ComsNets 2021</a>], (Published, 2021)
-                    [<a href="https://ieeexplore.ieee.org/abstract/document/9352809" target="_blank" style ="color: blue; ">visit</a>]
-                    [<a href="#" target="_blank" style ="color: blue; ">arXiv</a>]
-                    [<a href="#" target="_blank" style ="color: blue; ">eprint</a>]
-                </p>
-            </li>
-            <br>
-            <li class="list-group-item " >
-              <p id="parLi"> <b>Laltu Sardar</b> and Sushmita Ruj,
-                     <i>"FSPVDsse: A Forward Secure Publicly Verifiable Dynamic SSE scheme"</i>,<br>
-                    The 13th International Conference on Provable and Practical Security
-                    [<a href="https://www.monash.edu/provsec2019" target="_blank" style ="color: blue; ">ProvSec 2019</a>], (Published, 2019)
-                    [<a href="https://doi.org/10.1007/978-3-030-31919-9_23" target="_blank" style ="color: blue; ">visit</a>]
-                    [<a href="https://arxiv.org/abs/1910.00034" target="_blank" style ="color: blue; ">arXiv</a>]
-                    [<a href="https://eprint.iacr.org/2019/1123" target="_blank" style ="color: blue; ">eprint</a>]
-            </li>
-            <br>
-            <li class="list-group-item ">
-              <p id="parLi"> <b>Laltu Sardar</b> and Sushmita Ruj,
-                     <i>"The secure Link Prediction Problem"</i>,<br>
-                    Advances in Mathematics of Communications
-                    [<a href="https://aimsciences.org/journal/1930-5346/2019/13/4" target="_blank" style ="color: blue; ">AMC 2019-13-4</a>], (Published, 2019)
-                    [<a href="https://aimsciences.org/article/doi/10.3934/amc.2019043" target="_blank" style ="color: blue; ">visit</a>]
-                    [<a href="https://arxiv.org/abs/1901.11308" target="_blank" style ="color: blue; ">arXiv</a>]
-                    [<a href="https://eprint.iacr.org/2019/087" target="_blank" style ="color: blue; ">eprint</a>]
-                </p>
-            </li>
-            <br>
-            <li class="list-group-item ">
-              <p id="parLi"> <b>Laltu Sardar</b>,
-                     <i>"Data Survivability and Authenticity in Unattended WSN"</i>,<br>
-                    M. Tech. Thesis, in ISI Kolkata repository
-                    [<a href="http://library.isical.ac.in:8080/jspui/bitstream/10263/6496/1/DISS-339.pdf" target="_blank" style ="color: blue; ">visit</a>], under supervision of Sushmita Ruj.
-
-                </p>
-            </li>
-            <br>
-            <li class="list-group-item ">
-              <p class="color-black "><a href="https://laltu-sardar.github.io/docs/top_crypto_venues.html"  target="blank">List of crypto venues</a> </p>
-            </li>
-          </ul>
-          <!-- End Masonry Grid -->
-         </div>  <!--contentContainer-->
-        </div>  <!--contentContainerBox-->
-      </div>   <!--// end row -->
-    </div>
-  </div>
-  <!-- End Publications -->
-
-  
-
-
-
-  <!-- Contact--------------------------------------------------------------------------------------------- -->
-  <div  id ="contact">
-    <div class="container content-lg ">
-      <div class="row ">
-        <div class="col-sm-10 col-sm-offset-1 "  id="contentContainerBox">
-          <div class="text-left sm-text-left " >
-            <br>
-            <h2 class="margin-b-0 " id = "parContent">contact</h2>
-            <hr id ="hLine">
-            <!--
-            <h3 style="color: black; text-shadow: 5px 5px 10px white; ">There are four ways, and only four ways, in which we have contact with the world. We are evaluated and classified by these four contacts: what we do, how we look, what we say, and how we say it.
-                        <small style="color: black; text-shadow: 5px 5px 10px white; "> -------- Dale Carnegie</small></h3>
-                        <hr id ="hLine">
-            -->
-          </div>
-        </div>
-        <div class="col-sm-10 col-sm-offset-1 " id="contentContainerBox">
-            <div class="col-sm-4 "  >
-              <div class="text-left sm-text-left " >
-                <br>
-                <h5 id ="h2Text">Office</h5>
-                <p style="color:white; ">First Floor, Tower 1,
-                <br>Bengal Eco Intelligent Park (Techna),
-                <br>Block EM, Plot No 3, Sector V, Salt lake,
-                <br> Kolkata 700091, West Bengal, INDIA</p>
-              </div>
-            </div>
-
-            <div class="col-md-2 " >
-                <br>
-              <h5 id ="h2Text">Location</h5>
-              <a href="https://goo.gl/maps/b5HvNs85QfR2" target="_blank " id ="a2Text">Kolkata, India</a>
-            </div>
-            <div class="col-md-2 " >
-                <br>
-              <h5 id ="h2Text">Phone</h5>
-              <a href="# " id ="a2Text"> Ask by Email </a>
-            </div>
-            <div class="col-md-4 " >
-                <br>
-              <h5 id ="h2Text">Email</h5>
-              <a href="mailto:" target="_blank " id ="a2Text">name (dot) surname [at] tcgcrest (dot) org</a>
-              <br>
-              <a href="mailto:" target="_blank " id ="a2Text">laltuisical [at] gmail (dot) com</a>
-                <br>
-              <a href="" target="_blank " id ="a2Text">name (dot) surname [at] outlook (dot) com</a>
-              <a href="mailto:" target="_blank " id ="a2Text">laltuisical [at] gmail (dot) com</a>
-            </div>
-        </div>  <!--contentContainerBox-->
-      </div>   <!--// end row -->
-    </div>
-
-  </div>
-  <!-- End Contact -->
-  <!--========== END PAGE LAYOUT ==========-->
-
-  <!--========== FOOTER ==========-->
-  <footer class="footer " >
-    <div class="content container" >
-      <div class="row ">
-        <div class="col-xs-6 text-left sm-text-left ">
-            <hr >
-            <br>
-          <h4 class="margin-b-0 " style="color: black; ">@ <a href="# " style="color: black; " > Laltu Sardar</a>, IAI, TCG Crest, Kolkata </h4>
-        </div>
-        <div class="col-xs-6 text-right sm-text-right ">
-        <p style="color: black; " class="margin-b-0 ">Last Updated: January, 2023</p>
-          <p style="color: black; " class="margin-b-0 ">Theme Powered by: <a  href="http://keenthemes.com/free-bootstrap-templates/aircv-responsive-professional-cv-template/" target="_blank ">KeenThemes.com</a>
-           <a href='https://www.symptoma.it/'>Symptoma®</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=929b170187abc663f8ade98c8f1d03c9c3969ba6'></script>
-<script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/998567/t/5"></script>
-</p>
-
-        </div>
-
-      </div>
-      <!--// end row -->
-    </div>
-  </footer>
-  <!--========== END FOOTER ==========-->
-
-  <!-- Back To Top -->
-  <a href="javascript:void(0); " class="js-back-to-top back-to-top back-to-top-is-visible ">Top</a>
-
-  <!-- JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
-  <!-- CORE PLUGINS -->
-  <script src="./Laltu Sardar_files/jquery.min.js.download " type="text/javascript "></script>
-  <script src="./Laltu Sardar_files/jquery-migrate.min.js.download " type="text/javascript "></script>
-  <script src="./Laltu Sardar_files/bootstrap.min.js.download " type="text/javascript "></script>
-
-  <!-- PAGE LEVEL PLUGINS -->
-  <script src="./Laltu Sardar_files/jquery.easing.js.download " type="text/javascript "></script>
-  <script src="./Laltu Sardar_files/jquery.back-to-top.js.download " type="text/javascript "></script>
-  <script src="./Laltu Sardar_files/jquery.smooth-scroll.js.download " type="text/javascript "></script>
-  <script src="./Laltu Sardar_files/jquery.wow.min.js.download " type="text/javascript "></script>
-  <script src="./Laltu Sardar_files/jquery.parallax.min.js.download " type="text/javascript "></script>
-  <script src="./Laltu Sardar_files/jquery.appear.js.download " type="text/javascript "></script>
-  <script src="./Laltu Sardar_files/jquery.masonry.pkgd.min.js.download " type="text/javascript "></script>
-  <script src="./Laltu Sardar_files/imagesloaded.pkgd.min.js.download " type="text/javascript "></script>
-
-  <!-- PAGE LEVEL SCRIPTS -->
-  <script src="./Laltu Sardar_files/layout.min.js.download " type="text/javascript "></script>
-  <script src="./Laltu Sardar_files/progress-bar.min.js.download " type="text/javascript "></script>
-  <script src="./Laltu Sardar_files/masonry.min.js.download " type="text/javascript "></script>
-  <script src="./Laltu Sardar_files/wow.min.js.download " type="text/javascript "></script>
-
-
-  <!-- END BODY -->
-
+    
 </body>
-
 </html>
