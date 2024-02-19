@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SLP Prototype</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+        }
+        ol {
+            padding: 0;
+            list-style-type: decimal;
+            text-align: center;
+        }
+        li {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        p {
+            margin: 0;
+            color: #333;
+        }
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #000000; /* Teal color */
+        }
+        p {
+            color: black;
+        }
+        
+        nav {
+              position: fixed;
+              top: 0; /* Or "bottom: 0;" for fixed bottom navigation */
+              left: 0;
+              width: 100%;
+              z-index: 100; /* To ensure navigation stays on top of content */
+              background-color: white;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+            background-color: #008080; /* Teal color */
+            margin-top: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #fff; /* White color */
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        nav ul li a:hover {
+            background-color: #00796b; /* Darker teal color */
+        }
+    </style>
+</head>
+<body>
+<header>
+        <nav>
+        <h1>LALTU SARDAR</h1>
+        <p>Post-Doctoral Fellow, Institute for Advancing Intelligence, TCG CREST</p>
+            <ul>
+                <li><a href="./../../index.html">About</a></li>
+                <li><a href="./../research_interests.html">Research Interests</a></li>
+                <li><a href="./../publications.html">Publications</a></li>
+                <li><a href="./../teaching.html">Teaching</a></li>
+                <li><a href="./../implementations.html">Implementations</a></li>
+                <li><a href="./../awards.html">Awards</a></li>
+                <li><a href="./../talks.html">Talks</a></li>
+                <li><a href="./../professional_activities.html">Professional Activities</a></li>
+                <li><a href="./../hobbies.html">Hobbies</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container"><br><br><br><br>
+        <h2>Prototype Implementations: The Secure Link Prediction Problem</h2>   <hr> 
+        <h3>Installation and Execution</h3><hr>
+        <ol>
+            <li>Download the source code from <a href ="https://github.com/sardarlaltu/SecureLinkPrediction" target="blank">this link</a></li>
+            <li>Install PBC library</li>
+            <li>Install supporting Libraries; m4, flex, bison etc.</li>
+            <li>Install GNU library if required</li>
+            <li>Run myBGN_test to check whether the above library installed properly or not</li>
+            <li>Give graph data file in the data folder.</li>
+            <li>
+               
+                    Update data file path, number of nodes and security bits in makefile
+               
+            </li>
+            <li>
+                Run SLP1 by "make slp1"
+               
+            </li>
+            <li>
+               Run SLP2 by "make slp2"
+               
+            </li>
+        </ol>
+
+        
+        <hr>
+       <h4>SLP1.c</h4>   <hr> 
+        <ol>
+            <li>
+                <p><strong>SLP1_Key_Gen(int lambda):</strong> <br>Generates a key for the Secure Link Prediction (SLP) protocol.</p>
+                <ul>
+                    <li><em>Parameters:</em> <code>lambda</code> - Security parameter used for key generation.</li>
+                    <li><em>Returns:</em> A pointer to the generated SLP1 key.</li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>SLP1_Encrypt_Matrix(int ** AdjMatrix, BGN_PK_t * bgn_pk, int noOfNodes):</strong> <br>Encrypts an adjacency matrix using the Boneh-Goh-Nissim (BGN) cryptosystem.</p>
+                <ul>
+                    <li><em>Parameters:</em> 
+                        <ul>
+                            <li><code>AdjMatrix</code> - The adjacency matrix to be encrypted.</li>
+                            <li><code>bgn_pk</code> - The public key used for encryption.</li>
+                            <li><code>noOfNodes</code> - The number of nodes in the graph represented by the adjacency matrix.</li>
+                        </ul>
+                    </li>
+                    <li><em>Returns:</em> A pointer to the encrypted matrix.</li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>SLP1_Trapdoor_Gen(TRAPDOOR_t *trapdoor, int vertId, int keyPerm):</strong> <br>Generates a trapdoor for a given vertex ID and key permutation.</p>
+                <ul>
+                    <li><em>Parameters:</em> 
+                        <ul>
+                            <li><code>trapdoor</code> - Pointer to the structure where the trapdoor will be stored.</li>
+                            <li><code>vertId</code> - The ID of the vertex for which the trapdoor is generated.</li>
+                            <li><code>keyPerm</code> - Key permutation value.</li>
+                        </ul>
+                    </li>
+                    <li><em>Returns:</em> None.</li>
+                </ul>
+            </li>
+            <!-- Add descriptions for other functions -->
+            <li>
+                <p><strong>read_matrix_from_file(char * fileName, int noOfNodes):</strong> <br>Reads an adjacency matrix from a file.</p>
+                <ul>
+                    <li><em>Parameters:</em> 
+                        <ul>
+                            <li><code>fileName</code> - Name of the file containing the adjacency matrix.</li>
+                            <li><code>noOfNodes</code> - Number of nodes in the graph.</li>
+                        </ul>
+                    </li>
+                    <li><em>Returns:</em> Pointer to the read adjacency matrix.</li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>time_difference(struct timeval * startTime, struct timeval * endTime):</strong> <br>Calculates the time difference between two timestamps.</p>
+                <ul>
+                    <li><em>Parameters:</em> 
+                        <ul>
+                            <li><code>startTime</code> - Pointer to the start time.</li>
+                            <li><code>endTime</code> - Pointer to the end time.</li>
+                        </ul>
+                    </li>
+                    <li><em>Returns:</em> Time difference in seconds.</li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>SLP1_print_times(int noOfNodes, int lambda, double runTimeKG, double runTimeEM, int noOfLPQueries, double runTimeTG, double runTimeLPQ, double runTimeFMV):</strong> <br>Prints the times taken for different steps in the SLP protocol and writes them to a file.</p>
+                <ul>
+                    <li><em>Parameters:</em> 
+                        <ul>
+                            <li><code>noOfNodes</code> - Number of nodes in the graph.</li>
+                            <li><code>lambda</code> - Security parameter.</li>
+                            <li><code>runTimeKG</code> - Time taken for key generation.</li>
+                            <li><code>runTimeEM</code> - Time taken for matrix encryption.</li>
+                            <li><code>noOfLPQueries</code> - Number of link prediction queries.</li>
+                            <li><code>runTimeTG</code> - Time taken for trapdoor generation.</li>
+                            <li><code>runTimeLPQ</code> - Time taken for each link prediction query.</li>
+                            <li><code>runTimeFMV</code> - Time taken for finding the maximum vertex.</li>
+                        </ul>
+                    </li>
+                    <li><em>Returns:</em> None.</li>
+                </ul>
+            </li>
+        </ol>
+        <br>
+        <h3>SLP2.c</h3><hr>
+      <ol>
+    <li>
+        <strong>SLP2_contruct_b_matrix(int **AdjMatrix, int noOfNodes)</strong><br>
+        <em>Description:</em> Constructs a matrix B used in Secure Link Prediction (SLP) problem.<br>
+        <em>Parameters:</em>
+        <ul>
+            <li>AdjMatrix: 2D array representing the adjacency matrix.</li>
+            <li>noOfNodes: Number of nodes in the graph.</li>
+        </ul>
+        <em>Output:</em> BMatrix (constructed B matrix)
+    </li>
+    <li>
+        <strong>SLP1_Key_Gen(int lambda)</strong><br>
+        <em>Description:</em> Generates a key for Secure Link Prediction (SLP) using the BGN (Boneh-Goh-Nissim) cryptosystem.<br>
+        <em>Parameters:</em>
+        <ul>
+            <li>lambda: Security parameter.</li>
+        </ul>
+        <em>Output:</em> slp1_KEY (generated key for SLP)
+    </li>
+    <li>
+        <strong>SLP1_Encrypt_Matrix(int **AdjMatrix, BGN_PK_t *bgn_pk, int noOfNodes)</strong><br>
+        <em>Description:</em> Encrypts the adjacency matrix using the BGN cryptosystem for Secure Link Prediction (SLP).<br>
+        <em>Parameters:</em>
+        <ul>
+            <li>AdjMatrix: Adjacency matrix.</li>
+            <li>bgn_pk: Public key.</li>
+            <li>noOfNodes: Number of nodes.</li>
+        </ul>
+        <em>Output:</em> EncMatrix (encrypted matrix)
+    </li>
+    <li>
+        <strong>SLP2_Encrypt_Matrix(int **BMatrix, BGN_PK_t *bgn_pk, int noOfNodes)</strong><br>
+        <em>Description:</em> Encrypts the B matrix using the BGN cryptosystem for Secure Link Prediction (SLP).<br>
+        <em>Parameters:</em>
+        <ul>
+            <li>BMatrix: B matrix.</li>
+            <li>bgn_pk: Public key.</li>
+            <li>noOfNodes: Number of nodes.</li>
+        </ul>
+        <em>Output:</em> EncMatrix (encrypted matrix)
+    </li>
+    <li>
+        <strong>SLP1_Trapdoor_Gen(TRAPDOOR_t *trapdoor, int vertId, int keyPerm)</strong><br>
+        <em>Description:</em> Generates a trapdoor for Secure Link Prediction (SLP1) based on vertex ID and key permutation.<br>
+        <em>Parameters:</em>
+        <ul>
+            <li>trapdoor: Trapdoor structure to store the generated trapdoor.</li>
+            <li>vertId: Vertex ID.</li>
+            <li>keyPerm: Key permutation.</li>
+        </ul>
+        <em>Output:</em> None
+    </li>
+    <li>
+        <strong>SLP1_LinkPred_Query(LP_Q_RES_t *lpQres, TRAPDOOR_t *trapdoor, element_t **EncMatrix, BGN_PK_t *bgn_pk, int noOfNodes)</strong><br>
+        <em>Description:</em> Performs a link prediction query for Secure Link Prediction (SLP1) using the given trapdoor and encrypted matrix.<br>
+        <em>Parameters:</em>
+        <ul>
+            <li>lpQres: Link prediction query result structure.</li>
+            <li>trapdoor: Trapdoor generated for the query.</li>
+            <li>EncMatrix: Encrypted matrix.</li>
+            <li>bgn_pk: Public key.</li>
+            <li>noOfNodes: Number of nodes.</li>
+        </ul>
+        <em>Output:</em> None
+    </li>
+    <li>
+        <strong>SLP2_LinkPred_Query(LP2_Q_RES_t *lp2Qres, TRAPDOOR_t *trapdoor, element_t **EncMatrixA, element_t **EncMatrixB, BGN_PK_t *bgn_pk, int noOfNodes)</strong><br>
+        <em>Description:</em> Performs a link prediction query for Secure Link Prediction (SLP2) using the given trapdoor and encrypted matrices.<br>
+        <em>Parameters:</em>
+        <ul>
+            <li>lp2Qres: Link prediction query result structure.</li>
+            <li>trapdoor: Trapdoor generated for the query.</li>
+            <li>EncMatrixA: Encrypted matrix A.</li>
+            <li>EncMatrixB: Encrypted matrix B.</li>
+            <li>bgn_pk: Public key.</li>
+            <li>noOfNodes: Number of nodes.</li>
+        </ul>
+        <em>Output:</em> None
+    </li>
+    <li>
+        <strong>SLP1_Find_Max_Vertex(SLP1_RES_t *slp1Res, SLP1_KEY_t *slp1_KEY, LP_Q_RES_t *lpQres, int noOfNodes)</strong><br>
+        <em>Description:</em> Finds the maximum vertex in Secure Link Prediction (SLP1) based on the link prediction query result.<br>
+        <em>Parameters:</em>
+        <ul>
+            <li>slp1Res: Result structure for SLP1.</li>
+            <li>slp1_KEY: Key structure for SLP1.</li>
+            <li>lpQres: Link prediction query result structure.</li>
+            <li>noOfNodes: Number of nodes.</li>
+        </ul>
+        <em>Output:</em> None
+    </li>
+    <li>
+        <strong>SLP2_Find_Max_Vertex(SLP2_RES_t *slp2Res, SLP1_KEY_t *slp1_KEY, LP2_Q_RES_t *lp2Qres, int noOfNodes)</strong><br>
+        <em>Description:</em> Finds the maximum vertex in Secure Link Prediction (SLP2) based on the link prediction query result.<br>
+        <em>Parameters:</em>
+        <ul>
+            <li>slp2Res: Result structure for SLP2.</li>
+            <li>slp1_KEY: Key structure for SLP1.</li>
+            <li>lp2Qres: Link prediction query result structure.</li>
+            <li>noOfNodes: Number of nodes.</li>
+        </ul>
+        <em>Output:</em> None
+    </li>
+    <li>
+        <strong>SLP2_sort(mpz_t *scores, int *indices, int n)</strong><br>
+        <em>Description:</em> Sorts scores and indices for Secure Link Prediction (SLP2) based on maximum scores.<br>
+        <em>Parameters:</em>
+        <ul>
+            <li>scores: Scores to be sorted.</li>
+            <li>indices: Indices corresponding to the scores.</li>
+            <li>n: Number of elements.</li>
+        </ul>
+        <em>Output:</em> None
+    </li>
+    <li>
+        <strong>SLP2_final_score(SLP1_KEY_t *slp1_KEY, element_t *m, SLP2_RES_t *slp2Res, int noOfNodes)</strong><br>
+        <em>Description:</em> Calculates the final score for Secure Link Prediction (SLP2) based on the maximum score and degree.<br>
+        <em>Parameters:</em>
+        <ul>
+            <li>slp1_KEY: Key structure for SLP1.</li>
+            <li>m: Element representing the matrix.</li>
+            <li>slp2Res: Result structure for SLP2.</li>
+            <li>noOfNodes: Number of nodes.</li>
+        </ul>
+        <em>Output:</em> None
+    </li>
+    <li>
+        <strong>SLP1_Clear_LPQRes(LP_Q_RES_t *lpQres, int noOfNodes)</strong><br>
+        <em>Description:</em> Clears the memory allocated for the link prediction query result for Secure Link Prediction (SLP1).<br>
+        <em>Parameters:</em>
+        <ul>
+            <li>lpQres: Link prediction query result structure.</li>
+            <li>noOfNodes: Number of nodes.</li>
+        </ul>
+        <em>Output:</em> None
+    </li>
+    <li>
+        <strong>SLP1_Clear_All(int **AdjMatrix, element_t **EncMatrix, BGN_PK_t *bgnPk, int noOfNodes)</strong><br>
+        <em>Description:</em> Clears the memory allocated for all structures and matrices used in Secure Link Prediction (SLP1).<br>
+        <em>Parameters:</em>
+        <ul>
+            <li>AdjMatrix: Adjacency matrix.</li>
+            <li>EncMatrix: Encrypted matrix.</li>
+            <li>bgnPk: Public key.</li>
+            <li>noOfNodes: Number of nodes.</li>
+        </ul>
+        <em>Output:</em> None
+    </li>
+    <li>
+        <strong>SLP2_Clear_All(int **AdjMatrix, element_t **EncMatrixA, int **BMatrix, element_t **EncMatrixB, BGN_PK_t *bgnPk, int noOfNodes)</strong><br>
+        <em>Description:</em> Clears the memory allocated for all structures and matrices used in Secure Link Prediction (SLP2).<br>
+        <em>Parameters:</em>
+        <ul>
+            <li>AdjMatrix: Adjacency matrix.</li>
+            <li>EncMatrixA: Encrypted matrix A.</li>
+            <li>BMatrix: B matrix.</li>
+            <li>EncMatrixB: Encrypted matrix B.</li>
+            <li>bgnPk: Public key.</li>
+            <li>noOfNodes: Number of nodes.</li>
+        </ul>
+        <em>Output:</em> None
+    </li>
+    <li>
+        <strong>SLP1_print_slp1_res(SLP1_RES_t *slp1Res)</strong><br>
+        <em>Description:</em> Prints the result of Secure Link Prediction (SLP1) including the vertex ID and maximum score.<br>
+        <em>Parameters:</em>
+        <ul>
+            <li>slp1Res: Result structure for SLP1.</li>
+        </ul>
+        <em>Output:</em> None
+    </li>
+    <li>
+        <strong>SLP2_print_slp2_res(SLP2_RES_t *slp2Res)</strong><br>
+        <em>Description:</em> Prints the result of Secure Link Prediction (SLP2) including the vertex ID and maximum score.<br>
+        <em>Parameters:</em>
+        <ul>
+            <li>slp2Res: Result structure for SLP2.</li>
+        </ul>
+        <em>Output:</em> None
+    </li>
+    <li>
+        <strong>read_matrix_from_file(char *fileName, int noOfNodes)</strong><br>
+        <em>Description:</em> Reads the adjacency matrix from a file.<br>
+        <em>Parameters:</em>
+        <ul>
+            <li>fileName: Name of the file containing the adjacency matrix.</li>
+            <li>noOfNodes: Number of nodes.</li>
+        </ul>
+        <em>Output:</em> AdjMatrix (adjacency matrix)
+    </li>
+    <li>
+        <strong>Allocate_2D_int(int n, int m)</strong><br>
+        <em>Description:</em> Allocates memory for a 2D integer array.<br>
+        <em>Parameters:</em>
+        <ul>
+            <li>n: Number of rows.</li>
+            <li>m: Number of columns.</li>
+        </ul>
+        <em>Output:</em> arr (allocated 2D integer array)
+    </li>
+    <li>
+        <strong>Allocate_2D_element(int n, int m)</strong><br>
+        <em>Description:</em> Allocates memory for a 2D element array.<br>
+        <em>Parameters:</em>
+        <ul>
+            <li>n: Number of rows.</li>
+            <li>m: Number of columns.</li>
+        </ul>
+        <em>Output:</em> arr (allocated 2D element array)
+    </li>
+    <li>
+        <strong>time_difference(struct timeval *startTime, struct timeval *endTime)</strong><br>
+        <em>Description:</em> Calculates the time difference between two timevals.<br>
+        <em>Parameters:</em>
+        <ul>
+            <li>startTime: Start time.</li>
+            <li>endTime: End time.</li>
+        </ul>
+        <em>Output:</em> Time difference in seconds
+    </li>
+</ol>
+    </div>
+</body>
+</html>
