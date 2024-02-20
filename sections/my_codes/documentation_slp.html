@@ -3,39 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SLP Prototype</title>
+    <title>Responsive Divs</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-        }
-        .container {
-            max-width: 800px;
-            margin: 50px auto;
-            padding: 20px;
-            background-color: #fff;
-        }
-        ol {
-            padding: 0;
-            list-style-type: decimal;
-            text-align: center;
-        }
-        li {
-            margin-bottom: 15px;
-            text-align: left;
-        }
-        p {
-            margin: 0;
-            color: #333;
+            display: flex;
+            flex-direction: row;
         }
         a {
             color: blue;
             text-decoration: none;
         }
-        a:hover {
-            text-decoration: underline;
+        
+        .fixed-left {
+            width: 200px;
+            height: 100vh;
+            background-color: teal;
+            color: white;
+            padding: 20px;
         }
+        .main-content {
+            flex-grow: 1;
+            padding: 20px;
+        }
+         .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        @media only screen and (max-width: 768px) {
+            body {
+                flex-direction: column;
+            }
+            .fixed-left {
+                width: 100%;
+                height: auto;
+                margin-bottom: 20px;
+            }
+            .main-content {
+                padding: 20px;
+            }
+        }
+        
+        
         header {
             text-align: center;
             margin-bottom: 20px;
@@ -100,10 +114,19 @@
         </nav>
     </header>
     
-    <div class="container"><br><br><br><br>
-        <h2>Prototype Implementations: The Secure Link Prediction Problem</h2>   <hr> 
+<div class="fixed-left"><br><br><br><br><br><br><br>
+    <h2>Menu</h2>
+     <ul>
+                <li><a href="#Installation">Installation</a></li>
+                <li><a href="#slp1">SLP-I</a></li>
+                <li><a href="#slp2">SLP-II</a></li>
+            </ul>
+</div>
+
+<div class="main-content" id= "Installation"> <br><br><br><br><br><br><br>
+      <h2>Prototype Implementations: The Secure Link Prediction Problem</h2>   <hr> 
         <h3>Installation and Execution</h3><hr>
-        <ol>
+        <ol id="slp1"   >
             <li>Download the source code from <a href ="https://github.com/sardarlaltu/SecureLinkPrediction" target="blank">this link</a></li>
             <li>Install PBC library</li>
             <li>Install supporting Libraries; m4, flex, bison etc.</li>
@@ -125,9 +148,9 @@
             </li>
         </ol>
 
-        
-        <hr>
-       <h4>SLP1.c</h4>   <hr> 
+        <br><br><br><br><br><br><br>
+        <hr> 
+       <h4 >SLP1.c</h4>   <hr> 
         <ol>
             <li>
                 <p><strong>SLP1_Key_Gen(int lambda):</strong> <br>Generates a key for the Secure Link Prediction (SLP) protocol.</p>
@@ -190,7 +213,7 @@
             <li>
                 <p><strong>SLP1_print_times(int noOfNodes, int lambda, double runTimeKG, double runTimeEM, int noOfLPQueries, double runTimeTG, double runTimeLPQ, double runTimeFMV):</strong> <br>Prints the times taken for different steps in the SLP protocol and writes them to a file.</p>
                 <ul>
-                    <li><em>Parameters:</em> 
+                    <li id="slp2"><em>Parameters:</em> 
                         <ul>
                             <li><code>noOfNodes</code> - Number of nodes in the graph.</li>
                             <li><code>lambda</code> - Security parameter.</li>
@@ -206,8 +229,8 @@
                 </ul>
             </li>
         </ol>
-        <br>
-        <h3>SLP2.c</h3><hr>
+        <br><br><br><br><br><br><br>
+        <h3  >SLP2.c</h3><hr>
       <ol>
     <li>
         <strong>SLP2_contruct_b_matrix(int **AdjMatrix, int noOfNodes)</strong><br>
@@ -219,7 +242,7 @@
         </ul>
         <em>Output:</em> BMatrix (constructed B matrix)
     </li>
-    <li>
+    <li >
         <strong>SLP1_Key_Gen(int lambda)</strong><br>
         <em>Description:</em> Generates a key for Secure Link Prediction (SLP) using the BGN (Boneh-Goh-Nissim) cryptosystem.<br>
         <em>Parameters:</em>
@@ -430,6 +453,7 @@
         <em>Output:</em> Time difference in seconds
     </li>
 </ol>
-    </div>
+</div>
+
 </body>
 </html>
