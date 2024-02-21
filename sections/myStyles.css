@@ -1,0 +1,81 @@
+<style>
+    body {
+       font-family: Arial, sans-serif;
+       margin: 20px;
+       background-color: #f5f5f5;
+       color: #333;
+   }
+   header {
+       text-align: center;
+       margin-bottom: 20px;
+   }
+   h1 {
+       color: white; /* Teal color */
+   }
+   p {
+       color: black;
+   }
+
+   nav {
+         position: fixed;
+         top: 0; /* Or "bottom: 0;" for fixed bottom navigation */
+         left: 0;
+         width: 100%;
+         z-index: 100; /* To ensure navigation stays on top of content */
+         background-color: #0a465e;
+   }
+   nav ul {
+       list-style-type: none;
+       padding: 0;
+       text-align: center;
+       background-color:  #0a465e; /* Teal color */
+       margin-top: 10px;
+       margin-bottom: 20px;
+       border-radius: 5px;
+   }
+   nav ul li {
+       display: inline;
+       margin-right: 20px;
+   }
+   nav ul li a {
+       text-decoration: none;
+       color: #fff; /* White color */
+       font-weight: bold;
+       padding: 10px 20px;
+       border-radius: 5px;
+       transition: background-color 0.3s ease;
+   }
+   nav ul li a:hover {
+       background-color: #C5C7DF; /* Darker teal color */
+       color: black;
+   }
+
+   section {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       margin-bottom: 30px;
+   }
+   .column {
+       flex: 1;
+       padding: 20px;
+   }
+   .image-column {
+       text-align: center;
+   }
+   .image-column img {
+       width: 100%;
+       max-width: 400px;
+       border-radius: 90%;
+       box-shadow: 0 0 18px 8px white inset;
+   }
+   .text-column {
+       padding-left: 20px;
+   }
+   .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+        }
+    </style>
