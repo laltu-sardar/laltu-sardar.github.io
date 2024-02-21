@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teaching</title>
+    <link rel="stylesheet" type="text/css" href="myStyles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container2 {
+            max-width: 800px;
+            margin: 20px auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .image-container2 {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+        .image-container2 img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+        .image-container2:hover img {
+            transform: scale(1.1);
+        }
+        .image-description {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 5px;
+            text-align: center;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+<header>
+
+        <nav>
+            <ul>
+                <li><a href="https://laltu-sardar.github.io/">LALTU SARDAR</a></li>
+                <li><a href="research_interests.html">Research Interests</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="teaching.html">Teaching</a></li>
+                <li><a href="implementations.html">Implementations</a></li>
+                <li><a href="awards.html">Awards</a></li>
+                <li><a href="talks.html">Talks</a></li>
+                <li><a href="professional_activities.html">Activities</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Gallery</h2> <hr>
+        <!-- Camping Images -->
+        <div class="image-container">
+            <img src="picture_camping_1.jpg" alt="Camping 1">
+            <div class="image-description">Camping 1 Description</div>
+        </div>
+        <div class="image-container">
+            <img src="picture_camping_2.jpg" alt="Camping 2">
+            <div class="image-description">Camping 2 Description</div>
+        </div>
+        <div class="image-container">
+            <img src="picture_camping_3.jpg" alt="Camping 3">
+            <div class="image-description">Camping 3 Description</div>
+        </div>
+        <div class="image-container">
+            <img src="picture_camping_4.jpg" alt="Camping 4">
+            <div class="image-description">Camping 4 Description</div>
+        </div>
+        <!-- Conference Images -->
+        <div class="image-container">
+            <img src="picture_conf_1.jpg" alt="Conference 1">
+            <div class="image-description">Conference 1 Description</div>
+        </div>
+        <div class="image-container">
+            <img src="picture_conf_2.jpg" alt="Conference 2">
+            <div class="image-description">Conference 2 Description</div>
+        </div>
+        <!-- Convocation Images -->
+        <div class="image-container">
+            <img src="picture_master_convocation.jpg" alt="Master Convocation">
+            <div class="image-description">Master Convocation Description</div>
+        </div>
+        <div class="image-container">
+            <img src="picture_phd_convocation.jpg" alt="PhD Convocation">
+            <div class="image-description">PhD Convocation Description</div>
+        </div>
+
+    </div>
+</body>
+</html>
