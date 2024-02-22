@@ -15,7 +15,10 @@
    p {
        color: black;
    }
-
+    a{
+    text-decoration: none;
+    color: #0a465e;
+    }
    nav {
          position: fixed;
          top: 0; /* Or "bottom: 0;" for fixed bottom navigation */
@@ -71,6 +74,13 @@
    }
    .text-column {
        padding-left: 20px;
+   }
+   .my_img{
+   
+       width: 20px;
+       border-radius: 90%;
+       box-shadow: 0 0 18px 8px white inset;
+   
    }
    .container {
             max-width: 800px;
