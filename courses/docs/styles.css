@@ -1,0 +1,86 @@
+
+#parLi{
+	color:#800000;
+	
+}
+
+a {
+  color:#800000;
+}
+
+#parContent{
+color: white; 
+text-shadow: 5px 5px 10px black;	
+}
+
+#linkType1{
+	color: white;
+}
+
+#divContent{
+	color: black; 
+	background-color: #F5F5F5 ;
+}
+
+#sectionIntro{
+	background-attachment: fixed;    
+	background-position: center;   
+	background-repeat: no-repeat;    
+	background-size: cover;
+	background-color: white;
+}
+
+#sectionContainer{
+	background-attachment: fixed;    
+	background-position: center;   
+	background-repeat: no-repeat;    
+	background-size: cover;
+	background: #dadae0;
+}
+
+#contentContainerBox{
+	background: linear-gradient(to top, #001f4d 0%, #006666 78%);
+
+	box-shadow: 0px -8px 10px 10px rgba(255,255,255,0.2); 
+
+}
+#contentContainerBoxIntro{
+	background-color: white;
+
+	box-shadow: 0px -8px 10px 10px rgba(255,255,255,0.2); 
+
+}
+#contentContainer{
+	margin: 30px;
+	
+}
+
+
+#navText{
+	color:black;
+	
+}
+
+#linkAsP{
+	color: black;
+	font-size:15px
+
+}
+
+#hLine{
+	border: 1px solid black ;
+}
+
+#hText{
+	color:black;
+}
+#aText{
+	color:black;
+}
+#h2Text{
+	color:white;
+}
+#a2Text{
+	color:white;
+}
+
