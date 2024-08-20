@@ -1,0 +1,6 @@
+1. Consider any rounding technique for binary numbers and give examples for each:
+   a) Addition of floating-point numbers is not associative.
+   b) Multiplication is not associative.
+   
+2. Complete all three approaches of the `print_bits` function, discussed in the class, which prints the bits of any given type of memory. Write a C program containing these functions. 
+Print the memory representation for each data type: `int`, `long int`, `unsigned long int`, `short int`, `char`, `float`, `double`, `long double`, etc. If possible, do this for all such data types.
