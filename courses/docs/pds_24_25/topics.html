@@ -1,99 +1,475 @@
 
 
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Topics to be Covered</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            text-align: center;
-            color: #444;
-            margin-bottom: 20px;
-        }
-        h2 {
-            color: #555;
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 10px;
-            margin-top: 40px;
-            margin-bottom: 20px;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        ul li {
-            background: #efefef;
-            margin: 5px 0;
-            padding: 10px;
-            border-radius: 4px;
-        }
-        .section-divider {
-            border-top: 2px solid #ddd;
-            margin: 20px 0;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>Topics Remaining to be Covered</h1>
-
-        <h2>Syntaxes</h2>
+<html lang="en" class="no-js">
+  <!-- BEGIN HEAD -->
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>PDS: Laltu Sardar</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=0.7" name="viewport">
+    <meta content="Official Website" name="description">
+    <meta content="Laltu Sardar" name="author">
+    <!-- GLOBAL MANDATORY STYLES -->
+    <link href="./../css" rel="stylesheet" type="text/css">
+    <link href="./../simple-line-icons.css" rel="stylesheet" type="text/css">
+    <link href="./../bootstrap.min.css" rel="stylesheet" type="text/css">
+    <!-- PAGE LEVEL PLUGIN STYLES -->
+    <link href="./../animate.css" rel="stylesheet">
+    <!-- THEME STYLES -->
+    <link href="./../layout.min.css" rel="stylesheet" type="text/css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="http://www.isical.ac.in/~laltu_r/favicon.ico">
+    <!-- My Scripts -->
+    <script src="./../scripts.js"></script>
+    <link rel="stylesheet" href="./../styles.css">
+  </head>
+  <style>
+    tr:nth-child(even) {
+    background-color:  #c2d1d7;
+    }
+    .myNav {
+    position: fixed;
+    top: 0; /* Or "bottom: 0;" for fixed bottom navigation */
+    left: 0;
+    width: 100%;
+    z-index: 100; /* To ensure navigation stays on top of content */
+    background-color: #0a465e;
+    } 
+    nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    background-color:  #0a465e; /* Teal color */
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    }
+    nav ul li {
+    display: inline;
+    margin-right: 20px;
+    }
+    nav ul li a {
+    text-decoration: none;
+    color: #fff; /* White color */
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    }
+    nav ul li a:hover {
+    background-color: #C5C7DF; /* Darker teal color */
+    color: black;
+    }
+  </style>
+  <!-- END HEAD -->
+  <!-- BODY -->
+  <body id="body" data-spy="scroll" data-target=".header" class="page-on-scroll">
+    <div class="parallax-mirror"  style="visibility: hidden; z-index: -100; position: fixed; top: 0px; left: 0px; overflow: hidden;"><img class="parallax-slider" src="./Laltu Sardar_files/undefined"></div>
+    <!--========== HEADER ==========-->
+    <header class="header navbar-fixed-top top-nav-collapse">
+      <nav class ="myNav">
         <ul>
-            <li>Data Types, Variables and Constants</li>
-            <li>Type Casting</li>
-            <li>Scope of Variables</li>
-            <li>C Preprocessors</li>
-            <li>Functions and Recursions</li>
-            <li>Debugging Techniques</li>
-            <li>Ellipses in C</li>
-            <li>Command Line Arguments</li>
-            <li>Modular Programming</li>
-            <li>Projects Management in C</li>
+          <li><a href="./../index.html">Laltu Sardar</a></li>
+          <li><a href="./../sections/research_interests.html">Research Interests</a></li>
+          <li><a href="./../sections/publications.html">Publications</a></li>
+          <li><a href="./../sections/teaching.html">Teaching</a></li>
+          <li><a href="./../sections/implementations.html">Implementations</a></li>
+          <li><a href="./../sections/awards.html">Awards</a></li>
+          <li><a href="./../sections/talks.html">Talks</a></li>
+          <li><a href="./../sections/professional_activities.html">Activities</a></li>
+          <li><a href="./../sections/gallery.html">Gallery</a></li>
         </ul>
+      </nav>
+    </header>
+    <!--========== END HEADER ==========-->
+    <!--========== PAGE LAYOUT ==========-->
+    <!-- Class Schedule --------------------------------------------------------------------------------------------- -->
+    <!--div  id ="education"-->
+    <div  id ="education" style="background-color: white;">
+      <div class="container content-lg" style="border:2px double #800000;background-color: white;">
+        <div class="row" >
+          <h2  style="color: black; text-align: center;">Introduction to Programming and Data Structures</h2>
+          <h4 style="color: black; text-align: center; ">Ph.D. Coursework: First year, First Semester (Session: 2024-25)</h4>
+          <p style = "text-align: center">
+            <a style="color:#800000;" href = "#Information"  >&nbsp Information &nbsp</a>|
+            <a style="color:#800000;" href = "#Announcements"  >&nbsp Announcements &nbsp</a>|
+            <a style="color:#800000;" href = "#Schedule:Mid-sem" >&nbsp Mid-Sem Classes &nbsp</a>|
+            <a style="color:#800000;" href = "#Schedule:End-sem" >&nbsp End-Sem Classes &nbsp</a>|
+            <a style="color:#800000;" href = "#Assignments"  >&nbsp Assignments &nbsp</a>|
+            <a style="color:#800000;" href = "#References"  >&nbsp References &nbsp</a>
+          </p>
+          <div class="col-sm-10 col-sm-offset-1" >
+            <div id="contentContainer" style = "color: black" >
+              <div class="text-left sm-text-left "  >
+                <h1>Syllabus</h1>
+<h2>Table of Content</h2>
+<ul>
+    <li>C Basics</li>
+    <li>C Variables and Constants</li>
+    <li>C Data Types</li>
+    <li>C Input/Output</li>
+    <li>C Operators</li>
+    <li>C Control Statements and Decision-Making</li>
+    <li>C Functions</li>
+    <li>C Arrays & Strings</li>
+    <li>C Pointers</li>
+    <li>C User-Defined Data Types</li>
+    <li>C Storage Classes</li>
+    <li>C Memory Management</li>
+    <li>C Preprocessor</li>
+    <li>C File Handling</li>
+    <li>C Error Handling</li>
+    <li>C Programs</li>
+    <li>Miscellaneous</li>
+    <li>C Interview Questions</li>
+</ul>
 
-        <div class="section-divider"></div>
+<hr>
 
-        <h2>Data Structures</h2>
+<h2>C Basics</h2>
+<ul>
+    <li>C Language Introduction</li>
+    <li>Features of C Programming Language</li>
+    <li>C Programming Language Standard</li>
+    <li>Setting Up C Development Environment</li>
+    <li>C Hello World Program</li>
+    <li>Compiling a C Program: Behind the Scenes</li>
+    <li>C Comments</li>
+    <li>Tokens in C</li>
+    <li>C Identifiers</li>
+    <li>Keywords in C</li>
+</ul>
+
+<h2>C Variables and Constants</h2>
+<ul>
+    <li>C Variables</li>
+    <li>Constants in C</li>
+    <li>Const Qualifier in C</li>
+    <li>Different Ways to Declare Variable as Constant in C</li>
+    <li>Scope Rules in C</li>
+    <li>Internal Linkage and External Linkage in C</li>
+    <li>Global Variables in C</li>
+</ul>
+
+<h2>C Data Types</h2>
+<ul>
+    <li>Data Types in C</li>
+    <li>Data Type Modifiers in C</li>
+    <li>Literals in C</li>
+    <li>Escape Sequence in C</li>
+    <li>bool in C</li>
+    <li>Integer Promotions in C</li>
+    <li>Character Arithmetic in C</li>
+    <li>Type Conversion in C</li>
+</ul>
+
+<h2>C Input/Output</h2>
+<ul>
+    <li>Basic Input and Output in C</li>
+    <li>Format Specifiers in C</li>
+    <li>printf in C</li>
+    <li>scanf in C</li>
+    <li>Scansets in C</li>
+    <li>Formatted and Unformatted Input and Output Functions</li>
+</ul>
+
+<h2>C Operators</h2>
+<ul>
+    <li>Operators in C</li>
+    <li>Arithmetic Operators in C</li>
+    <li>Unary Operators in C</li>
+    <li>Relational Operators in C</li>
+    <li>Bitwise Operators in C</li>
+    <li>Logical Operators in C</li>
+    <li>Assignment Operators in C</li>
+    <li>Increment and Decrement Operators in C</li>
+    <li>Conditional or Ternary Operator (?:) in C</li>
+    <li>sizeof Operator in C</li>
+    <li>Operator Precedence and Associativity in C</li>
+</ul>
+
+<h2>C Control Statements and Decision-Making</h2>
+<ul>
+    <li>Decision-Making in C</li>
+    <li>C if Statement</li>
+    <li>C if…else Statement</li>
+    <li>C if-else-if Ladder</li>
+    <li>Switch Statement in C</li>
+    <li>Using Range in switch case in C</li>
+    <li>Loops in C (for, while, do…while)</li>
+    <li>for versus while Loop</li>
+    <li>continue, break, goto Statements in C</li>
+</ul>
+
+<h2>C Functions</h2>
+<ul>
+    <li>C Functions</li>
+    <li>User-Defined Function in C</li>
+    <li>Parameter Passing Techniques in C</li>
+    <li>Importance of Function Prototype in C</li>
+    <li>Return Multiple Values From a Function</li>
+    <li>main Function in C</li>
+    <li>Implicit Return Type int in C</li>
+    <li>Callbacks in C</li>
+    <li>Nested Functions in C</li>
+    <li>Variadic Functions in C</li>
+    <li>_Noreturn Function Specifier in C</li>
+    <li>Predefined Identifier __func__ in C</li>
+    <li>Math Functions in C</li>
+</ul>
+
+<h2>C Arrays & Strings</h2>
+<ul>
+    <li>C Arrays and Properties</li>
+    <li>Multidimensional Arrays in C</li>
+    <li>Initialization of Multidimensional Arrays in C</li>
+    <li>Passing Arrays to Functions in C</li>
+    <li>Passing 2D Arrays as Parameters in C</li>
+    <li>Data Types for Which Array is Not Possible</li>
+    <li>Passing an Array by Value in C</li>
+    <li>Strings in C</li>
+    <li>An Array of Strings in C</li>
+    <li>Difference Between Single Quoted and Double Quoted Initialization</li>
+    <li>String Functions in C</li>
+</ul>
+
+<h2>C Pointers</h2>
+<ul>
+    <li>C Pointers</li>
+    <li>Pointer Arithmetic in C</li>
+    <li>Pointer to Pointer (Double Pointer) in C</li>
+    <li>Function Pointer in C</li>
+    <li>Declaring Function Pointer in C</li>
+    <li>Pointer to an Array in C</li>
+    <li>Constant Pointer in C</li>
+    <li>Pointer vs Array in C</li>
+    <li>Dangling, Void, Null, and Wild Pointers</li>
+    <li>Near, Far, and Huge Pointers in C</li>
+    <li>restrict Keyword in C</li>
+</ul>
+
+<h2>C User-Defined Data Types</h2>
+<ul>
+    <li>C Structures</li>
+    <li>dot (.) Operator in C</li>
+    <li>C typedef</li>
+    <li>Structure Member Alignment, Padding, and Data Packing</li>
+    <li>Flexible Array Members in a Structure in C</li>
+    <li>C Unions</li>
+    <li>Bit Fields in C</li>
+    <li>Difference Between Structure and Union in C</li>
+    <li>Anonymous Union and Structure in C</li>
+    <li>Enumeration (enum) in C</li>
+</ul>
+
+<h2>C Storage Classes</h2>
+<ul>
+    <li>Storage Classes in C</li>
+    <li>extern Keyword in C</li>
+    <li>Static Variables and Functions in C</li>
+    <li>Initialization of Static Variables in C</li>
+    <li>Understanding “volatile” Qualifier in C</li>
+    <li>Understanding the “register” Keyword in C</li>
+</ul>
+
+<h2>C Memory Management</h2>
+<ul>
+    <li>Memory Layout of C Programs</li>
+    <li>Dynamic Memory Allocation in C</li>
+    <li>malloc() vs calloc()</li>
+    <li>Memory Leaks in C</li>
+    <li>Dynamic Arrays in C</li>
+    <li>Dynamically Allocate a 2D Array in C</li>
+    <li>Dynamically Growing Array in C</li>
+</ul>
+
+<h2>C Preprocessor</h2>
+<ul>
+    <li>C Preprocessors and Directives</li>
+    <li>How a Preprocessor Works in C</li>
+    <li>Header Files in C</li>
+    <li>stdio.h vs stdlib.h</li>
+    <li>Writing Your Own Header Files in C</li>
+    <li>Macros and Their Types in C</li>
+    <li># and ## Operators in C</li>
+    <li>Multiline Macros in C</li>
+    <li>Variable Length Arguments for Macros</li>
+    <li>Branch Prediction Macros in GCC</li>
+    <li>typedef vs #define in C</li>
+    <li>#define vs const in C</li>
+</ul>
+
+<h2>C File Handling</h2>
+<ul>
+    <li>Basics of File Handling in C</li>
+    <li>C fopen() Function</li>
+    <li>EOF, getc() and feof() in C</li>
+    <li>fgets() and gets() in C</li>
+    <li>fseek() vs rewind() in C</li>
+    <li>getchar(), fgetc() and getc()</li>
+    <li>Read/Write Structure From/to a File</li>
+    <li>Printing Contents of File</li>
+    <li>File Deletion Program in C</li>
+    <li>Merging File Contents into a Third File</li>
+    <li>printf, sprintf vs fprintf</li>
+    <li>getc(), getchar(), getch() and getche()</li>
+</ul>
+
+<h2>C Error Handling</h2>
+<ul>
+    <li>Error Handling in C</li>
+    <li>Using goto for Exception Handling in C</li>
+    <li>Error Handling During File Operations</li>
+    <li>Handling Divide By Zero and Multiple Exceptions</li>
+</ul>
+
+<h2>C Programs</h2>
+<ul>
+    <li>Basic C Programs</li>
+    <li>Control Flow Programs</li>
+    <li>Pattern Printing Programs</li>
+    <li>Functions Programs</li>
+    <li>Arrays Programs</li>
+    <li>Strings Programs</li>
+    <li>Conversions Programs</li>
+    <li>Pointers Programs</li>
+    <li>Structures and Unions Programs</li>
+    <li>File I/O Programs</li>
+    <li>Date and Time Programs</li>
+</ul>
+
+<h2>Data Structures</h2>
+<ul>
+    <li>Introduction to Data Structures</li>
+    <li>Arrays and their Operations</li>
+    <li>Polynomials
+        <ul>
+            <li>Representation</li>
+            <li>Addition, Subtraction, Multiplication, Division</li>
+        </ul>
+    </li>
+    <li>Linked Lists
         <ul>
             <li>Singly Linked List</li>
             <li>Doubly Linked List</li>
-            <li>Stack and Queue</li>
-            <li>Binary Tree: Binary Search Tree</li>
-            <li>AVL Tree</li>
-            <li>Matrix Operations</li>
-            <li>Graph Algorithms</li>
-            <li>Polynomial Manipulation</li>
+            <li>Circular Linked List</li>
         </ul>
-
-        <div class="section-divider"></div>
-
-        <h2>Solving Important Problems</h2>
+    </li>
+    <li>Binary Search Tree (BST)
         <ul>
-            <li>Permutation and Combinations</li>
-            <li>Execution Time and Optimization</li>
+            <li>Insert</li>
+            <li>Search</li>
+            <li>Update</li>
+            <li>Traversal (In-order, Pre-order, Post-order)</li>
         </ul>
-        <h4><a href="https://laltu-sardar.github.io/courses/courses_pds_2024_25.html"  " style = "color:black;"><strong>Back to the course webpage</strong> </a></h4>
-    </div>
-    
-</body>
+    </li>
+    <li>Stacks
+        <ul>
+            <li>Stack Using Arrays</li>
+            <li>Stack Using Linked List</li>
+            <li>Stack Operations (Push, Pop, Peek)</li>
+        </ul>
+    </li>
+    <li>Queues
+        <ul>
+            <li>Queue Using Arrays</li>
+            <li>Queue Using Linked List</li>
+            <li>Circular Queue</li>
+            <li>Priority Queue</li>
+            <li>Queue Operations (Enqueue, Dequeue, Peek)</li>
+        </ul>
+    </li>
+    <li>Advanced Matrix Algorithms
+        <ul>
+            <li>Inverse</li>
+            <li>Determinant</li>
+            <li>Dominant Eigenvalue and Vector</li>
+        </ul>
+    </li>
+    <li>Trees
+        <ul>
+            <li>Binary Trees</li>
+            <li>Binary Search Tree (BST)</li>
+            <li>Tree Traversal Techniques (In-order, Pre-order, Post-order)</li>
+        </ul>
+    </li>
+    <li>Advanced Trees
+        <ul>
+            <li>AVL Tree</li>
+        </ul>
+    </li>
+    <li>Graph Theory
+        <ul>
+            <li>Introduction to Graphs</li>
+            <li>Graph Representation (Adjacency Matrix, Adjacency List)</li>
+            <li>Graph Traversal Algorithms (BFS, DFS)</li>
+        </ul>
+    </li>
+</ul>
+
+            </div>
+              </div>
+            </div>
+            <!--contentContainer-->
+          </div>
+          <!--contentContainerBox-->
+          <!--p style = "text-align: center;color:black" >Quick Links<br>
+            <u><a style="color:#800000;" href = "docs/Syllabus_Cryptology_2022_Fall.pdf" target="_blank" > Syllabus</a></u>
+                        &ensp;<u><a style="color:#800000;" href = "#Schedule:Mid-sem" >Mid-Sem</a></u>
+                        &ensp;<u><a style="color:#800000;" href = "#Schedule:End-sem" >End-Sem</a></u>
+                        &ensp;<u><a style="color:#800000;" href = "#Assignments">Assignments</a></u>
+                        &ensp;<u><a style="color:#800000;" href = "#Projects"  >Projects</a></u>
+                       &ensp;<u><a style="color:#800000;" href = "#References"  > References</a></u>
+              <p-->
+          <!--marquee direction = "left" class="blink"><br>
+            <td><a style="color:#800000;" href = "docs/algo_23_24/pds_assignments_05_polynomials.pdf" target="_blank">Assignments #05</a>
+            </marquee-->
+          <!--marquee direction = "right" class="blink"><br>--<strong>
+            <a style="color:#000000;" href = "docs/algo_23_24/sample_input_01.zip" target="_blank">sample input 01</a> -- -- --
+            <a style="color:#600000;" href = "docs/algo_23_24/sample_input_03.zip" target="_blank">sample input 03</a> ---- <a style="color:#600000;" href = "docs/algo_23_24/sample_input_04.zip" target="_blank">sample input 04</a></strong>--
+            </marquee-->
+        </div>
+        <!--// end row -->
+        <div class="row" id = "Information">
+          <div class="col-sm-10 col-sm-offset-1" >
+            <div id="contentContainer" style = "color: black">
+              <div class="text-left sm-text-left " >
+                <h4 style  = "color:  #800000;">&#128195; Information </h4>
+                <hr style="border: 1px solid #001f4d">
+              </div>
+              <!-- Masonry Grid -->
+              
+
+        
+            <!--contentContainer-->
+          </div>
+          <!--contentContainerBox-->
+        </div>
+        <!--// end row -->
+       
+    <!-- End Education -->
+    <!--========== FOOTER ==========-->
+    <footer class="footer " style="background-color: white;">
+      <div class="content container" style="background-color: white;">
+        <div class="row ">
+          <div class="col-xs-12 text-left sm-text-left ">
+            <h4 class="margin-b-0 " style="color: black; text-align: center ">@ <a href="https://laltu-sardar.github.io/" style="color: black; " > Laltu Sardar</a>,
+              Institute for Advancing Intelligence (IAI), TCG Crest, Kolkata, India
+            </h4>
+          </div>
+        </div>
+        <!--// end row -->
+      </div>
+    </footer>
+    <!--========== END FOOTER ==========-->
+    <!-- Back To Top -->
+    <a href="#" class="js-back-to-top back-to-top back-to-top-is-visible " style = "color:white;"><strong>Top</strong> </a>
+    <!-- END BODY -->
+  </body>
 </html>
+
+
 
 
 
