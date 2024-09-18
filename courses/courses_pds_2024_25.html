@@ -59,10 +59,27 @@
     background-color: #C5C7DF; /* Darker teal color */
     color: black;
     }
+     #marquee {
+            position: absolute;
+            font-size: 15px;
+            font-family: Arial, sans-serif;
+            background: #c2d1d7;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            pointer-events: none; /* To avoid blocking other mouse events */
+        }
   </style>
   <!-- END HEAD -->
   <!-- BODY -->
   <body id="body" data-spy="scroll" data-target=".header" class="page-on-scroll">
+   <script>
+        document.addEventListener('mousemove', function(e) {
+            const marquee = document.getElementById('marquee');
+            marquee.style.right = e.pageX + 'px';
+            marquee.style.top = e.pageY + 'px';
+        });
+    </script>
     <div class="parallax-mirror"  style="visibility: hidden; z-index: -100; position: fixed; top: 0px; left: 0px; overflow: hidden;"><img class="parallax-slider" src="./Laltu Sardar_files/undefined"></div>
     <!--========== HEADER ==========-->
     <header class="header navbar-fixed-top top-nav-collapse">
@@ -136,9 +153,12 @@
  
  
                 <hr style="border: 1px solid #001f4d">
-                <marquee direction = "left" >
-                  <a style="color:#800000;" href = "#Assignments" target="_blank" > <strong>&#10022 Assignment #03 has been uploaded &#10022</strong></a>
-                </marquee>
+                
+               
+                <div id="marquee">
+                  <a style="color:#800000;" href = "#Assignments" target="_blank" > <strong>&#10022 Assignment #04 has been uploaded &#10022</strong></a></div>
+                  
+                
                 <!--marquee direction = "left" >
                   <a style="color:#800000;" href = "docs/algo_23_24/endsem_questions.pdf" target="_blank" > <strong>&#10022 End-sem question paper&#10022</strong></a></marquee-->
                 <!--marquee direction = "right" >
@@ -394,7 +414,7 @@
 </tr>
 <tr>
     <th scope="row">10</th>
-    <td>2024-Sep-18</td>
+    <td>2024-Sep-17</td>
     <td><strong>Programming Practice Class</strong></td>
     <td>Dr. Laltu Sardar</td>
     <td></td>
@@ -402,8 +422,8 @@
 <tr>
     <th scope="row">11</th>
     <td>2024-Sep-19</td>
-    <td><strong>Doubly Linked List</strong></td>
-    <td>----</td>
+    <td><strong>Doubly Linked List<br>Stack & Queue</strong></td>
+    <td>Dr. Laltu Sardar</td>
     <td><a style="color:#800000;" href="docs/pds_24_25/slides_ms_10.pdf" target="_blank">slides_ms_11</a></td>
 </tr>
 <tr>
@@ -707,7 +727,7 @@
                   </tr>
                   <tr>
                     <th scope="row">4</th>
-                    <td> Binary Search Tree;<br>Insert, Search, update, etc.<br>Polynomials</td>
+                    <td>Stack, Queue:<br> Using linked List and Array</td>
                     <td> <a style="color:#800000;" href = "docs/pds_24_25/assignment_04.pdf" target="_blank">Assignment #04</a>
                     </td>
                     <td>2024-Sep-29</td>
@@ -723,7 +743,7 @@
                   </tr>
                   <tr>
     <th scope="row">5</th>
-    <td>Stack, Queue:<br> Using linked List and Array</td>
+    <td> Binary Search Tree;<br>Insert, Search, update, etc.<br>Polynomials</td>
     <td><a style="color:#800000;" href="docs/pds_24_25/assignment_05.pdf" target="_blank">Assignment #05</a></td>
     <td>2024-Oct-30</td>
     <td></td>
