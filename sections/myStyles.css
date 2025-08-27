@@ -19,6 +19,9 @@
     text-decoration: none;
     color: #0a465e;
     }
+   
+    
+    
    nav {
          position: fixed;
          top: 0; /* Or "bottom: 0;" for fixed bottom navigation */
@@ -49,9 +52,15 @@
        transition: background-color 0.3s ease;
    }
    nav ul li a:hover {
-       background-color: #C5C7DF; /* Darker teal color */
+       background-color: white; /* Darker teal color */
        color: black;
    }
+   
+   nav ul li a.active {
+    background-color: white;
+    color: black;
+}
+
 
    section {
        display: flex;
@@ -83,9 +92,11 @@
    
    }
    .container {
-            max-width: 800px;
-            margin: 50px auto;
-            padding: 20px;
-            background-color: #fff;
-        }
+    max-width: 800px;
+    margin: 100px auto 50px; /* push content down (top=100px, bottom=50px) */
+    padding: 20px;
+    background-color: #fff;
+}
+
+ 
     </style>
