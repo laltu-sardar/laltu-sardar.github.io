@@ -61,29 +61,51 @@
     color: black;
 }
 
+section {
+    display: flex;
+    flex-wrap: wrap;              /* allow wrapping on smaller screens */
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
 
-   section {
-       display: flex;
-       justify-content: space-between;
-       align-items: center;
-       margin-bottom: 30px;
-   }
-   .column {
-       flex: 1;
-       padding: 20px;
-   }
-   .image-column {
-       text-align: center;
-   }
-   .image-column img {
-       width: 100%;
-       max-width: 400px;
-       border-radius: 90%;
-       box-shadow: 0 0 18px 8px white inset;
-   }
-   .text-column {
-       padding-left: 20px;
-   }
+.column {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    min-width: 300px;             /* forces stacking when screen too small */
+}
+
+.image-column {
+    text-align: center;
+}
+
+.image-column img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 90%;           /* rounded photo */
+    box-shadow: 0 0 18px 8px white inset; /* white glow inset */
+}
+
+
+
+
+.text-column {
+    padding-left: 20px;
+}
+
+/* Responsive layout for mobile */
+@media (max-width: 768px) {
+    section {
+        flex-direction: column;   /* stack vertically */
+        text-align: center;       /* center text for better mobile look */
+    }
+    .text-column {
+        padding-left: 0;          /* remove left padding on mobile */
+        margin-top: 20px;         /* add spacing below image */
+    }
+}
+
    .my_img{
    
        width: 20px;
@@ -96,6 +118,26 @@
     margin: 100px auto 50px; /* push content down (top=100px, bottom=50px) */
     padding: 20px;
     background-color: #fff;
+}
+
+
+.contact-section {
+    display: flex;
+    flex-wrap: wrap;   /* allow wrapping on small screens */
+    gap: 20px;         /* space between columns */
+    margin-top: 15px;
+}
+
+.contact-section .column {
+    flex: 1;
+    min-width: 280px;  /* when screen smaller than this → stack */
+}
+
+/* On mobile: stack top-down */
+@media (max-width: 768px) {
+    .contact-section {
+        flex-direction: column;
+    }
 }
 
  
