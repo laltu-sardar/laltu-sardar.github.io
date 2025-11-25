@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <!-- BEGIN HEAD -->
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>COrgOS: Laltu Sardar</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=0.7" name="viewport">
+    <meta content="Official Website" name="description">
+    <meta content="Laltu Sardar" name="author">
+    <!-- GLOBAL MANDATORY STYLES -->
+    <link href="./docs/css" rel="stylesheet" type="text/css">
+    <link href="./docs/simple-line-icons.css" rel="stylesheet" type="text/css">
+    <link href="./docs/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <!-- PAGE LEVEL PLUGIN STYLES -->
+    <link href="./docs/animate.css" rel="stylesheet">
+    <!-- THEME STYLES -->
+    <link href="./docs/layout.min.css" rel="stylesheet" type="text/css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="http://www.isical.ac.in/~laltu_r/favicon.ico">
+    <!-- My Scripts -->
+    <script src="docs/scripts.js"></script>
+    <link rel="stylesheet" href="docs/styles.css">
+  </head>
+  <style>
+    tr:nth-child(even) {
+    background-color:  #c2d1d7;
+    }
+    .myNav {
+    position: fixed;
+    top: 0; /* Or "bottom: 0;" for fixed bottom navigation */
+    left: 0;
+    width: 100%;
+    z-index: 100; /* To ensure navigation stays on top of content */
+    background-color: #0a465e;
+    } 
+    nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    background-color:  #0a465e; /* Teal color */
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    }
+    nav ul li {
+    display: inline;
+    margin-right: 20px;
+    }
+    nav ul li a {
+    text-decoration: none;
+    color: #fff; /* White color */
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    }
+    nav ul li a:hover {
+    background-color: #C5C7DF; /* Darker teal color */
+    color: black;
+    }
+     #marquee {
+            position: absolute;
+            font-size: 15px;
+            font-family: Arial, sans-serif;
+            background: #c2d1d7;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            pointer-events: none; /* To avoid blocking other mouse events */
+        }
+  </style>
+  <!-- END HEAD -->
+  <!-- BODY -->
+  <body id="body" data-spy="scroll" data-target=".header" class="page-on-scroll">
+   <script>
+        document.addEventListener('mousemove', function(e) {
+            const marquee = document.getElementById('marquee');
+            const offsetX = 1; // Adjust this value to change horizontal distance from cursor
+            const offsetY = 1; // Adjust this value to change vertical distance from cursor
+            marquee.style.left = (e.pageX - offsetX) + 'px';
+            marquee.style.top = (e.pageY - offsetY) + 'px';
+        });
+    </script>
+    <div class="parallax-mirror"  style="visibility: hidden; z-index: -100; position: fixed; top: 0px; left: 0px; overflow: hidden;"><img class="parallax-slider" src="./Laltu Sardar_files/undefined"></div>
+    <!--========== HEADER ==========-->
+    <header class="header navbar-fixed-top top-nav-collapse">
+      <nav class ="myNav">
+        <ul>
+          <li><a href="./../index.html">Laltu Sardar</a></li>
+          <li><a href="./../sections/research_interests.html">Research Interests</a></li>
+          <li><a href="./../sections/publications.html">Publications</a></li>
+          <li><a href="./../sections/teaching.html">Teaching</a></li>
+          <li><a href="./../sections/implementations.html">Implementations</a></li>
+          <li><a href="./../sections/awards.html">Awards</a></li>
+          <li><a href="./../sections/talks.html">Talks</a></li>
+          <li><a href="./../sections/professional_activities.html">Activities</a></li>
+          <li><a href="#">Gallery</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!--========== END HEADER ==========-->
+    <!--========== PAGE LAYOUT ==========-->
+    <!-- Class Schedule --------------------------------------------------------------------------------------------- -->
+    <!--div  id ="education"-->
+    <div  id ="education" style="background-color: white;">
+      <div class="container content-lg" style="border:2px double #800000;background-color: white;">
+        <div class="row" >
+          <h2  style="color: black; text-align: center;">Computer Organisation & Operating System</h2>
+          <h4 style="color: black; text-align: center; ">BS-MS Program, 2nd year, Semester 4 (Session: 2025-26)</h4>
+          <p style = "text-align: center">
+            <a style="color:#800000;" href = "#Information"  >&nbsp Information &nbsp</a>|
+            <a style="color:#800000;" href = "#Announcements"  >&nbsp Announcements &nbsp</a>|
+            <a style="color:#800000;" href = "#Schedule:Mid-sem" >&nbsp Mid-Sem Classes &nbsp</a>|
+            <a style="color:#800000;" href = "#Schedule:End-sem" >&nbsp End-Sem Classes &nbsp</a>|
+            <a style="color:#800000;" href = "#Assignments"  >&nbsp Assignments &nbsp</a>|
+            <a style="color:#800000;" href = "#References"  >&nbsp References &nbsp</a>
+          </p>
+          <div class="col-sm-10 col-sm-offset-1" >
+            <div id="contentContainer" style = "color: black" >
+              <div class="text-left sm-text-left "  >
+                <hr style="border: 1px solid #001f4d">
+                <table class="table table-dark">
+                  <thead>
+                    <tr  style  = "color: black; ">
+                      <th scope="col">Course offered at </th>
+                      <th scope="col"></th>
+                      <th scope="col">Instructor</th>
+                    </tr>
+                  </thead>
+                  <thead>
+                    <tr  >
+                      <td scope="col">
+                      	<img style="height:70px;" src="./docs/iisertvmlogo.jpg" alt="iiser-tvm-logo">
+                      </td>
+                      <td scope="col">The School of Data Science,
+                        <br>Indian Institute of Science Education and Research Thiruvananthapuram,
+                        <br>Thiruvananthapuram, Kerala, India
+                      </td>
+                      <td scope="col">
+                        <a href = "https://laltu-sardar.github.io" target="_blank" style="color:#800000;" >👤 Dr. Laltu Sardar &#9993; </a> <br>
+                        <!--a href = "#" target="_blank" style="color:#800000;">👤 Dr. Ritankar Mandal &#9993;</a--> <br>
+                      </td>
+                    </tr>
+                  </thead>
+                </table>
+                <hr style="border: 1px solid #001f4d">
+                <p  style  = "color: black; "><strong>Course Objective</strong> <br> This course aims to build a clear understanding of the fundamental principles that shape modern computer organization and operating systems. Students will explore how programs are structured, stored, and executed through detailed study of memory organization and related architectural concepts. The course also guides learners through the essential ideas involved in designing an operating system, enabling them to connect theoretical foundations with practical system level behavior.</p>
+                <hr style="border: 1px solid #001f4d">
+                <p  style  = "color: black; "><strong>Prerequisites:</strong> NA 
+ </p>
+ 
+ 
+                <hr style="border: 1px solid #001f4d">
+                
+               
+                <!--div id="marquee">
+                  <a style="color:#800000;" href = "#Assignments" target="_blank" > <strong>&#10022 Assignment #04 has been uploaded &#10022</strong></a></div-->
+                  
+                
+                <marquee direction = "left" >
+                  <a style="color:#800000;" href = "#" target="_blank" > <strong>&#10022 Classes will be started from 5th January, 2026 &#10022</strong></a></marquee>
+                <!--marquee direction = "right" >
+                  <a style="color:#800000;" href = "docs/algo_23_24/endsem_sample_input_outputs.zip" target="_blank" > <strong>&#10022 sample input-outputs&#10022</strong></a></marquee-->
+              </div>
+            </div>
+            <!--contentContainer-->
+          </div>
+          <!--contentContainerBox-->
+          <!--p style = "text-align: center;color:black" >Quick Links<br>
+            <u><a style="color:#800000;" href = "docs/Syllabus_Cryptology_2022_Fall.pdf" target="_blank" > Syllabus</a></u>
+                        &ensp;<u><a style="color:#800000;" href = "#Schedule:Mid-sem" >Mid-Sem</a></u>
+                        &ensp;<u><a style="color:#800000;" href = "#Schedule:End-sem" >End-Sem</a></u>
+                        &ensp;<u><a style="color:#800000;" href = "#Assignments">Assignments</a></u>
+                        &ensp;<u><a style="color:#800000;" href = "#Projects"  >Projects</a></u>
+                       &ensp;<u><a style="color:#800000;" href = "#References"  > References</a></u>
+              <p-->
+          <!--marquee direction = "left" class="blink"><br>
+            <td><a style="color:#800000;" href = "docs/algo_23_24/pds_assignments_05_polynomials.pdf" target="_blank">Assignments #05</a>
+            </marquee-->
+          <!--marquee direction = "right" class="blink"><br>--<strong>
+            <a style="color:#000000;" href = "docs/algo_23_24/sample_input_01.zip" target="_blank">sample input 01</a> -- -- --
+            <a style="color:#600000;" href = "docs/algo_23_24/sample_input_03.zip" target="_blank">sample input 03</a> ---- <a style="color:#600000;" href = "docs/algo_23_24/sample_input_04.zip" target="_blank">sample input 04</a></strong>--
+            </marquee-->
+        </div>
+        <!--// end row -->
+        <div class="row" id = "Information">
+          <div class="col-sm-10 col-sm-offset-1" >
+            <div id="contentContainer" style = "color: black">
+              <div class="text-left sm-text-left " >
+                <h4 style  = "color:  #800000;">&#128195; Information </h4>
+                <hr style="border: 1px solid #001f4d">
+              </div>
+              <!-- Masonry Grid -->
+              <table class="table table-dark" style="text-align: left;">
+                <tbody>
+                  <tr>
+                    <td scope="row"> &#10022 Class Timing: TBA </td>
+                  </tr>
+                  <tr>
+                    <td scope="row">
+                      &#10022<a style="color:#800000;" href = "docs/corgos_26/COrgOS_syllabus.png" target="_blank" >&nbsp COrgOS Syllabus &nbsp</a>
+                      &#10022<a style="color:#800000;" href = "docs/corgos_26/TimeTable_IISER.pdf" target="_blank" >&nbsp IISER-TVM Time-Table &nbsp</a>
+                      &#10022<a style="color:#800000;" href = "docs/corgos_26/Syllabus_IISER.pdf" target="_blank" >&nbsp IISER-TVM Complete Syllabus &nbsp</a>
+                      &#10022<a style="color:#800000;" href= "docs/corgos_26/course_page_qr_COrgOS.png" target="_blank" >&nbsp Course-page QR Code &nbsp</a>
+                      &#10022<a style="color:#800000;" href = "docs/corgos_26/COrgOS_topics.html" target="_blank" >&nbsp Topics &nbsp</a>  
+                    </td>
+                  </tr>
+                  <tr>
+                    <td scope="row">&#10022 Marks Distribution: <strong>Mid-Sem: 40%, End-Sem: 60%</strong> and <strong>Written Exam: 50%, Assignments: 50%</strong></td>
+                  </tr>
+                  <tr>
+                    <td scope="row">&#10022 Pass Marks: According to <a style="color:#800000;" href = "https://academics.iisertvm.ac.in/programmes" target="_blank" >IISER TVM policy</a></td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="table table-dark" border="1">
+                <thead>
+                  <tr  style  = "color: white; background-color: #0a465e;">
+                    <th scope="col">#</th>
+                    <th scope="col">Total Marks 100</th>
+                    <th scope="col">Assignments</th>
+                    <th scope="col">Written Exam</th>
+                    <th scope="col">  Total</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mid-Semester</td>
+                    <td> 20
+                    <td>20
+                    </td>
+                    <td>40
+                    </td>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>End-Semester
+                    </td>
+                    <td> 30
+                    </td>
+                    <td>30
+                    </td>
+                    <td>60
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">&#10022</th>
+                    <td> Total</td>
+                    <td>50</td>
+                    <td>50
+                    </td>
+                    <td>100
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="table table-dark" style="text-align: left;">
+                <tbody>
+                  <!--tr>
+                    <td scope="row"> &#10022 Old course-pages:
+                      <a style="color:#800000;" href = "https://laltu-sardar.github.io/courses_pds_2022.html" target="_blank" >2022-23: Sem-I</a>; &nbsp
+                      <a style="color:#800000;" href = "https://laltu-sardar.github.io/courses_pds_2023.html" target="_blank" >2022-23: Sem-II</a>;  &nbsp
+                      <a style="color:#800000;" href = "https://laltu-sardar.github.io/courses_pds_2023_24.html" target="_blank" >2023-24: Sem-I</a>
+                    </td>
+                  </tr-->
+                  <tr>
+                    <td scope="row">&#10022 Attendance: <a style="color:#800000;" href = "https://docs.google.com/spreadsheets/d/1zRgVFB3-Y-Zp6KLP0BrPk8FmFhpS6xyQAmqtZOrMn-E/edit?usp=sharing" target="_blank" > <strong>See your attendances here.</strong> </a></td>
+                  </tr>
+                  <!--tr>
+                    <td scope="row">&#10022 Languages to be taught:
+                      <br><strong>C</strong> : The main focus: To Develop programming thinking
+                      <br><sup>*</sup><strong>C++</strong> : First object oriented programming
+                      <br><sup>*</sup><strong>Python</strong> : Mainly For AI/ML
+                      <br><sup>*</sup><strong>Solidity</strong> : For blockchain researchers
+                      <br><br><sup>*</sup> Depends on time and interest of students
+                    </td>
+                  </tr-->
+                  <!--tr>
+                    <td scope="row"> &#10022 Preferred softwares--<br>
+                      --Text editor: <a style="color:#800000;" href = "https://github.com/atom/atom/releases/tag/v1.60.0" target="_blank" >Atom </a>; Notepad++ <br>
+                      --Terminal for ubuntu: build in terminal<br>
+                      --Terminal for windows: <a style="color:#800000;" href = "https://mobaxterm.mobatek.net/" target="_blank" >mobaxterm</a> or terminal in <a style="color:#800000;" href = "https://ubuntu.com/wsl" target="_blank" >Windows Subsystem for Linux (WSL)</a>
+                    </td-->
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!--contentContainer-->
+          </div>
+          <!--contentContainerBox-->
+        </div>
+        <!--// end row -->
+        <div class="row" id = "Announcements">
+          <div class="col-sm-10 col-sm-offset-1" >
+            <div id="contentContainer" style = "color: black">
+              <div class="text-left sm-text-left " >
+                <h4 style  = "color:  #800000;">&#128483; Announcements </h4>
+                <hr style="border: 1px solid #001f4d">
+              </div>
+              <!-- Masonry Grid -->
+              <table class="table table-dark" style="text-align: left;">
+                <tbody>
+                  <tr>
+                    <td scope="row">&#9745 The COrgOS classes will be start from January 5, 2026</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!--contentContainer-->
+          </div>
+          <!--contentContainerBox-->
+        </div>
+        <!--// end row -->
+        <div class="row" id = "Schedule:Mid-sem">
+          <div class="col-sm-10 col-sm-offset-1" >
+            <div id="contentContainer" style = "color: black">
+              <div class="text-left sm-text-left " >
+                <h4 style  = "color:  #800000;">📆 Class Schedule: Mid-sem </h4>
+                <hr style="border: 1px solid #001f4d">
+              </div>
+              <!-- Masonry Grid -->
+              <table class="table table-dark" id = "table_mid_sem">
+                <thead>
+                  <tr  style  = "color: white; background-color: #0a465e;">
+                    <th scope="col">#</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Topic</th>	
+                    <th scope="col">Remarks</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>2026-Jan-00</td>
+                    <td><strong>Introduction</strong></td>
+                    <td><a style="color:#800000;" href="docs/corgos_26/slides_ms_01.pdf" target="_blank">slides_ms_01</a></td>
+                  </tr>        
+<tr>
+    <th scope="row">*</th>
+    <td>2026-Feb-00</td>
+    <td><strong>Mid-Semestral Lab Test</strong></td>
+    <td><a style="color:#800000;" href="docs/corgos_26/midsem_questions.pdf" target="_blank">questions</a> <br>
+    <a style="color:#800000;" href="docs/corgos_26/midsem_sample_solutions.zip" target="_blank">sample_solutions</a> </td>
+</tr>                  
+                </tbody>
+              </table>
+            </div>
+            <!--contentContainer-->
+          </div>
+          <!--contentContainerBox-->
+        </div>
+        <!--// end row -->
+        <div class="row" >
+          <div class="col-sm-10 col-sm-offset-1">
+            <div id="contentContainer" style = "color: black">
+              <div class="text-left sm-text-left " id = "Schedule:End-sem">
+                <h4 style  = "color:  #800000;">📆 Class Schedule: End-sem</h4>
+                <hr style="border: 1px solid #001f4d">
+              </div>
+              <table class="table table-dark" >
+                <thead>
+                  <tr  style  = "color: white; background-color: #0a465e;">
+                    <th scope="col">#</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Topic</th>
+                    <th scope="col">Remarks</th>
+                  </tr>
+                </thead>
+                <tbody>
+<tr>
+    <th scope="row">1</th>
+    <td>2026-Mar-00</td>
+    <td><strong>TBD</strong></td>
+    <td>--</td>
+</tr>
+
+<tr>
+    <th scope="row">*</th>
+    <td>2026-Apr-00</td>
+    <td><strong>Mid-Semestral Lab Test</strong></td>
+    <td><a style="color:#800000;" href="docs/corgos_26/endsem_questions.pdf" target="_blank">questions</a> <br>
+    <a style="color:#800000;" href="docs/corgos_26/endsem_sample_solutions.zip" target="_blank">sample_solutions</a> </td>
+</tr>   
+                </tbody>
+              </table>
+              <hr style="border: 1px solid #001f4d">
+              <!-- End Masonry Grid -->
+            </div>
+            <!--contentContainer-->
+          </div>
+          <!--contentContainerBox-->
+        </div>
+        <!--// end row -->
+        <!------------------------------------- Begin Assignments -->
+        <div class="row" id ="Assignments">
+          <div class="col-sm-10 col-sm-offset-1" >
+            <div id="contentContainer" style = "color: black">
+              <div class="text-left sm-text-left " >
+                <h4 style  = "color:  #800000;">✍ Assignments </h4>
+                <hr style="border: 1px solid #001f4d">
+                <br>
+              </div>
+              <h3>Assignment Problems</h3>
+              <!-- Masonry Grid -->
+              <table class="table table-dark">
+                <thead>
+                  <tr  style  = "color: white; background-color: #0a465e;">
+                    <th scope="col">#</th>
+                    <th scope="col">Topic</th>
+                    <th scope="col">Assignments</th>
+                    <th scope="col">Deadline</th>
+                    <th scope="col">Remarks</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row"></th>
+                    <td></td>
+                    <td><u><strong>Mid-semester</strong></u></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>TBD</td>
+                    <td> <a style="color:#800000;" href = "docs/corgos_26/assignment_1.pdf" target="_blank">Assignment 1</a>
+                    </td>
+                    <td>2026-Jan-00</td>
+                    <td>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>TBD</td>
+                    <td> <a style="color:#800000;" href = "docs/corgos_26/assignment_2.pdf" target="_blank">Assignment 2</a>
+                    </td>
+                    <td>2026-Feb-00</td>
+                    <td>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row"></th>
+                    <td></td>
+                    <td><u><strong> End-semester</strong></u></td>
+                    <td></td>
+                       <td></td>
+                  </tr>
+<tr>
+                    <th scope="row">--</th>
+                    <td>TBD</td>
+                    <td> <a style="color:#800000;" href = "docs/corgos_26/assignment_0.pdf" target="_blank">Assignment </a>
+                    </td>
+                    <td>2026-Mar-00</td>
+                    <td>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">--</th>
+                    <td>TBD</td>
+                    <td> <a style="color:#800000;" href = "docs/corgos_26/assignment_0.pdf" target="_blank">Assignment </a>
+                    </td>
+                    <td>2026-Apr-00</td>
+                    <td>
+                    </td>
+                  </tr>
+                  
+                </tbody>
+              </table>
+              <br><br><br>
+              <h3 style="color: black">Submission Guidelines</h3>
+              <table class="table table-dark">
+                <thead>
+                  <tr  style  = "color: white; background-color: #0a465e;">
+                    <th scope="col">#</th>
+                    <th scope="col">Points</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td><u>Header</u><br>  &#9755  In the beginning of each file, please include the followings<br>
+                      <code>
+                      /************************************************************<br>
+                      File Name:<br>
+                      Problem ID:<br>
+                      Name:<br>
+                      Collaborators:<br>
+                      Acknowledgements:<br>
+                      ************************************************************/
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td><u>Acknowledgement</u><br>  &#9755 In acknowledgement part, refer books, websites, etc., from where any part of your code is inspired</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td><u>Submission File</u><br> &#9755 Assignments must be sent as <strong>zip</strong> format. The name of the zip files must be of the form <strong>roll_assignment_xy.zip</strong> where <strong>xy = assignment id</strong> and <strong> roll = your roll in small case.</strong> For example: abc12345_assignement_01.zip will be the file name for the student with roll abc12345, for assignment 01</td>
+                  </tr>
+                  
+                  <tr>
+                    <th scope="row">5</th>
+                    <td><u>Submission Link</u><br> &#9755 Upload the zip via this <a style="color:#800000;" href = "#" target="_blank">Submission Link</a><br>&#9755 Check submission log from <a style="color:#800000;" href = "#" target="_blank">This Link</a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">6</th>
+                    <td><u>Sharing Assignment</u><br>  &#9755 Discussion with friends is allowed. However, <strong>copying</strong> others' codes is <strong>strictly prohibited</strong>.<br> Minimum <strong>50%</strong> Marks will be deducted for <strong>taker.</strong> The <strong>giver</strong> will get minimum <span style="color: red;"><strong>25% negative</strong></span> marks.<br>If we can't distinguish giver and taker, both may get negetive minimum 50%, of the allotted marks.</td>
+                  </tr>
+                  
+                  <tr>
+                    <th scope="row">8</th>
+                    <td><u>Late Submission</u><br>  &#9755 Deductions due to late submission: 1 day-- 10%; 2 days-- 20%; 3 days-- 30%; >= 4 days --May not even checked</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!--contentContainer-->
+          </div>
+          <!--contentContainerBox-->
+        </div>
+        <!--// end row -->
+        <!--// end row -->
+        <div class="row"  >
+          <div class="col-sm-10 col-sm-offset-1">
+            <div id="contentContainer" style = "color: black">
+              <div class="text-left sm-text-left " id = "Projects">
+                <h4 style  = "color:  #800000;">📑 Projects</h4>
+                <hr style="border: 1px solid #001f4d">
+              </div>
+              <table class="table table-dark" >
+                <thead>
+                  <tr  style  = "color: white; background-color: #0a465e;">
+                    <th scope="col">#</th>
+                    <th scope="col">Topic</th>
+                    <th scope="col">Project</th>
+                    <th scope="col">Remarks</th>
+                    <th scope="col">Deadline</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>TBD</td>
+                    <td>
+                      <a style="color:#800000;" href = "#" target="_blank">Project-I</a>
+                    </td>
+                    <td>
+                      <a style="color:#800000;" href = "#" target="_blank">Allocations</a>
+                    </td>
+                    <td>2026-Apr-00</td>
+                  </tr>
+                  <!--tr>
+                    <th scope="row">.</th>
+                    <td>Project Rules:
+                      <br>1. Students can select any one of the projects
+                      <br>2. Students can form group
+                      <br>3. Each group must prepare a report
+                      <br>4. Each group will have to present their project with live demo
+                    </td>
+                    <td>Exact Weightages:
+                      <br>1. Project and Assignments-- 50/100;
+                      <br>2. Mid-semester exam-- 20/100;
+                      <br>3. End-semester exam-- 30/100
+                    </td>
+                    </tr-->
+                </tbody>
+              </table>
+              <hr style="border: 1px solid #001f4d">
+              <!-- End Masonry Grid -->
+            </div>
+            <!--contentContainer-->
+          </div>
+          <!--contentContainerBox-->
+        </div>
+        <!--  References -->
+        <div class="row" id ="References">
+          <div class="col-sm-10 col-sm-offset-1">
+            <div id="contentContainer" style = "color: black">
+              <div class="text-left sm-text-left ">
+                <br>
+                <h2 class="margin-b-0" style="color: #800000; text-shadow: 5px 5px 5px white;">📚 References</h2>
+              </div>
+              <hr style="border: 1px solid #001f4d">
+              <!-- Masonry Grid -->
+              <h4 style="color: black">Books</h4>
+              
+              
+              
+              
+              
+              <!-- Book Table -->
+<table class="table table-dark">
+    <thead>
+        <tr style="color: white; background-color: #0a465e;">
+            <th scope="col">#</th>
+            <th scope="col">Title</th>
+            <th scope="col">Author(s)</th>
+            <th scope="col">ISBN</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+    <th scope="row">1</th>
+    <td>Computer Organisation and Design: The Hardware/Software Interface</td>
+    <td>
+        <a style="color:black;" href="#">D. A. Patterson and J. L. Hennesy</a>
+    </td>
+    <td>
+        <a style="color:black;" href="#">978-0-12-374750-1</a>
+    </td>
+</tr>
+
+<tr>
+    <th scope="row">2</th>
+    <td>Computer System Design and Architecture</td>
+    <td>
+        <a style="color:black;" href="#">V. P. Heuring and H. F. Jordan</a>
+    </td>
+    <td>
+        <a style="color:black;" href="#">978-0-13-048440-6</a>
+    </td>
+</tr>
+
+<tr>
+    <th scope="row">3</th>
+    <td>Computer Architecture: A Quantitative Approach</td>
+    <td>
+        <a style="color:black;" href="#">J. L. Hennessy and D. A. Patterson</a>
+    </td>
+    <td>
+        <a style="color:black;" href="#">N/A</a>
+    </td>
+</tr>
+
+<tr>
+    <th scope="row">4</th>
+    <td>Computer Organization</td>
+    <td>
+        <a style="color:black;" href="#">Carl Hamacher, Zvonko Vranesic and Safwat Zaky</a>
+    </td>
+    <td>
+        <a style="color:black;" href="#">978-0-07-232086-2</a>
+    </td>
+</tr>
+
+<tr>
+    <th scope="row">5</th>
+    <td>Operating Systems: Internals & Design Principles</td>
+    <td>
+        <a style="color:black;" href="#">William Stallings</a>
+    </td>
+    <td>
+        <a style="color:black;" href="#">978-0-13-230998-1</a>
+    </td>
+</tr>
+
+<tr>
+    <th scope="row">6</th>
+    <td>Modern Operating Systems</td>
+    <td>
+        <a style="color:black;" href="#">Andrew S. Tanenbaum and Herbert Bos</a>
+    </td>
+    <td>
+        <a style="color:black;" href="#">978-0-13-359162-0</a>
+    </td>
+</tr>
+
+<tr>
+    <th scope="row">7</th>
+    <td>Operating Systems - Design Oriented Approach</td>
+    <td>
+        <a style="color:black;" href="#">Charles Crowley</a>
+    </td>
+    <td>
+        <a style="color:black;" href="#">978-0-07-463551-3</a>
+    </td>
+</tr>
+<tr>
+    <th scope="row">8</th>
+    <td>Operating System Concepts</td>
+    <td>
+        <a style="color:black;" href="#">Abraham Silberschatz, Peter Baer Galvin and Greg Gagne</a>
+    </td>
+    <td>
+        <a style="color:black;" href="#">978-1-118-06333-0</a>
+    </td>
+</tr>
+
+        
+    </tbody>
+    
+</table>
+** We will follow [1] for the Computer Organisation and [8] for the Operating System. For rest of the topics, we will provide sources time to time.
+<br> <br>             
+ <h4 style="color: black">Helpful Websites</h4>               
+<table class="table table-dark">
+    <thead>
+        <tr style="color: white; background-color: #0a465e;">
+            <th scope="col">#</th>
+            <th scope="col">Website</th>
+            <th scope="col">Useful for</th>
+        </tr>
+    </thead>
+    <tbody>
+
+  <tr>
+    <td>1</td>
+    <td><a href="https://www.codechef.com" target="_blank">https://www.codechef.com</a></td>
+    <td>To Practice Coding</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td><a href="https://www.geeksforgeeks.org" target="_blank">https://www.geeksforgeeks.org</a></td>
+    <td>To Learn Coding</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td><a href="https://unstop.com/practice" target="_blank">https://unstop.com</a></td>
+    <td>To Practice Coding</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td><a href="https://www.hackerrank.com/skills-verification/problem_solving_basic" target="_blank">https://www.hackerrank.com</a></td>
+    <td>To Practice Problem Solving Skills</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td><a href="https://www.cs.usfca.edu/~galles/visualization/Algorithms.html" target="_blank">https://www.cs.usfca.edu/~galles/visualization/Algorithms.html</a></td>
+    <td>To Visualize Data Structures and Algorithms</td>
+  </tr>
+  </tbody>
+</table>
+              
+              
+             
+              <!-- End Masonry Grid -->
+            </div>
+            <!--contentContainer-->
+          </div>
+          <!--contentContainerBox-->
+        </div>
+        <!-- End References -->
+        <!--// end row -->
+        <!--// end row -->
+      </div>
+    </div>
+    <!-- End Education -->
+    <!--========== FOOTER ==========-->
+    <footer class="footer " style="background-color: white;">
+      <div class="content container" style="background-color: white;">
+        <div class="row ">
+          <div class="col-xs-12 text-left sm-text-left ">
+            <h4 class="margin-b-0 " style="color: black; text-align: center ">@ <a href="https://laltu-sardar.github.io/" style="color: black; " > Laltu Sardar</a>,
+              Institute for Advancing Intelligence (IAI), TCG Crest, Kolkata, India
+            </h4>
+          </div>
+        </div>
+        <!--// end row -->
+      </div>
+    </footer>
+    <!--========== END FOOTER ==========-->
+    <!-- Back To Top -->
+    <a href="#" class="js-back-to-top back-to-top back-to-top-is-visible " style = "color:white;"><strong>Top</strong> </a>
+    <!-- END BODY -->
+  </body>
+</html>
