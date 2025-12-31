@@ -1,0 +1,187 @@
+BIO
+
+BIO 121 - Principles of Life II
+BIO 122 - Biology Lab II
+BIO 3003 - Biochemistry
+BIO 312 - Advanced Genetics and Genome Biology
+BIO 313 - Physiology
+BIO 314 - Biochemistry
+BIO 315 - Advanced Biology Lab I
+BIO 324 - Molecular Biology
+BIO 4001 - Biostatistics
+BIO 4002 - Biomolecular Spectroscopy and Mass Spectrometry
+BIO 4004 - Bioinformatics
+BIO 4012 - Host Pathogen Interactions
+BIO 4013 - Evolutionary Ecology
+BIO 4015 - Advances in Plant Biology
+BIO 4018 - Microbiome and Vaccinology
+BIO 4019 - Systems Biology Theory
+BIO 4020 - Human Genetics Gene Therapy and Personal Genomics
+BIO 4021 - Systems Biology Applications
+BIO 4024 - Population Genetics
+BIO 4104 - Advanced Bioinformatics
+BIO 4110 - Experimental Biology
+BIO 416 - Biostatistics
+BIO 4201 - Stem Cell Biology
+BIO 4203 - Regenerative Medicine
+BIO 4208 - Stem Cells and Regenerative Medicine
+BIO 4212 - Systems Biology
+BIO 426 - Bioinformatics
+
+CHY
+
+CHY 121 - Basic Physical Chemistry I
+CHY 122 - Chemistry Lab II
+CHY 221 - Chemistry of Biomolecules and Heterocycles
+CHY 2201 - Chemistry of Biomolecules and Heterocycles
+CHY 311 - Coordination Chemistry
+CHY 312 - Organic Chemistry Reactions and Mechanisms
+CHY 313 - Quantum Chemistry
+CHY 314 - Physical Chemistry II
+CHY 3104 - Physical Chemistry II
+CHY 411 - Main Group Chemistry
+CHY 412 - Advanced Organic Chemistry I
+CHY 413 - Chemical and Statistical Thermodynamics
+CHY 414 - Instrumental Methods for Structure Determination
+CHY 415 - Advanced Chemistry Lab II
+CHY 421 - Advanced Organic Chemistry II
+CHY 5221 - Advanced Organic Chemistry
+CHY 5222 - Advanced Inorganic Chemistry
+CHY 5223 - Advanced Physical Chemistry
+CHY 5224 - Advanced Materials Chemistry
+CHY 5225 - Advanced Catalysis
+CHY 5203 - Computational Chemistry
+CHY 5205 - Spectroscopic Techniques
+CHY 626 - Advanced Chemistry Project
+
+DSC
+
+DSC 121 - Data Science Foundations
+DSC 311 - Mathematical Statistics
+DSC 312 - Optimization Techniques
+DSC 313 - Database Management Systems
+DSC 314 - Data Structures
+DSC 315 - Computer Organization and Operating Systems
+DSC 316 - Machine Learning I
+DSC 317 - Data Structures Lab
+DSC 318 - Mathematical Statistics Lab
+DSC 411 - Probability Theory and Stochastic Processes
+DSC 412 - Scientific Computing
+DSC 413 - Data Warehousing and Business Intelligence
+DSC 414 - Advanced Artificial Intelligence
+DSC 415 - Data Science Lab II
+DSC 421 - Time Series Analysis
+DSC 422 - Parallel and Distributed Computing
+DSC 423 - Data Analysis and Visualization
+DSC 4514 - Advanced Data Science Project
+DSC 5517 - Advanced Topics in Data Science
+DSC 6101 - Research Methods in Data Science
+DSC 6106 - Advanced Machine Learning
+DSC 6108 - Deep Learning
+DSC 6109 - Data Science Project
+
+ESS (EES)
+
+EES 121 - Introduction to Earth and Environmental Sciences
+EES 311 - Mathematical Methods
+EES 312 - Introduction to Atmospheric Science
+EES 313 - Introduction to Geosciences
+EES 314 - Environmental Sustainability
+EES 315 - Observational Techniques
+EES 316 - Hydrology
+EES 317 - EES Laboratory I
+EES 411 - Atmospheric Thermodynamics and Cloud Physics
+EES 412 - Atmospheric Chemistry and Air Pollution
+EES 413 - Hydrometeorology
+EES 414 - Tropical Meteorology and Monsoon Dynamics
+EES 415 - Atmospheric and Oceanic Dynamics
+EES 416 - Air Quality and Meteorology Laboratory
+EES 4303 - Earth System Modelling
+EES 6303 - Earth System Modelling Advanced
+
+HUM
+
+HUM 121 - Communication Skills II
+HUM 221 - Introduction to Sociology
+HUM 321 - Advanced Social Sciences
+
+IDC
+
+IDC 121 - Mathematical Tools II
+IDC 122 - Numeric Computing using C or C++
+IDC 1 - Interdisciplinary Course I
+IDC 2 - Interdisciplinary Course II
+IDC 3 - Interdisciplinary Course III
+IDC 4 - Interdisciplinary Course IV
+
+MAT
+
+MAT 121 - Matrices and Calculus I
+MAT 203 - Introduction to Real Analysis
+MAT 204 - Introduction to Groups and Rings
+MAT 205 - Linear Algebra and Complex Analysis
+MAT 310 - Applied Linear Algebra
+MAT 3202 - Probability Theory
+MAT 3512 - Applied Mathematics II
+MAT 3901 - Mathematical Modeling
+MAT 401 - Multivariable Analysis
+MAT 402 - Galois Theory
+MAT 403 - Topology
+MAT 404 - Partial Differential Equations
+MAT 421 - Functional Analysis
+MAT 422 - Algebraic Topology
+MAT 423 - Commutative Algebra
+MAT 424 - Differential Geometry
+MAT 4521 - Advanced Probability
+MAT 4522 - Stochastic Processes
+MAT 4523 - Measure Theoretic Probability
+MAT 4524 - Random Processes
+MAT 501 - Curves and Surfaces
+MAT 5514 - Mathematical Modeling
+MAT 5517 - Advanced Topics in Mathematics
+MAT 6201 - Research Methods in Mathematics
+MAT 6202 - Advanced Algebra
+MAT 6203 - Advanced Analysis
+MAT 6204 - Advanced Topology
+MAT 6205 - Advanced Differential Equations
+MAT 6206 - Mathematics Project
+
+PHY
+
+PHY 121 - Electromagnetism
+PHY 122 - Physics Lab II
+PHY 301 - Mathematical Methods I
+PHY 313 - Electronics
+PHY 314 - Quantum Mechanics I
+PHY 315 - Advanced Physics Lab I
+PHY 317 - Mechanics II
+PHY 321 - Statistical Mechanics
+PHY 401 - Electrodynamics
+PHY 402 - Classical Electrodynamics
+PHY 403 - Mathematical Methods II
+PHY 404 - Quantum Mechanics III
+PHY 415 - Advanced Physics Lab III
+PHY 4204 - Solid State Physics
+PHY 4205 - Electronic Devices and Computer Interfacing
+PHY 421 - Quantum Information
+PHY 4210 - Experimental Quantum Physics
+PHY 4218 - Quantum Technologies
+PHY 422 - Nuclear and Particle Physics
+PHY 4235 - Modeling Materials
+PHY 4237 - Modeling Materials
+PHY 4238 - Advanced Condensed Matter
+PHY 5123 - Foundations of Quantum Mechanics
+PHY 5127 - Quantum Computation
+PHY 5209 - Advanced Electrodynamics
+PHY 5212 - Advanced Statistical Physics
+PHY 5235 - Computational Condensed Matter
+PHY 5237 - Advanced Materials Modeling
+PHY 6123 - Quantum Information Advanced
+PHY 6127 - Quantum Computation Advanced
+PHY 6204 - Advanced Solid State Physics
+PHY 6210 - Experimental Physics Project
+PHY 6212 - Advanced Quantum Experiments
+PHY 6218 - Quantum Devices
+PHY 622 - Particle Physics
+PHY 6235 - Advanced Modeling Materials
+PHY 6237 - Advanced Computational Physics
