@@ -1,0 +1,319 @@
+-------------- 1st Year
+BIO
+
+BIO 121 - Principles of Life II
+BIO 122 - Biology Lab II
+
+CHY
+
+CHY 121 - Basic Physical Chemistry I
+CHY 122 - Chemistry Lab II
+
+DSC
+
+DSC 121 - Data Science Foundations
+
+ESS
+
+EES 121 - Introduction to Earth and Environmental Sciences
+
+HUM
+
+HUM 121 - Communication Skills II
+
+IDC
+
+IDC 121 - Mathematical Tools II
+IDC 122 - Numeric Computing using C or C++
+
+MAT
+
+MAT 121 - Matrices and Calculus I
+
+PHY
+
+PHY 121 - Electromagnetism
+PHY 122 - Physics Lab II
+
+-------------- 2nd Year
+BIO
+
+BIO 3003 - Biochemistry
+BIO 312 - Advanced Genetics and Genome Biology
+BIO 313 - Physiology
+BIO 314 - Biochemistry
+BIO 315 - Advanced Biology Lab I
+BIO 324 - Molecular Biology
+BIO 612 - Principles of Life II Advanced
+BIO 613 - Physiology Advanced
+BIO 614 - Biochemistry Advanced
+BIO 624 - Molecular Biology Advanced
+
+CHY
+
+CHY 221 - Chemistry of Biomolecules and Heterocycles
+CHY 2201 - Chemistry of Biomolecules and Heterocycles
+CHY 311 - Coordination Chemistry
+CHY 312 - Organic Chemistry Reactions and Mechanisms
+CHY 313 - Quantum Chemistry
+CHY 314 - Physical Chemistry II
+CHY 3104 - Physical Chemistry II
+
+DSC
+
+DSC 311 - Mathematical Statistics
+DSC 312 - Optimization Techniques
+DSC 313 - Database Management Systems
+DSC 314 - Data Structures
+DSC 315 - Computer Organization and Operating Systems
+DSC 316 - Machine Learning I
+DSC 317 - Data Structures Lab
+DSC 318 - Mathematical Statistics Lab
+
+ESS
+
+EES 311 - Mathematical Methods
+EES 312 - Introduction to Atmospheric Science
+EES 313 - Introduction to Geosciences
+EES 314 - Environmental Sustainability
+EES 315 - Observational Techniques
+EES 316 - Hydrology
+EES 317 - EES Laboratory I
+
+HUM
+
+HUM 221 - Introduction to Sociology
+
+IDC
+
+IDC 1 - Interdisciplinary Course I
+IDC 2 - Interdisciplinary Course II
+IDC 3 - Interdisciplinary Course III
+IDC 4 - Interdisciplinary Course IV
+
+MAT
+
+MAT 203 - Introduction to Real Analysis
+MAT 204 - Introduction to Groups and Rings
+MAT 205 - Linear Algebra and Complex Analysis
+MAT 3512 - Applied Mathematics II
+MAT 3901 - Mathematical Modeling
+MAT 5517 - Advanced Topics in Mathematics
+
+PHY
+
+PHY 301 - Mathematical Methods I
+PHY 313 - Electronics
+PHY 314 - Quantum Mechanics I
+PHY 315 - Advanced Physics Lab I
+PHY 317 - Mechanics II
+
+-------------- 3rd Year
+BIO
+
+BIO 324 - Molecular Biology
+BIO 4001 - Biostatistics
+BIO 4002 - Biomolecular Spectroscopy and Mass Spectrometry
+BIO 4004 - Bioinformatics
+BIO 4012 - Host Pathogen Interactions
+BIO 4013 - Evolutionary Ecology
+BIO 4015 - Advances in Plant Biology
+BIO 4018 - Microbiome and Vaccinology
+BIO 4019 - Systems Biology Theory
+BIO 4020 - Human Genetics Gene Therapy and Personal Genomics
+BIO 4024 - Population Genetics
+BIO 4115 - Advanced Plant Biology
+BIO 416 - Biostatistics
+BIO 426 - Bioinformatics
+BIO 6012 - Host Pathogen Interactions Advanced
+BIO 6013 - Evolutionary Ecology Advanced
+BIO 6015 - Advances in Plant Biology Advanced
+BIO 6024 - Population Genetics Advanced
+BIO 6115 - Advanced Plant Biology Lab
+BIO 6120 - Human Genetics Advanced
+BIO 616 - Biostatistics Lab
+BIO 626 - Bioinformatics Lab
+
+CHY
+
+CHY 411 - Main Group Chemistry
+CHY 412 - Advanced Organic Chemistry I
+CHY 413 - Chemical and Statistical Thermodynamics
+CHY 414 - Instrumental Methods for Structure Determination
+CHY 415 - Advanced Chemistry Lab II
+CHY 421 - Advanced Organic Chemistry II
+CHY 617 - Advanced Chemistry Elective
+
+DSC
+
+DSC 314 - Data Structures
+DSC 317 - Data Structures Lab
+DSC 411 - Probability Theory and Stochastic Processes
+DSC 412 - Scientific Computing
+DSC 413 - Data Warehousing and Business Intelligence
+DSC 414 - Advanced Artificial Intelligence
+DSC 415 - Data Science Lab II
+DSC 4514 - Advanced Data Science Project
+
+ESS
+
+EES 411 - Atmospheric Thermodynamics and Cloud Physics
+EES 412 - Atmospheric Chemistry and Air Pollution
+EES 413 - Hydrometeorology
+EES 414 - Tropical Meteorology and Monsoon Dynamics
+EES 415 - Atmospheric and Oceanic Dynamics
+EES 416 - Air Quality and Meteorology Laboratory
+EES 4303 - Earth System Modelling
+EES 6303 - Earth System Modelling Advanced
+
+HUM
+
+HUM 321 - Advanced Social Sciences
+
+MAT
+
+MAT 310 - Applied Linear Algebra
+MAT 3202 - Probability Theory
+MAT 401 - Multivariable Analysis
+MAT 402 - Galois Theory
+MAT 403 - Topology
+MAT 404 - Partial Differential Equations
+MAT 501 - Curves and Surfaces
+MAT 502 - Differential Geometry
+MAT 503 - Algebraic Topology
+MAT 504 - Functional Analysis II
+MAT 505 - Measure Theory II
+MAT 5501 - Advanced Algebra
+MAT 5502 - Advanced Analysis
+MAT 5514 - Mathematical Modeling
+MAT 5517 - Advanced Topics in Mathematics
+
+PHY
+
+PHY 321 - Statistical Mechanics
+PHY 401 - Electrodynamics
+PHY 402 - Classical Electrodynamics
+PHY 403 - Mathematical Methods II
+PHY 404 - Quantum Mechanics III
+PHY 415 - Advanced Physics Lab III
+PHY 4205 - Electronic Devices and Computer Interfacing
+PHY 4237 - Modeling Materials
+PHY 4001 - Biophysics
+PHY 4002 - Condensed Matter Physics
+PHY 4003 - Computational Physics
+PHY 4004 - Advanced Electronics
+PHY 4110 - Experimental Methods
+PHY 4120 - Condensed Matter II
+PHY 5132 - Advanced Quantum Mechanics
+PHY 601 - Advanced Mechanics
+PHY 602 - Advanced Electrodynamics
+PHY 6110 - Experimental Physics Advanced
+PHY 6120 - Condensed Matter Advanced
+PHY 6132 - Quantum Information
+PHY 6205 - Advanced Electronics
+
+-------------- 4th Year
+BIO
+
+BIO 4013 - Evolutionary Ecology
+BIO 4015 - Advances in Plant Biology
+BIO 4021 - Systems Biology Applications
+BIO 4024 - Population Genetics
+BIO 4104 - Advanced Bioinformatics
+BIO 4110 - Experimental Biology
+BIO 4201 - Stem Cell Biology
+BIO 4203 - Regenerative Medicine
+BIO 4208 - Stem Cells and Regenerative Medicine
+BIO 4212 - Systems Biology
+BIO 6013 - Evolutionary Ecology Advanced
+BIO 6015 - Advances in Plant Biology Advanced
+BIO 6021 - Systems Biology Applications Advanced
+BIO 6024 - Population Genetics Advanced
+BIO 6104 - Advanced Bioinformatics Lab
+BIO 6110 - Experimental Biology Advanced
+BIO 6201 - Stem Cell Biology Advanced
+BIO 6203 - Regenerative Medicine Advanced
+BIO 6208 - Stem Cell Research
+BIO 6212 - Systems Biology Advanced
+
+CHY
+
+CHY 314 - Physical Chemistry II
+CHY 5221 - Advanced Organic Chemistry
+CHY 5222 - Advanced Inorganic Chemistry
+CHY 5223 - Advanced Physical Chemistry
+CHY 5224 - Advanced Materials Chemistry
+CHY 5225 - Advanced Catalysis
+CHY 5203 - Computational Chemistry
+CHY 5205 - Spectroscopic Techniques
+CHY 626 - Advanced Chemistry Project
+
+DSC
+
+DSC 317 - Data Structures Lab
+DSC 4101 - Advanced Probability
+DSC 4106 - Advanced Optimization
+DSC 414 - Advanced Artificial Intelligence
+DSC 421 - Time Series Analysis
+DSC 422 - Parallel and Distributed Computing
+DSC 423 - Data Analysis and Visualization
+DSC 5517 - Advanced Topics in Data Science
+DSC 6101 - Research Methods in Data Science
+DSC 6106 - Advanced Machine Learning
+DSC 6108 - Deep Learning
+DSC 6109 - Data Science Project
+
+ESS
+
+EES 4303 - Earth System Modelling
+EES 6303 - Earth System Modelling Advanced
+
+MAT
+
+MAT 421 - Functional Analysis
+MAT 422 - Algebraic Topology
+MAT 423 - Commutative Algebra
+MAT 424 - Differential Geometry
+MAT 4521 - Advanced Probability
+MAT 4522 - Stochastic Processes
+MAT 4523 - Measure Theoretic Probability
+MAT 4524 - Random Processes
+MAT 5517 - Advanced Topics in Mathematics
+MAT 6201 - Research Methods in Mathematics
+MAT 6202 - Advanced Algebra
+MAT 6203 - Advanced Analysis
+MAT 6204 - Advanced Topology
+MAT 6205 - Advanced Differential Equations
+MAT 6206 - Mathematics Project
+
+PHY
+
+PHY 421 - Quantum Information
+PHY 422 - Nuclear and Particle Physics
+PHY 4235 - Modeling Materials
+PHY 4238 - Advanced Condensed Matter
+PHY 4204 - Solid State Physics
+PHY 4210 - Experimental Quantum Physics
+PHY 4218 - Quantum Technologies
+PHY 5123 - Foundations of Quantum Mechanics
+PHY 5127 - Quantum Computation
+PHY 5209 - Advanced Electrodynamics
+PHY 5212 - Advanced Statistical Physics
+PHY 5235 - Computational Condensed Matter
+PHY 5237 - Advanced Materials Modeling
+PHY 6123 - Quantum Information Advanced
+PHY 6127 - Quantum Computation Advanced
+PHY 6204 - Advanced Solid State Physics
+PHY 6210 - Experimental Physics Project
+PHY 6212 - Advanced Quantum Experiments
+PHY 6218 - Quantum Devices
+PHY 622 - Particle Physics
+PHY 6235 - Advanced Modeling Materials
+PHY 6237 - Advanced Computational Physics.
+
+
+The above list is as per the Timetable for Vasanth 2026 semester.
+
+NB: The list is prepared with LLM, and not verified. 
+If anyone found any error, drop me a mail.
+

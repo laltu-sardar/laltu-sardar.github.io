@@ -1,0 +1,248 @@
+====================================
+The list of all courses at IISER Tvm
+====================================
+
+Foundation and Pre Major Courses
+
+BIO 111 - Principles of Life I
+BIO 121 - Principles of Life II
+CHY 111 - Basic Organic and Inorganic Chemistry I
+CHY 121 - Basic Physical Chemistry I
+MAT 111 - Introduction to Proofs
+MAT 121 - Matrices and Calculus I
+PHY 111 - Mechanics I
+PHY 121 - Electromagnetism
+
+BIO 112 - Biology Lab I
+BIO 122 - Biology Lab II
+CHY 112 - Chemistry Lab I
+CHY 122 - Chemistry Lab II
+PHY 112 - Physics Lab I
+PHY 122 - Physics Lab II
+
+IDC 111 - Mathematical Tools I
+IDC 121 - Mathematical Tools II
+IDC 112 - Introduction to Programming in C/C++
+IDC 122 - Numeric Computing using C/C++
+IDC 212 - Programming in Python
+IDC 222 - Scientific Computing and Data Visualization
+
+HUM 111 - Communication Skills I
+HUM 121 - Communication Skills II
+HUM 211 - Introduction to Economics
+HUM 221 - Introduction to Sociology
+
+BIO 211 - Principles of Life III: Organismal Biology
+BIO 212 - Principles of Life IV: Microbiology
+CHY 211 - Atomic Structure and Chemical Bonding
+CHY 212 - Basic Organic and Inorganic Chemistry II
+MAT 201 - Calculus and Matrices II
+MAT 202 - Introduction to Probability
+PHY 211 - Thermal and Statistical Physics
+PHY 212 - Optics
+DSC 211 - Introduction to Artificial Intelligence
+DSC 212 - Mathematical Foundations to Data Science
+EESS 201 - Introduction to Earth and Climate Sciences
+EESS 202 - Introduction to Environmental and Sustainability Sciences
+
+Biological Sciences
+
+BIO 312 - Advanced Genetics and Genome Biology
+BIO 313 - Physiology
+BIO 314 - Biochemistry
+BIO 315 - Advanced Biology Lab I
+BIO 321 - Structural Biology
+BIO 322 - Immunology
+BIO 323 - Cell Biology
+BIO 324 - Molecular Biology
+BIO 325 - Advanced Biology Lab II
+BIO 327 - Ecology and Evolution
+BIO 416 - Biostatistics
+BIO 426 - Bioinformatics
+BIO 511 - Developmental Biology
+BIO 512 - Neurobiology
+
+BIO 3001 - Advanced Genetics and Genome Biology
+BIO 3002 - Physiology
+BIO 3003 - Biochemistry
+BIO 3004 - Molecular Biology
+BIO 3005 - Structural Biology
+BIO 3006 - Immunology
+BIO 3007 - Cell Biology
+BIO 3008 - Ecology and Evolution
+BIO 4001 - Biostatistics
+BIO 4002 - Biomolecular Spectroscopy and Mass Spectrometry
+BIO 4003 - Cryo Electron Microscopy and 3D Image Processing
+BIO 4004 - Bioinformatics
+BIO 4005 - Bio Imaging and Processing
+BIO 4006 - Drug Discovery and Development
+BIO 4007 - Synthetic Biology
+BIO 4008 - Stem Cells and Regenerative Medicine
+
+BIO 3011 - Genome Stability
+BIO 3012 - Bacterial Genetics
+BIO 4011 - Chronobiology
+BIO 4012 - Host Pathogen Interactions
+BIO 4013 - Evolutionary Ecology
+BIO 4015 - Advances in Plant Biology
+BIO 4016 - Laboratory Animal Science
+BIO 4017 - Biosafety and Regulation
+BIO 4018 - Microbiome and Vaccinology
+BIO 4019 - Systems Biology Theory
+BIO 4020 - Human Genetics Gene Therapy and Personal Genomics
+BIO 4021 - Systems Biology Applications
+BIO 4022 - Biological Data Analysis Using Python
+BIO 4023 - Bacterial Communication and Pathogenesis
+BIO 4024 - Population Genetics
+BIO 5011 - Advanced Developmental Biology
+BIO 5012 - Animal Behaviour
+BIO 5013 - Cancer Biology
+BIO 5014 - Scientific Writing
+
+Chemical Sciences
+
+CHY 221 - Chemistry of Biomolecules and Heterocycles
+CHY 311 - Coordination Chemistry
+CHY 312 - Organic Chemistry Reactions and Mechanisms
+CHY 313 - Quantum Chemistry
+CHY 314 - Physical Chemistry II
+CHY 321 - Organometallic Chemistry
+CHY 322 - Bioinorganic Chemistry
+CHY 323 - Organic Chemistry Synthetic Methods
+CHY 324 - Theoretical Spectroscopy
+CHY 325 - Advanced Chemistry Lab I
+CHY 411 - Main Group Chemistry
+CHY 412 - Advanced Organic Chemistry I
+CHY 413 - Chemical and Statistical Thermodynamics
+CHY 414 - Instrumental Methods for Structure Determination
+CHY 415 - Advanced Chemistry Lab II
+CHY 421 - Advanced Organic Chemistry II
+CHY 422 - Solid State Chemistry
+CHY 423 - Advanced Quantum Chemistry
+CHY 424 - Advanced Chemistry Lab III
+CHY 521 - Physical Organic Chemistry
+CHY 522 - Frontiers in Inorganic Chemistry
+CHY 523 - Chemical Kinetics and Dynamics
+
+CHY 2201 - Chemistry of Biomolecules and Heterocycles
+CHY 3104 - Physical Chemistry II
+CHY 3202 - Bioorganic Chemistry
+CHY 4103 - Biomaterials
+CHY 4202 - Solid State Chemistry
+
+Data Sciences
+
+DSC 311 - Mathematical Statistics
+DSC 312 - Optimization Techniques
+DSC 313 - Database Management System
+DSC 314 - Data Structures
+DSC 315 - Computer Organization and Operating System
+DSC 316 - Machine Learning I
+DSC 317 - Data Structures Lab
+DSC 318 - Mathematical Statistics Lab
+DSC 321 - Design and Analysis of Algorithms
+DSC 322 - Applied Regression Analysis
+DSC 323 - Numerical Analysis
+DSC 324 - Machine Learning II
+DSC 325 - Data Science Lab I
+DSC 411 - Probability Theory and Stochastic Processes
+DSC 412 - Scientific Computing
+DSC 413 - Data Warehousing and Business Intelligence
+DSC 414 - Advanced Artificial Intelligence
+DSC 415 - Data Science Lab II
+DSC 421 - Time Series Analysis
+DSC 422 - Parallel and Distributed Computing
+DSC 423 - Data Analysis and Visualization
+DSC 511 - Big Data Analytics
+DSC 512 - Humans and Data
+DSC 513 - Statistical Simulation and Computation
+
+Earth Environmental and Sustainability Sciences
+
+EES 311 - Mathematical Methods
+EES 312 - Introduction to Atmospheric Science
+EES 313 - Introduction to Geosciences
+EES 314 - Environmental Sustainability
+EES 315 - Observational Techniques
+EES 316 - Hydrology
+EES 317 - EES Laboratory I
+EES 318 - Environmental Impact and Risk Assessment
+EES 319 - Introduction to Ocean Sciences
+EES 320 - Environmental Chemistry and Pollution
+EES 321 - Remote Sensing and GIS
+EES 322 - EES Laboratory II
+
+EES A311 - Atmospheric Radiation
+EES A312 - Climate Change Mitigation and Adaptation
+EES A411 - Atmospheric Thermodynamics and Cloud Physics
+EES A412 - Atmospheric Chemistry and Air Pollution
+EES A413 - Hydrometeorology
+EES A414 - Tropical Meteorology and Monsoon Dynamics
+EES A415 - Atmospheric and Oceanic Dynamics
+EES A416 - Air Quality and Meteorology Laboratory
+EES A417 - Geophysical Fluid Dynamics
+EES A418 - Data Visualization Laboratory
+EES A419 - Satellite Meteorology
+EES A420 - Land Atmosphere Interactions
+EES A421 - Atmospheric Aerosols
+EES A422 - Earth System Modelling
+EES A423 - Boundary Layer Meteorology
+
+Mathematical Sciences
+
+MAT 203 - Introduction to Real Analysis
+MAT 204 - Introduction to Groups and Rings
+MAT 205 - Linear Algebra and Complex Analysis
+MAT 303 - Metric Spaces
+MAT 304 - Abstract Algebra
+MAT 313 - Linear Algebra
+MAT 314 - Numerical Analysis
+MAT 315 - Mathematical Statistics
+MAT 316 - Mathematical Statistics Lab
+MAT 321 - Complex Analysis
+MAT 324 - Theory of Ordinary Differential Equations
+MAT 402 - Galois Theory
+MAT 403 - Topology
+MAT 407 - Multivariable Analysis
+MAT 411 - Measure Theory
+MAT 421 - Functional Analysis
+MAT 501 - Curves and Surfaces
+
+MAT 2003 - Introduction to Real Analysis
+MAT 2004 - Introduction to Groups and Rings
+MAT 2005 - Linear Algebra and Complex Analysis I
+MAT 307 - Numerical Analysis
+MAT 309 - Theory of Ordinary Differential Equations
+MAT 404 - Multivariable Analysis
+
+Physical Sciences
+
+PHY 301 - Mathematical Methods I
+PHY 312 - Classical Mechanics
+PHY 313 - Electronics
+PHY 314 - Quantum Mechanics I
+PHY 315 - Advanced Physics Lab I
+PHY 317 - Mechanics II
+PHY 321 - Statistical Mechanics
+PHY 322 - Condensed Matter Physics I
+PHY 324 - Numerical Methods
+PHY 327 - Quantum Mechanics II
+PHY 401 - Electrodynamics
+PHY 402 - Classical Electrodynamics
+PHY 403 - Mathematical Methods II
+PHY 404 - Quantum Mechanics III
+PHY 411 - Statistical Mechanics
+PHY 412 - Condensed Matter II
+PHY 415 - Advanced Physics Lab III
+PHY 419 - Statistics and Data Analysis in Physical Sciences
+PHY 4217 - Quantum Information
+PHY 422 - Nuclear and Particle Physics
+PHY 423 - Modeling Materials
+PHY 5125 - Foundations of Quantum Mechanics
+
+
+The above list is as per the following document:
+https://www.iisertvm.ac.in/beta/schoolcms/writable/uploads/Complete_Course_Catalogue.pdf
+
+NB: The list is prepared with LLM, and not verified. 
+If anyone found any error, drop me a mail.
