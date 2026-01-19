@@ -1,0 +1,11 @@
+Homework
+
+1. Convert the following decimal values into 32-bit IEEE 754 floating point representation.
+
+(a) 12.125  
+(b) -31.626  
+(c) -32.125  
+(d) 17.25  
+
+2. Find the maximum and minimum negative number that can be represented by a 32-bit IEEE 754 floating point variable in normalized form.
+
