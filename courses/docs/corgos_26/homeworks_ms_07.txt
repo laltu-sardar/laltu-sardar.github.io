@@ -7,5 +7,16 @@ Homework
 (c) -32.125  
 (d) 17.25  
 
+While answering, you must do the following steps:
+a) Convert to binary.
+b) Convert to normalized form.
+c) Convert the exponent to base 127 by adding 127 to the exponent and taking its unsigned integer value.
+d) Place the sign bit, exponent bits, and fraction bits in their respective positions. 
+
 2. Find the maximum and minimum negative number that can be represented by a 32-bit IEEE 754 floating point variable in normalized form.
+
+3. Suppose you represent floating point numbers using 16 bits: 1 bit for the sign, 5 bits for the exponent, and 10 bits for the fraction.
+
+4. What are the largest and smallest positive and negative values that can be represented in normalized form if you follow the same algorithm as the 32-bit IEEE 754 format, with the exponent represented in base 15?
+
 
