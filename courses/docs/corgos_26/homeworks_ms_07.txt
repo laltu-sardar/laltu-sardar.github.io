@@ -1,4 +1,6 @@
-Homework
+Homeworks: 
+  
+
 
 1. Convert the following decimal values into 32-bit IEEE 754 floating point representation.
 
@@ -19,4 +21,4 @@ d) Place the sign bit, exponent bits, and fraction bits in their respective posi
 
 4. What are the largest and smallest positive and negative values that can be represented in normalized form if you follow the same algorithm as the 32-bit IEEE 754 format, with the exponent represented in base 15?
 
-
+NB: If you cannot solve it, discuss it with your friends or read the book. If you still cannot do it, meet me in my office from 5 to 6 pm on class days.
