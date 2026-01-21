@@ -1,0 +1,82 @@
+-------------------------------------------------- FLOATING POINT ADDITION 
+
+1. Add the following decimal numbers using 32-bit floating point representation:
+   a)	12.375 + 3.625,
+   b)   1.5 × 2^5  +  1.25 × 2^2
+   c)   -6.5 + (-2.25),   
+   d)	9.125 + (-4.75), 
+   e)	1.1011 × 2^3  +  1.0110 × 2^1
+
+2. Perform floating point addition and show rounding:
+   0.1 + 0.2
+   Explain why the result is not exactly 0.3 in binary floating point.
+
+3. Add two very small numbers and observe underflow behavior:
+   1.0 × 2^-126  +  1.0 × 2^-126
+
+4. Show that floating point addition is not associative (i.e., (a+b)+c != a+(b+c) ) from the following example 
+   - 1.0 × 2^-126  +  1.0 × 2^-126 + 1
+
+
+5. Add these and give the result, assuming you can only store 5 bits + 1 guard bit.
+    1.0000001 × 2^0  +  1.0000000 × 2^-7
+
+----------------------------------- Floating point multiplication
+
+6. Multiply the following decimal numbers:
+	a) 3.5 x 2.25
+	b) 6.0 x 0.75
+	c) -4.5 x (-1.5)
+	d) -2.75 x 3.0
+	e) (1.101)_2 x 2^2   x   (1.011)_2 x 2^1
+
+
+7. Multiply and show rounding effects:
+   0.1 × 0.2
+   Explain why the result is not exact in binary floating point.
+
+
+8. Multiply:    0.0 × 15.75
+    Explain the result.
+
+9. Multiply:    Infinity × 0.0
+    State the IEEE 754 result and reason.
+
+10. Multiply:    NaN × 5.0
+    Explain why the result is NaN.
+
+-------------------------------------------------- ASCII ENCODING AND DECODING 
+
+11. Write a c code to print unsigned integer values of the following characters into ASCII
+   a) A
+   b) z
+   c) 0
+   d) @
+   e) newline
+
+12. Write a c code to Decode the following 7-bit ASCII binary values into characters:
+   a) 1000001
+   b) 1100001
+   c) 0110000
+   d) 0100000
+   e) 0001010
+
+13. Write a c code to Encode the following string into ASCII binary print their HEX: 
+   "HELLO"
+
+14. Decode the following ASCII hexadecimal sequence into text:
+   48 65 6C 6C 6F
+
+
+15. Write a c code to find the difference (in decimal) in their ASCII value between:
+   a) 'A' and 'a'
+   b) '0' and '9'
+   c) 'A' and 'D'
+   You are not allowed to take more than two variables
+
+
+These problems should be solved by this weekends
+
+End of Homework
+
+
