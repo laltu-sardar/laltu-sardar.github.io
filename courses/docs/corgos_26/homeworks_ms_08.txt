@@ -75,6 +75,41 @@
    You are not allowed to take more than two variables
 
 
+-------------------------------------------------- BITWISE AND LOGICAL OPERATORS
+Instructions:
+- Represent all numbers in 8-bit binary.
+- For logical operators, non-zero is true (1) and zero is false (0).
+
+16. Find Results in the following operations Bitwise logical operations:
+   a) 00110101 AND 00011100
+   b) 01011010 OR 00101101
+   c) 01101001 XOR 00111100
+   d) NOT 01010110 (In C, the bitwise NOT operator ~ inverts each bit. )
+   
+Note that in C, the bitwise AND, OR, XOR, and NOT operators are written as &, |, ^, and ~ respectively.
+
+
+17. Shift operations:
+   a) 00101101 << 2
+   b) 10110010 >> 3   (logical right shift)
+   
+Note that when a variable is defined as signed, a right shift preserves the sign bit by keeping 1 in the MSB. However, the same operation inserts 0 in the MSB when the variable is unsigned.
+
+
+18. Bitwise operations using decimal values:
+   a) 45 AND 29
+   b) 72 OR 15
+
+19. Logical AND operations:
+   a) 0 AND 7
+   b) 3 AND 5
+
+20. Logical OR and NOT operations:
+   a) 0 OR 0
+   b) NOT 12
+
+--------------------------------------------------
+
 These problems should be solved by this weekends
 
 End of Homework
