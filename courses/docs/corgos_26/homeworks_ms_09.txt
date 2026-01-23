@@ -1,0 +1,8 @@
+Suppose you are allowed to perform only the operations provided in the instruction set given in the class.
+Each load instruction lw can load a maximum of 32 bits.
+
+Given two variables a and b, each 64 bits long, explain how you would add them using assembly language under these constraints.
+You will finally store the value in c, i.e.,  c= a+b;
+
+Write the assembly-level approach.
+
