@@ -1,273 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
+    <title>Laltu Sardar | Gallery</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery:Laltu Sardar</title>
-    <link rel="stylesheet" type="text/css" href="myStyles.css">
-    <style>
-      .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 10px;
-      }
-      .gallery img {
-      width: 100%;
-      height: auto;
-      }
-      .gallery figcaption {
-      text-align: center;
-      margin-top: 5px;
-      }
-      
-       .gallery figure {
-            margin: 0;
-        }
+    <link rel="stylesheet" href="./../src/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
 
-        .gallery a {
-            text-decoration: none;
-            color: inherit;
-        }
-
-    </style>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="https://laltu-sardar.github.io/">LALTU SARDAR</a></li>
-          <li><a href="research_interests.html">Research Interests</a></li>
-          <li><a href="publications.html">Publications</a></li>
-          <li><a href="teaching.html">Teaching</a></li>
-          <li><a href="implementations.html">Implementations</a></li>
-          <li><a href="awards.html">Awards</a></li>
-          <li><a href="talks.html">Talks</a></li>
-          <li><a href="professional_activities.html">Activities</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-        </ul>
-      </nav>
-    </header>
-    
-    <div class ="container" style = " max-width: 800px;">
-    
-    <h2>Gallery</h2>
-    <!---------------------------------------------------------- PhD Convocation Images -->
-    <hr>
-    <h3>PhD Convocation</h3>
-    <hr>
-    <div class="gallery">
-        <figure>
-            <a href="img/convocation_family_H.JPG" target="_blank">
-                <img src="img/convocation_family_L.JPG" alt="PhD convocation">
-            </a>
-            <figcaption>
-                Cherishing this special moment with my beloved family! 🎓💖 🎓🌟
-            </figcaption>
-        </figure>
-        <figure>
-            <a href="img/phd_convo_myself_H.jpg" target="_blank">
-                <img src="img/phd_convo_myself_H.jpg" alt="Jumping for joy in Goa's golden sunset glow!">
-            </a>
-            <figcaption>Stepping into a new chapter! 🎓✨ </figcaption>
-        </figure>
-        <figure>
-            <a href="img/convocation_group2_H.jpg" target="_blank">
-                <img src="img/convocation_group2_L.jpg" alt="PhD convocation">
-            </a>
-            <figcaption>
-                Celebrating the culmination of our academic journey together! 🎓🌟
-            </figcaption>
-        </figure>
+<header>
+    <div class="container">
+        <nav>
+            <h2>Laltu Sardar</h2>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+            <ul>
+                <li><a href="./../index.html">Home</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="teaching.html">Teaching</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="awards.html">Awards</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
     </div>
-    
-    <!---------------------------------------------------------- INDOCRYPT 2021 -->
-    <hr>
-    <h3>INDOCRYPT Conference 2021, Jaipur</h3>
-    <hr>
-    <div class="gallery">
-    <figure>
-        <a href="img/city_palace_large.jpg" target="_blank">
-            <img src="img/city_palace_L.JPG" alt="The City Palace">
-        </a>
-        <figcaption></figcaption>
-    </figure>
-    <figure>
-        <a href="img/city_palace_large.jpg" target="_blank">
-            <img src="img/city_palace_L.JPG" alt="The City Palace">
-        </a>
-        <figcaption></figcaption>
-    </figure>
-    <figure>
-        <a href="img/city_palace_large.jpg" target="_blank">
-            <img src="img/city_palace_L.JPG" alt="The City Palace">
-        </a>
-        <figcaption></figcaption>
-    </figure>
-</div>
-    
-    <!---------------------------------------------------------- INDOCRYPT 2023 -->
-    <hr>
-    <h3>INDOCRYPT Conference 2023, Goa</h3>
-    <hr>
-    <div class="gallery">
-    <figure>
-        <a href="img/jumping_in_goa_large.jpg" target="_blank">
-            <img src="img/goa_banner.JPG" alt="Goa Banner">
-        </a>
-        <figcaption>BITS Pilani Goa Campus</figcaption>
-    </figure>
-    <figure>
-        <a href="img/goa_fort_large.jpg" target="_blank">
-            <img src="img/goa_fort.JPG" alt="Ranodom Click">
-        </a>
-        <figcaption>A random click</figcaption>
-    </figure>
-    <figure>
-        <a href="img/jumping_in_goa_large.jpg" target="_blank">
-            <img src="img/jumping_in_goa.JPG" alt="Jumping for joy in Goa's golden sunset glow!">
-        </a>
-        <figcaption>Jumping for joy in Goa's golden sunset glow! 🌅🌴 </figcaption>
-    </figure>
-    
-</div>
+</header>
 
+<main class="container">
 
-   <!---------------------------------------------------------National Workshop in Cryptology 2016< -->
-    <hr>
-    <h3>National Workshop in Cryptology 2016</h3>
-    <hr>
-    <div class="gallery">
-    <figure>
-        <a href="img/shimoga_08_L.jpg" target="_blank">
-            <img src="img/shimoga_08_L.jpg" alt="Jumping for joy in Goa's golden sunset glow!">
-        </a>
-        <figcaption> </figcaption>
-    </figure>
-    <figure>
-        <a href="img/shimoga_07_L.jpg" target="_blank">
-            <img src="img/shimoga_07_L.jpg" alt="Jumping for joy in Goa's golden sunset glow!">
-        </a>
-        <figcaption></figcaption>
-    </figure>
-    <figure>
-        <a href="img/shimoga_06_L.jpg" target="_blank">
-            <img src="img/shimoga_06_L.jpg" alt="Jumping for joy in Goa's golden sunset glow!">
-        </a>
-        <figcaption></figcaption>
-    </figure>
-    <figure>
-        <a href="img/shimoga_01_L.jpg" target="_blank">
-            <img src="img/shimoga_01_L.jpg" alt="Jumping for joy in Goa's golden sunset glow!">
-        </a>
-        <figcaption> </figcaption>
-    </figure>
-    <figure>
-        <a href="img/shimoga_09_L.jpg" target="_blank">
-            <img src="img/shimoga_09_L.jpg" alt="Jumping for joy in Goa's golden sunset glow!">
-        </a>
-        <figcaption></figcaption>
-    </figure>
-    <figure>
-        <a href="img/shimoga_04_L.jpg" target="_blank">
-            <img src="img/shimoga_04_L.jpg" alt="Jumping for joy in Goa's golden sunset glow!">
-        </a>
-        <figcaption></figcaption>
-    </figure>
-    <figure>
-        <a href="img/shimoga_05_L.jpg" target="_blank">
-            <img src="img/shimoga_05_L.jpg" alt="Jumping for joy in Goa's golden sunset glow!">
-        </a>
-        <figcaption> </figcaption>
-    </figure>
-    <figure>
-        <a href="img/shimoga_02_L.jpg" target="_blank">
-            <img src="img/shimoga_02_L.jpg" alt="Jumping for joy in Goa's golden sunset glow!">
-        </a>
-        <figcaption></figcaption>
-    </figure>
-    <figure>
-        <a href="img/shimoga_10_L.jpg" target="_blank">
-            <img src="img/shimoga_10_L.jpg" alt="Jumping for joy in Goa's golden sunset glow!">
-        </a>
-        <figcaption></figcaption>
-    </figure>
-    
-</div>
-    
-    <!----------------------------------------------------------With friends, During M.Tech 2014-16 -->
-    <hr>
-    <h3>With friends, During M.Tech 2014-16</h3>
-    <hr>
-    <div class="gallery">
-    <figure>
-        <a href="img/arsenal_princep_ghat_2_L.jpg" target="_blank">
-            <img src="img/arsenal_princep_ghat_2_L.jpg" alt="Jumping for joy in Goa's golden sunset glow!">
-        </a>
-        <figcaption> </figcaption>
-    </figure>
-    <figure>
-        <a href="img/arsenal_princep_ghat_1_L.jpg" target="_blank">
-            <img src="img/arsenal_princep_ghat_1_L.jpg" alt="Jumping for joy in Goa's golden sunset glow!">
-        </a>
-        <figcaption> </figcaption>
-    </figure>
-    <figure>
-        <a href="img/arsenal_princep_ghat_3_L.jpg" target="_blank">
-            <img src="img/arsenal_princep_ghat_3_L.jpg" alt="Jumping for joy in Goa's golden sunset glow!">
-        </a>
-        <figcaption></figcaption>
-    </figure>
-</div>
+    <h1>Gallery</h1>
 
-<!---------------------------------------------------------- Re-Union 2016 CU-->
-    <hr>
-    <h3>Re-Union 2016 University of Calcutta, 2014-16</h3>
-    <hr>
-    <div class="gallery">
-    <figure>
-        <a href="img/cu_reunion_3_L.jpg" target="_blank">
-            <img src="img/cu_reunion_3_L.jpg" alt="Jumping for joy in Goa's golden sunset glow!">
-        </a>
-        <figcaption> </figcaption>
-    </figure>
-    <figure>
-        <a href="img/cu_reunion_2_L.jpg" target="_blank">
-            <img src="img/cu_reunion_2_L.jpg" alt="Jumping for joy in Goa's golden sunset glow!">
-        </a>
-        <figcaption> </figcaption>
-    </figure>
-    <figure>
-        <a href="img/cu_reunion_1_L.jpg" target="_blank">
-            <img src="img/cu_reunion_1_L.jpg" alt="Jumping for joy in Goa's golden sunset glow!">
-        </a>
-        <figcaption></figcaption>
-    </figure>
-</div>
+    <section>
+        <h2>The page is under contruction</h2>
 
-<!----------------------------------------------------------2016 IMSc  -->
-    <hr>
-    <h3>IMSc 2016</h3>
-    <hr>
-    <div class="gallery">
-    <figure>
-        <a href="img/imsc_3_L.jpg" target="_blank">
-            <img src="img/imsc_3_L.jpg" alt="Jumping for joy in Goa's golden sunset glow!">
-        </a>
-        <figcaption> </figcaption>
-    </figure>
-    <figure>
-        <a href="img/imsc_2_L.jpg" target="_blank">
-            <img src="img/imsc_2_L.jpg" alt="Jumping for joy in Goa's golden sunset glow!">
-        </a>
-        <figcaption> </figcaption>
-    </figure>
-    <figure>
-        <a href="img/imsc_1_L.jpg" target="_blank">
-            <img src="img/imsc_1_L.jpg" alt="Jumping for joy in Goa's golden sunset glow!">
-        </a>
-        <figcaption> </figcaption>
-    </figure>
-</div>
-    
-  </body>
+        <div class="gallery-grid">
+            <img src="images/photo1.jpg" alt="Conference Photo">
+            <img src="images/photo2.jpg" alt="Workshop Photo">
+            <img src="images/photo3.jpg" alt="Seminar Photo">
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 Laltu Sardar | All Rights Reserved</p>
+</footer>
+
+<script src="./../src/script.js"></script>
+</body>
 </html>
+
