@@ -1,0 +1,541 @@
+/* ==============================
+   Reset
+============================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ==============================
+   Color System
+============================== */
+:root {
+    --primary: #072f4f;
+    --accent: #8a6a3a;
+    --text-main: #000000;
+    --text-soft: #374151;
+    --divider: #d1d5db;
+
+    --font-body: 'Crimson Pro', serif;
+    --font-heading: 'Inter', sans-serif;
+}
+
+
+/* ==============================
+   Base Typography
+============================== */
+body{
+    font-family: var(--font-body);
+    line-height: 1.75;
+    color: var(--text-main);
+    background-color: #ffffff;
+}
+
+h1, h2, h3, nav {
+    font-family: var(--font-heading);
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* ==============================
+   Header
+============================== */
+header {
+    background: var(--primary);
+    color: white;
+    padding: 1rem 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 22px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* ==============================
+   Mobile Menu
+============================== */
+.menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background: var(--primary);
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 220px;
+        padding: 1rem;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+/* ==============================
+   Main Content
+============================== */
+main {
+    padding: 2.5rem 0;
+    min-height: 70vh;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+h2 {
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+/* Section divider */
+.section-divider {
+    margin: 40px 0;
+    border: none;
+    border-top: 1px solid var(--divider);
+}
+
+/* ==============================
+   Footer
+============================== */
+footer {
+    background: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* ==============================
+   Gallery
+============================== */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* ==============================
+   Teaching Section
+============================== */
+
+.teaching-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.quote {
+    font-style: italic;
+    color: var(--text-soft);
+    margin-top: 10px;
+}
+
+.quote-author {
+    text-align: right;
+    font-size: 0.9rem;
+    margin-top: 5px;
+    color: var(--accent);
+}
+
+/* Institution Heading */
+.institution h2 {
+    color: var(--primary);
+    border-left: 4px solid var(--accent);
+    padding-left: 12px;
+    margin-bottom: 20px;
+}
+
+/* Academic List */
+.academic-list {
+    padding-left: 22px;
+    line-height: 1.8;
+}
+
+.academic-list li {
+    margin-bottom: 28px;
+}
+
+/* Course row layout */
+.course-row {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+/* Year styling */
+.course-year {
+    color: var(--text-soft);
+    font-weight: 500;
+}
+
+/* Meta information */
+.course-meta {
+    font-size: 0.95rem;
+    color: var(--text-soft);
+    margin-top: 4px;
+}
+
+/* Links */
+.academic-list a {
+    text-decoration: none;
+    color: var(--primary);
+}
+
+.research-quote {
+    margin: 20px 0 30px 0;
+}
+
+.profile-icons {
+    margin-top: 15px;
+}
+
+.profile-icons a {
+    display: inline-block;
+    margin: 12px;
+}
+
+.profile-icons img {
+    max-width: 42px;
+    display: block;
+}
+
+
+.profile-header {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+
+
+/* ===============================
+   Professional Homepage Layout
+================================= */
+
+.profile-hero {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    gap: 50px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-photo img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.profile-info h1 {
+    margin-bottom: 8px;
+}
+
+.profile-role {
+    font-weight: 600;
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+
+.profile-summary {
+    max-width: 650px;
+}
+
+/* Education layout */
+.info-section {
+    margin-bottom: 10px;
+}
+
+.info-block {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    margin-bottom: 15px;
+}
+
+/* Links */
+.info-block a {
+    text-decoration: none;
+    color: var(--primary);
+}
+
+.info-left {
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.info-right {
+    color: var(--text-main);
+}
+
+/* Contact layout */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 8px 20px;
+}
+
+/* Mobile refinement */
+@media (max-width: 768px) {
+    .profile-hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .info-block {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ===============================
+   Homepage Layout
+================================= */
+
+
+
+.home-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: start;
+}
+
+.home-left h2,
+.home-right h2 {
+    margin-bottom: 15px;
+}
+
+/* Image slider */
+.image-slider {
+    position: relative;
+    width: 100%;
+    height: 320px;
+    overflow: hidden;
+    border-radius: 6px;
+}
+
+.image-slider img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.image-slider img.active {
+    opacity: 1;
+}
+
+/* ===============================
+   Recent Photos Grid (2 per row)
+================================= */
+
+.recent-photos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 45px;
+}
+
+.recent-photos img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .home-section {
+        grid-template-columns: 1fr;
+    }
+
+    .image-slider {
+        height: 220px;
+    }
+}
+
+/* ===============================
+ Smaller image slider
+================================= */
+
+
+
+.image-slider {
+    position: relative;
+    width: 60%;
+    height: 200px;
+    margin: 0 auto;   /* centers horizontally */
+    overflow: hidden;
+    border-radius: 6px;
+}
+
+
+
+.image-slider img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+}
+
+.image-slider img.active {
+    opacity: 1;
+}
+
+/* Navigation buttons */
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 3px;
+}
+
+.slider-btn.prev {
+    left: 8px;
+}
+
+.slider-btn.next {
+    right: 8px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .image-slider {
+        width: 100%;
+        height: 180px;
+        margin: 0 auto;
+    }
+}
+
+
+
+/* ===============================
+marquee
+================================= */
+
+.marquee-vertical {
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.news-list {
+    margin: 0;
+    padding-left: 20px;   /* needed so numbers have space */
+    list-style-type: decimal;   /* show numbers */
+    animation: scrollUp 15s linear infinite;
+}
+
+.news-list li {
+    margin-bottom: 32px;   /* increase space between items */
+}
+
+@keyframes scrollUp {
+    0% {
+        transform: translateY(-10%);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+
+/* =====================================
+   Top Section Layout (60% / 40%)
+===================================== */
+
+.home-top {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 50px;
+    align-items: start;
+}
+
+.home-top-left h2,
+.home-top-right h2 {
+    margin-bottom: 15px;
+}
+
+
+/* =====================================
+   Bottom Section Layout (40% / 60%)
+===================================== */
+
+.home-bottom {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 50px;
+    align-items: start;
+}
+
+.home-bottom-left h2,
+.home-bottom-right h2 {
+    margin-bottom: 15px;
+}
+
+
+/* =====================================
+   Mobile Responsive
+===================================== */
+
+@media (max-width: 768px) {
+
+    .home-top,
+    .home-bottom {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+
