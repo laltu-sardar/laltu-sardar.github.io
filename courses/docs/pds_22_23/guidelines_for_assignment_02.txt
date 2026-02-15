@@ -1,0 +1,13 @@
+Guidelines for assignment 02:
+1. In each assignment problem, take input from files only
+2. Input file name for assignment problem with ID "AP0101" will be "input_AP0101.txt"
+3. First line of the problem will be "no of tests", say k
+4. Then there will be a k number of test cases.
+5. Output the results in the terminal. We do not need test results checking in the input file.
+6. For an array, it is mandatory to allocate memory dynamically using malloc/calloc. Free the memory after using.
+7. Write the targeted problem in function:
+8. Declaration of functions at the beginning is mandatory
+9. Indentation should be proper.  
+10. main function should only take input from files
+11. We have uploaded a sample program and a sample input file for AP0101.   
+  
