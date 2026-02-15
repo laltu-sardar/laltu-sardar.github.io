@@ -1,9 +1,0 @@
-Submission instructions: The followings instructions should be followed assignment #05 onward. Otherwise marks will be deducted. (upto 5 for each category)
-		1. Always use “myfopen” to open a file that exit the program, in case of fail to open a given file        
-		2. Write use your own “myfscanf” that exits the program after throwing the error.
-		3. Similarly, use your own “mymalloc”, “mymalloc”, etc., functions wherever applicable
-		4. Always check validity of inputs in every function. Throw easily understandable error message.
-		5. use "-Wall" during compilation to see all warnings: remove all warnings before submitting. We will deduct marks if we find unnecessary warnings. 
-		6. Declaration of functions is mandatory. 
-		7. Follow proper output format, if applicable
-	

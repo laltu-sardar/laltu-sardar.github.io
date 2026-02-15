@@ -1,2 +1,0 @@
-1. Write your own function for arbitrary 2D memory allocation. As follows.
-void **my_malloc_2D (int n, int m, int unit)
