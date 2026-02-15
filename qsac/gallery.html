@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Q-SAC Research Group</title>
+
+    <style>
+        :root {
+            --primary: #072f4f;
+            --secondary: #0a3d63;
+            --accent: #072f4f;
+            --accent-bright: #072f4f;
+            --bg-light: #fafaf8;
+            --text-dark: #000000;
+            --text-light: #374151;
+            --border: #d1d5db;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Crimson Pro', serif;
+            color: var(--text-dark);
+            line-height: 1.6;
+            background: var(--bg-light);
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
+            z-index: 1000;
+            animation: slideDown 0.5s ease-out;
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1.2rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Inter', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+            letter-spacing: -0.5px;
+            position: relative;
+        }
+
+        .logo::before {
+            content: '⟨';
+            color: var(--accent-bright);
+            margin-right: 0.3rem;
+            font-size: 1.8rem;
+        }
+
+        .logo::after {
+            content: '⟩';
+            color: var(--accent-bright);
+            margin-left: 0.3rem;
+            font-size: 1.8rem;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text-dark);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--accent-bright);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-bright);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-links a.active {
+            color: var(--accent-bright);
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 6rem 2rem 4rem;
+        }
+
+        h1 {
+            font-family: 'Inter', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--primary);
+            position: relative;
+            display: inline-block;
+        }
+
+        h1::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: var(--accent-bright);
+        }
+
+        .page-intro {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            margin-bottom: 3rem;
+            max-width: 800px;
+        }
+
+        /* Gallery Section */
+        .gallery-section {
+            margin-bottom: 5rem;
+            animation: fadeIn 0.6s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .section-header {
+            margin-bottom: 2rem;
+        }
+
+        .section-title {
+            font-family: 'Inter', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: var(--secondary);
+            margin-bottom: 0.5rem;
+        }
+
+        .section-date {
+            font-size: 1rem;
+            color: var(--accent);
+            font-weight: 500;
+        }
+
+        .section-description {
+            font-size: 1rem;
+            color: var(--text-light);
+            margin-top: 0.5rem;
+            line-height: 1.7;
+        }
+
+        /* Image Grid - 2 images per row */
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+            background: white;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .gallery-image {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            display: block;
+            background: linear-gradient(135deg, var(--accent) 0%, var(--accent-bright) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+
+        .image-caption {
+            padding: 1rem;
+            background: white;
+        }
+
+        .caption-title {
+            font-weight: 600;
+            color: var(--primary);
+            font-size: 1rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .caption-text {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            line-height: 1.5;
+        }
+
+        /* Placeholder styling for images */
+        .image-placeholder {
+            width: 100%;
+            height: 350px;
+            background: linear-gradient(135deg, var(--accent) 0%, var(--accent-bright) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+            font-weight: 500;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--primary);
+            color: white;
+            padding: 3rem 2rem 2rem;
+            margin-top: 6rem;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+        }
+
+        .footer-section h4 {
+            font-family: 'Inter', sans-serif;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .footer-section p,
+        .footer-section a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            line-height: 1.8;
+            font-size: 0.95rem;
+        }
+
+        .footer-section a:hover {
+            color: var(--accent-bright);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                gap: 1.5rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .image-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery-image,
+            .image-placeholder {
+                height: 280px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="qsac.html" class="logo">Q-SAC</a>
+            <ul class="nav-links">
+                <li><a href="qsac.html">Home</a></li>
+                <li><a href="qsac.html#members" onclick="showPage('members')">Members</a></li>
+                <li><a href="qsac.html#publications" onclick="showPage('publications')">Publications</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="qsac.html#contact" onclick="showPage('contact')">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1>Gallery</h1>
+        <p class="page-intro">Explore moments from our research group's journey - conferences, workshops, team events, and collaborative milestones that showcase our community and achievements.</p>
+
+        <!-- Event Section 1: Annual Workshop 2025 -->
+        <div class="gallery-section">
+            <div class="section-header">
+                <h2 class="section-title">Annual Post-Quantum Cryptography Workshop 2025</h2>
+                <div class="section-date">September 15-17, 2025</div>
+                <p class="section-description">Our flagship annual workshop brought together over 200 researchers from academia and industry to discuss the latest advances in post-quantum cryptography. The three-day event featured keynote speakers, technical sessions, and collaborative discussions on standardization efforts.</p>
+            </div>
+            <div class="image-grid">
+                <div class="gallery-item">
+                    <div class="image-placeholder">Keynote Presentation</div>
+                    <div class="image-caption">
+                        <div class="caption-title">Opening Keynote</div>
+                        <div class="caption-text">Dr. Sarah Mitchell delivers the opening keynote on "The Future of Lattice-Based Cryptography"</div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="image-placeholder">Panel Discussion</div>
+                    <div class="image-caption">
+                        <div class="caption-title">Expert Panel</div>
+                        <div class="caption-text">Industry and academic leaders discuss standardization challenges</div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="image-placeholder">Poster Session</div>
+                    <div class="image-caption">
+                        <div class="caption-title">Research Posters</div>
+                        <div class="caption-text">PhD students present their latest research findings</div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="image-placeholder">Networking Reception</div>
+                    <div class="image-caption">
+                        <div class="caption-title">Evening Reception</div>
+                        <div class="caption-text">Attendees network and exchange ideas during the welcome reception</div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="image-placeholder">Technical Workshop</div>
+                    <div class="image-caption">
+                        <div class="caption-title">Hands-on Workshop</div>
+                        <div class="caption-text">Participants learn practical implementation techniques</div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="image-placeholder">Group Photo</div>
+                    <div class="image-caption">
+                        <div class="caption-title">Conference Participants</div>
+                        <div class="caption-text">All attendees gather for the official conference photo</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Event Section 2: Lab Retreat 2025 -->
+        <div class="gallery-section">
+            <div class="section-header">
+                <h2 class="section-title">Q-SAC Research Group Retreat</h2>
+                <div class="section-date">August 5-7, 2025</div>
+                <p class="section-description">Our annual team retreat provided an opportunity for group members to bond, share research updates, and plan future collaborations in a relaxed mountain setting.</p>
+            </div>
+            <div class="image-grid">
+                <div class="gallery-item">
+                    <div class="image-placeholder">Team Building Activity</div>
+                    <div class="image-caption">
+                        <div class="caption-title">Team Building</div>
+                        <div class="caption-text">Group members participate in collaborative problem-solving exercises</div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="image-placeholder">Research Presentations</div>
+                    <div class="image-caption">
+                        <div class="caption-title">Research Updates</div>
+                        <div class="caption-text">PhD students present their progress and receive feedback</div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="image-placeholder">Hiking Trail</div>
+                    <div class="image-caption">
+                        <div class="caption-title">Mountain Hike</div>
+                        <div class="caption-text">The team enjoys a scenic hike through local trails</div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="image-placeholder">Evening Dinner</div>
+                    <div class="image-caption">
+                        <div class="caption-title">Group Dinner</div>
+                        <div class="caption-text">Team members share meals and stories</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Event Section 3: CRYPTO 2025 -->
+        <div class="gallery-section">
+            <div class="section-header">
+                <h2 class="section-title">CRYPTO 2025 Conference</h2>
+                <div class="section-date">August 18-22, 2025</div>
+                <p class="section-description">Several group members attended CRYPTO 2025 in Santa Barbara, where our PhD student Sarah Chen received the Best Paper Award for her work on lattice-based signatures.</p>
+            </div>
+            <div class="image-grid">
+                <div class="gallery-item">
+                    <div class="image-placeholder">Award Ceremony</div>
+                    <div class="image-caption">
+                        <div class="caption-title">Best Paper Award</div>
+                        <div class="caption-text">Sarah Chen receives the Best Paper Award</div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="image-placeholder">Conference Presentation</div>
+                    <div class="image-caption">
+                        <div class="caption-title">Paper Presentation</div>
+                        <div class="caption-text">Sarah presents her research findings to the community</div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="image-placeholder">Team at CRYPTO</div>
+                    <div class="image-caption">
+                        <div class="caption-title">Q-SAC at CRYPTO</div>
+                        <div class="caption-text">Group members at the conference venue</div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="image-placeholder">Rump Session</div>
+                    <div class="image-caption">
+                        <div class="caption-title">Rump Session</div>
+                        <div class="caption-text">Attendees enjoy the traditional CRYPTO rump session</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Event Section 4: New Lab Members Welcome -->
+        <div class="gallery-section">
+            <div class="section-header">
+                <h2 class="section-title">Welcome New Members</h2>
+                <div class="section-date">September 2025</div>
+                <p class="section-description">We welcomed three new PhD students and four master's students to the Q-SAC group this fall.</p>
+            </div>
+            <div class="image-grid">
+                <div class="gallery-item">
+                    <div class="image-placeholder">Welcome Lunch</div>
+                    <div class="image-caption">
+                        <div class="caption-title">Welcome Celebration</div>
+                        <div class="caption-text">New and existing members gather for a welcome lunch</div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="image-placeholder">Lab Tour</div>
+                    <div class="image-caption">
+                        <div class="caption-title">Lab Orientation</div>
+                        <div class="caption-text">New students receive a tour of our research facilities</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Event Section 5: Industry Collaboration Visit -->
+        <div class="gallery-section">
+            <div class="section-header">
+                <h2 class="section-title">IBM Research Collaboration</h2>
+                <div class="section-date">October 2025</div>
+                <p class="section-description">Members of our group visited IBM Research to discuss ongoing collaborative projects on hardware acceleration for post-quantum cryptography.</p>
+            </div>
+            <div class="image-grid">
+                <div class="gallery-item">
+                    <div class="image-placeholder">IBM Visit</div>
+                    <div class="image-caption">
+                        <div class="caption-title">At IBM Research</div>
+                        <div class="caption-text">Q-SAC team visits IBM's quantum computing facilities</div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="image-placeholder">Technical Discussion</div>
+                    <div class="image-caption">
+                        <div class="caption-title">Collaboration Meeting</div>
+                        <div class="caption-text">Researchers discuss hardware implementation strategies</div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="image-placeholder">Lab Demo</div>
+                    <div class="image-caption">
+                        <div class="caption-title">Technology Demonstration</div>
+                        <div class="caption-text">IBM researchers demonstrate their latest quantum systems</div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="image-placeholder">Team Dinner</div>
+                    <div class="image-caption">
+                        <div class="caption-title">Collaborative Dinner</div>
+                        <div class="caption-text">Both teams celebrate successful discussions</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Event Section 6: PhD Defense -->
+        <div class="gallery-section">
+            <div class="section-header">
+                <h2 class="section-title">Dr. Rachel Wong's PhD Defense</h2>
+                <div class="section-date">May 2024</div>
+                <p class="section-description">Rachel Wong successfully defended her dissertation on "Efficient Implementations of Isogeny-Based Cryptography" and joined CryptoLabs as a senior researcher.</p>
+            </div>
+            <div class="image-grid">
+                <div class="gallery-item">
+                    <div class="image-placeholder">Defense Presentation</div>
+                    <div class="image-caption">
+                        <div class="caption-title">Thesis Defense</div>
+                        <div class="caption-text">Rachel presents her dissertation research</div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="image-placeholder">Celebration</div>
+                    <div class="image-caption">
+                        <div class="caption-title">Successful Defense</div>
+                        <div class="caption-text">The group celebrates Rachel's achievement</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Q-SAC Research Group</h4>
+                <p>Advancing the frontiers of quantum-safe cryptography through cutting-edge research and education.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <p><a href="qsac.html">Home</a></p>
+                <p><a href="qsac.html#members">Members</a></p>
+                <p><a href="qsac.html#publications">Publications</a></p>
+                <p><a href="gallery.html">Gallery</a></p>
+                <p><a href="qsac.html#contact">Contact</a></p>
+            </div>
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <p>Email: qsac@university.edu</p>
+                <p>Phone: +1 (555) 123-4567</p>
+                <p>Twitter: @QSAC_Research</p>
+                <p>GitHub: github.com/qsac-research</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Q-SAC Research Group. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Helper function for navigation from main page
+        function showPage(pageId) {
+            window.location.href = 'qsac.html#' + pageId;
+        }
+    </script>
+</body>
+</html>
