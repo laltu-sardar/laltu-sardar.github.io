@@ -1,6 +1,8 @@
 #include <sys/types.h>
 #include <stdio.h>
 #include <unistd.h>
+#include <sys/wait.h>	// wait()
+
 int value = 5;
 int main()
 {
