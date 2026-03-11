@@ -2,5 +2,8 @@
 
 2. Write a C program to create 6 child processes. In this program, the `i`th process receives the value `i` from the parent. Then the `i`th child computes `n = 3 * i` and executes the `print_names` executable with input `n`.
 
-3. The final output should be the names at positions 3, 6, 9, 12, and 15 in the file `dsc_315_students.txt`.
+The final output should be the names at positions 3, 6, 9, 12, and 15 in the file `dsc_315_students.txt`.
 
+3. Write a C program in which the child process becomes a zombie, and it should be easily visible.
+
+4. Write a C program in which the child process becomes an orphan, and it should be easily visible.
