@@ -1,0 +1,6 @@
+1. Modify the code `print_names.c` so that it takes an integer `n` from the command line and prints only the name on the `n`th line.
+
+2. Write a C program to create 6 child processes. In this program, the `i`th process receives the value `i` from the parent. Then the `i`th child computes `n = 3 * i` and executes the `print_names` executable with input `n`.
+
+3. The final output should be the names at positions 3, 6, 9, 12, and 15 in the file `dsc_315_students.txt`.
+
