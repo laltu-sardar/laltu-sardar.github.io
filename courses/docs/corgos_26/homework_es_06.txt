@@ -1,0 +1,10 @@
+Consider two matrices stored in two files:
+`input_file_A.txt` and `input_file_B.txt`.
+
+The matrices have dimensions 80 × 100 and 100 × 90, respectively.
+
+Write a C program to multiply these two matrices and compute the resulting matrix ( C = AB ), which will have dimensions 80 × 90.
+
+While performing the computation, create 5 threads and distribute the workload among them. Finally, store the resulting matrix in another file named `output_C.txt`.
+
+Insert the sleep(1) function at appropriate points in the program so that it demonstrates that the actual execution time is reduced by apprx. 5 times.
