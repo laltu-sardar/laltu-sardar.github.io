@@ -59,42 +59,42 @@
     background-color: #C5C7DF; /* Darker teal color */
     color: black;
     }
-     #marquee {
-            position: absolute;
-            font-size: 15px;
-            font-family: Arial, sans-serif;
-            background: #c2d1d7;
-            color: white;
-            padding: 10px;
-            border-radius: 5px;
-            pointer-events: none; /* To avoid blocking other mouse events */
-        }
+    #marquee {
+    position: absolute;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    background: #c2d1d7;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    pointer-events: none; /* To avoid blocking other mouse events */
+    }
   </style>
   <!-- END HEAD -->
   <!-- BODY -->
   <body id="body" data-spy="scroll" data-target=".header" class="page-on-scroll">
-   <script>
-        document.addEventListener('mousemove', function(e) {
-            const marquee = document.getElementById('marquee');
-            const offsetX = 1; // Adjust this value to change horizontal distance from cursor
-            const offsetY = 1; // Adjust this value to change vertical distance from cursor
-            marquee.style.left = (e.pageX - offsetX) + 'px';
-            marquee.style.top = (e.pageY - offsetY) + 'px';
-        });
+    <script>
+      document.addEventListener('mousemove', function(e) {
+          const marquee = document.getElementById('marquee');
+          const offsetX = 1; // Adjust this value to change horizontal distance from cursor
+          const offsetY = 1; // Adjust this value to change vertical distance from cursor
+          marquee.style.left = (e.pageX - offsetX) + 'px';
+          marquee.style.top = (e.pageY - offsetY) + 'px';
+      });
     </script>
     <div class="parallax-mirror"  style="visibility: hidden; z-index: -100; position: fixed; top: 0px; left: 0px; overflow: hidden;"><img class="parallax-slider" src="./Laltu Sardar_files/undefined"></div>
     <!--========== HEADER ==========-->
     <header class="header navbar-fixed-top top-nav-collapse">
       <nav class ="myNav">
         <ul>
-                <li><a href="./../index.html">Home</a></li>
-                <li><a href="./../sections/education.html">Education</a></li>
-                <li><a href="./../sections/research.html">Research</a></li>
-                <li><a href="./../sections/teaching.html">Teaching</a></li>
-                <li><a href="./../sections/activities.html">Activities</a></li>
-                <li><a href="./../sections/awards.html">Awards</a></li>
-                <li><a href="./../sections/gallery.html">Gallery</a></li>
-            </ul>
+          <li><a href="./../index.html">Home</a></li>
+          <li><a href="./../sections/education.html">Education</a></li>
+          <li><a href="./../sections/research.html">Research</a></li>
+          <li><a href="./../sections/teaching.html">Teaching</a></li>
+          <li><a href="./../sections/activities.html">Activities</a></li>
+          <li><a href="./../sections/awards.html">Awards</a></li>
+          <li><a href="./../sections/gallery.html">Gallery</a></li>
+        </ul>
       </nav>
     </header>
     <!--========== END HEADER ==========-->
@@ -129,7 +129,7 @@
                   <thead>
                     <tr  >
                       <td scope="col">
-                      	<img style="height:70px;" src="./docs/iisertvmlogo.jpg" alt="iiser-tvm-logo">
+                        <img style="height:70px;" src="./docs/iisertvmlogo.jpg" alt="iiser-tvm-logo">
                       </td>
                       <td scope="col">The School of Data Science,
                         <br>Indian Institute of Science Education and Research Thiruvananthapuram,
@@ -146,32 +146,24 @@
                 <p  style  = "color: black; "><strong>Course Objective</strong> <br> This course aims to build a clear understanding of the fundamental principles that shape modern computer organization and operating systems. Students will explore how programs are structured, stored, and executed through detailed study of memory organization and related architectural concepts. The course also guides learners through the essential ideas involved in designing an operating system, enabling them to connect theoretical foundations with practical system level behavior.</p>
                 <hr style="border: 1px solid #001f4d">
                 <p  style  = "color: black; "><strong>Prerequisites:</strong> NA 
- </p>
- 
- 
+                </p>
                 <hr style="border: 1px solid #001f4d">
                 <p  style  = "color: black; "><strong>Textbooks:</strong> 
-<ol>
-  <li><strong>Computer Organisation and Design</strong>, Patterson & Hennessy (ISBN: 978-0-12-374750-1)</li>
-  <li><strong>Operating System Concepts</strong> (Global Ed.), Silberschatz et al. (ISBN: 9781119320913)</li>	
-</ol>
-<strong>Slides for OS:</strong> 
-<ul>
-<li><strong>OS Concepts Lecture Slides</strong> (10th Ed.), Silberschatz, Galvin, & Gagne: <a href="https://os-book.com/OS10/slide-dir/index.html">os-book.com</a></li>
-</ul>
-
- </p>
- 
- 
+                <ol>
+                  <li><strong>Computer Organisation and Design</strong>, Patterson & Hennessy (ISBN: 978-0-12-374750-1)</li>
+                  <li><strong>Operating System Concepts</strong> (Global Ed.), Silberschatz et al. (ISBN: 9781119320913)</li>
+                </ol>
+                <strong>Slides for OS:</strong> 
+                <ul>
+                  <li><strong>OS Concepts Lecture Slides</strong> (10th Ed.), Silberschatz, Galvin, & Gagne: <a href="https://os-book.com/OS10/slide-dir/index.html">os-book.com</a></li>
+                </ul>
+                </p>
                 <hr style="border: 1px solid #001f4d">
-                
-               
                 <!--div id="marquee">
                   <a style="color:#800000;" href = "#Assignments" target="_blank" > <strong>&#10022 Assignment #04 has been uploaded &#10022</strong></a></div-->
-                  
-                
                 <marquee direction = "left" >
-                  <a style="color:#800000;" href = "https://docs.google.com/spreadsheets/d/121uPqZf1zlEPwf6DsJj-wOCUfFGdS2ZE8DbsiEqVE2U" target="_blank" > <strong>&#10022 Click here to check assignment and midsem marks &#10022</strong></a></marquee>
+                  <a style="color:#800000;" href = "https://docs.google.com/spreadsheets/d/121uPqZf1zlEPwf6DsJj-wOCUfFGdS2ZE8DbsiEqVE2U" target="_blank" > <strong>&#10022 Click here to check assignment and midsem marks &#10022</strong></a>
+                </marquee>
                 <!--marquee direction = "right" >
                   <a style="color:#800000;" href = "docs/algo_23_24/endsem_sample_input_outputs.zip" target="_blank" > <strong>&#10022 sample input-outputs&#10022</strong></a></marquee-->
               </div>
@@ -219,9 +211,9 @@
                   </tr>
                   <tr>
                     <td scope="row"><b> &#10022 List of courses</b>:
-                    &#10022  <a style="color:#800000;" href = "docs/corgos_26/List_of_courses_offered_Vashant_2026_school-wise.txt" target="_blank" ><b>School-wise offered in Vasanth 2026 (Not Finalized)</b></a> 
-                    &#10022  <a style="color:#800000;" href = "docs/corgos_26/List_of_courses_offered_Vashant_2026.txt" target="_blank" ><b>Year-wise offered in Vasanth 2026 (Not Finalized)</b></a>                    
-                    &#10022  <a style="color:#800000;" href = "docs/corgos_26/iisertvm_all_courses.txt" target="_blank" ><b>All approved in IISER Tvm</b></a>	
+                      &#10022  <a style="color:#800000;" href = "docs/corgos_26/List_of_courses_offered_Vashant_2026_school-wise.txt" target="_blank" ><b>School-wise offered in Vasanth 2026 (Not Finalized)</b></a> 
+                      &#10022  <a style="color:#800000;" href = "docs/corgos_26/List_of_courses_offered_Vashant_2026.txt" target="_blank" ><b>Year-wise offered in Vasanth 2026 (Not Finalized)</b></a>                    
+                      &#10022  <a style="color:#800000;" href = "docs/corgos_26/iisertvm_all_courses.txt" target="_blank" ><b>All approved in IISER Tvm</b></a>	
                     </td>
                   </tr>
                   <tr>
@@ -229,7 +221,6 @@
                   </tr>
                   <tr>
                     <td scope="row">&#10022 Pass Marks: According to <a style="color:#800000;" href = "https://academics.iisertvm.ac.in/programmes" target="_blank" >IISER TVM policy</a> </td>
-                    
                   </tr>
                 </tbody>
               </table>
@@ -275,10 +266,10 @@
                       <a style="color:#800000;" href = "https://laltu-sardar.github.io/courses_pds_2023.html" target="_blank" >2022-23: Sem-II</a>;  &nbsp
                       <a style="color:#800000;" href = "https://laltu-sardar.github.io/courses_pds_2023_24.html" target="_blank" >2023-24: Sem-I</a>
                     </td>
-                  </tr-->
+                    </tr-->
                   <tr>
                     <td scope="row">&#10022 Attendance: <a style="color:#800000;" href = "https://docs.google.com/spreadsheets/d/1jA8ZrI6AJQJdaNm8vXYBxHERqSPWblKWLpsrzXxA3Zo/edit?usp=sharing" target="_blank" > <strong>See your attendances here.</strong> </a><br>
-                    &#10022 Course Information Handout: <a style="color:#800000;" href = "docs/corgos_26/CIH.pdf" target="_blank" >See here</a> 
+                      &#10022 Course Information Handout: <a style="color:#800000;" href = "docs/corgos_26/CIH.pdf" target="_blank" >See here</a> 
                     </td>
                   </tr>
                   <!--tr>
@@ -289,7 +280,7 @@
                       <br><sup>*</sup><strong>Solidity</strong> : For blockchain researchers
                       <br><br><sup>*</sup> Depends on time and interest of students
                     </td>
-                  </tr-->
+                    </tr-->
                   <!--tr>
                     <td scope="row"> &#10022 Preferred softwares--<br>
                       --Text editor: <a style="color:#800000;" href = "https://github.com/atom/atom/releases/tag/v1.60.0" target="_blank" >Atom </a>; Notepad++ <br>
@@ -320,14 +311,13 @@
                   </tr>
                 </tbody>
               </table>
-             <h5 style  = "color:  #800000;"> Updates </h5>
-              	<ol reversed>
-              	<li>Sildes for the 2nd class is added.</li>
-		  <li>Viewer permission for attendance sheet is granted.</li>
-		  <li>Sildes for the 1st class is added.</li>
-		  <li>Webpage QR Code is Updated.</li>
-		</ol>
-			      
+              <h5 style  = "color:  #800000;"> Updates </h5>
+              <ol reversed>
+                <li>Sildes for the 2nd class is added.</li>
+                <li>Viewer permission for attendance sheet is granted.</li>
+                <li>Sildes for the 1st class is added.</li>
+                <li>Webpage QR Code is Updated.</li>
+              </ol>
             </div>
             <!--contentContainer-->
           </div>
@@ -347,201 +337,173 @@
                   <tr  style  = "color: white; background-color: #0a465e;">
                     <th scope="col">#</th>
                     <th scope="col">Date</th>
-                    <th scope="col">Topics on Computer Organization</th>	
+                    <th scope="col">Topics on Computer Organization</th>
                     <th scope="col">Remarks</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-  <th scope="row">1</th>
-  <td>2026-Jan-05</td>
-  <td><strong>Introduction: </strong><br> What is computer organization, Basic principles of abstraction,<br>Hardware components overview</td>
-  <td>, <a style="color:#800000;" href="docs/corgos_26/slides_ms_01.pdf" target="_blank">slides_ms_01</a></td>
-</tr>
-
-<tr>
-  <th scope="row">2</th>
-  <td>2026-Jan-07</td>
-  <td><strong>Performance Measurement: </strong><br>Latency, throughput, Benchmarks, Evaluating,<br> comparing and summarizing performance</td>
-  <td><a style="color:#800000;" href="docs/corgos_26/slides_ms_02.pdf" target="_blank">slides_ms_02</a></td>
-</tr>
-
-
-<tr>
-  <th scope="row">3</th>
-  <td>2026-Jan-09</td>
-  <td><strong>Binary Number Representations</td>
-  <td><a style="color:#800000;" href="docs/corgos_26/slides_ms_03.pdf" target="_blank">slides_ms_03</a><br><a style="color:#800000;" href="docs/corgos_26/boardwork_ms_03.pdf" target="_blank">boardwork</a></td>
-</tr>
-
-
-<tr>
-  <th scope="row">4</th>
-  <td>2026-Jan-12</td>
-  <td><strong>Binary Number Addition and their circuit logic</td>
-  <td><a style="color:#800000;" href="docs/corgos_26/slides_ms_04.pdf" target="_blank">slides_ms_04</a><br><a style="color:#800000;" href="docs/corgos_26/boardwork_ms_04.pdf" target="_blank">boardwork</a></td>
-</tr>
-
-
-<tr>
-  <th scope="row">5</th>
-  <td>2026-Jan-14</td>
-  <td><strong>Circuit logic for addition and subtraction for integers<br>Overflow detection <br> Multiplication Algorithm for unsigned int </strong></td>
-  <td><a style="color:#800000;" href="docs/corgos_26/slides_ms_05.pdf" target="_blank">slides_TBA</a><br><a style="color:#800000;" href="docs/corgos_26/boardwork_ms_05.pdf" target="_blank">boardwork</a></td>
-</tr>
-
-
-<tr>
-  <th scope="row">6</th>
-  <td>2026-Jan-16</td>
-  <td><strong>Hex Representation: <br> Logical/Bitwise operators in C<br>Introduction to Floating Point Representation</strong></td>
-   <td><a style="color:#800000;" href="docs/corgos_26/slides_ms_06.pdf" target="_blank">slides_TBA</a><br><a style="color:#800000;" href="docs/corgos_26/boardwork_ms_06.pdf" target="_blank">boardwork</a></td>
-</tr>
-
-
-<tr>
-  <th scope="row">7</th>
-  <td>2026-Jan-19</td>
-  <td><strong>Floating Point Representation</strong></td>
-   <td><a style="color:#800000;" href="docs/corgos_26/slides_ms_07.pdf" target="_blank">slides_TBA</a>
-   <br><a style="color:#800000;" href="docs/corgos_26/boardwork_ms_07.pdf" target="_blank">boardwork</a>
-   <br><a style="color:#800000;" href="docs/corgos_26/homeworks_ms_07.txt" target="_blank">homework</a></td>
-</tr>
-
-
-<tr>
-  <th scope="row">8</th>
-  <td>2026-Jan-21</td>
-  <td><strong>Operations over floating Points<br>Inroduction to ASCII and UNICODE</strong></td>
-   <td><a style="color:#800000;" href="docs/corgos_26/slides_ms_08.pdf" target="_blank">Incomplete slides on floating point</a>
-   <br><a style="color:#800000;" href="docs/corgos_26/boardwork_ms_08.pdf" target="_blank">boardwork</a>
-   <br><a style="color:#800000;" href="docs/corgos_26/homeworks_ms_08.txt" target="_blank">homework</a></td>
-</tr>
-
-<tr>
-  <th scope="row">9</th>
-  <td>2026-Jan-23</td>
-  <td><strong>Inroduction to MIPS<br>Instruction set & Assembly Language</strong></td>
-   <td><a style="color:#800000;" href="docs/corgos_26/slides_ms_09.pdf" target="_blank">slides</a>
-   <br><a style="color:#800000;" href="docs/corgos_26/boardwork_ms_09.pdf" target="_blank">boardwork</a>
-   <br><a style="color:#800000;" href="docs/corgos_26/homeworks_ms_09.txt" target="_blank">homework</a></td>
-</tr>
-
-
-<tr>
-  <th scope="row">10</th>
-  <td>2026-Jan-28</td>
-  <td><strong>MIPS Instruction Set<br>Basic codes in Assembly Language</strong></td>
-   <td><a style="color:#800000;" href="docs/corgos_26/slides_ms_10.pdf" target="_blank">slides</a>
-   <br><a style="color:#800000;" href="docs/corgos_26/boardwork_ms_10.pdf" target="_blank">boardwork</a>
-   <br><a style="color:#800000;" href="docs/corgos_26/homeworks_ms_10.txt" target="_blank">homework</a></td>
-</tr>
-<tr>
-  <th scope="row">11</th>
-  <td>2026-Feb-02</td>
-  <td><strong>Addressig Modes<br>C to MIPS Assembly</strong>: Loop and function</td>
-   <td><a style="color:#800000;" href="docs/corgos_26/slides_ms_11.pdf" target="_blank">slides</a>
-   <br><a style="color:#800000;" href="docs/corgos_26/boardwork_ms_11.pdf" target="_blank">boardwork</a>
-   <br><a style="color:#800000;" href="docs/corgos_26/homeworks_ms_11.txt" target="_blank">homework</a></td>
-</tr>
-
-<tr>
-  <th scope="row">12</th>
-  <td>2026-Feb-04</td>
-  <td><strong>Memory Hierarchy</strong><br>Introduction to <strong>Cache</strong></td>
-   <td><a style="color:#800000;" href="docs/corgos_26/slides_ms_12.pdf" target="_blank">slides</a>
-   <br><a style="color:#800000;" href="docs/corgos_26/boardwork_ms_12.pdf" target="_blank">boardwork</a>
-   <br><a style="color:#800000;" href="docs/corgos_26/homeworks_ms_12.txt" target="_blank">homework</a></td>
-</tr>
-
-<tr>
-  <th scope="row">13</th>
-  <td>2026-Feb-06</td>
-  <td><strong>Measuring Cache Performance</strong></td>
-   <td><a style="color:#800000;" href="docs/corgos_26/slides_ms_13.pdf" target="_blank">slides</a>
-   <br><a style="color:#800000;" href="docs/corgos_26/boardwork_ms_13.pdf" target="_blank">boardwork</a>
-   <br><a style="color:#800000;" href="docs/corgos_26/homeworks_ms_13.txt" target="_blank">homework</a></td>
-</tr>
-
-
-<tr>
-  <th scope="row">14</th>
-  <td>2026-Feb-09</td>
-  <td><strong>Virtual Memory</strong><br> Page table; Page fault; Parallelism</td>
-  <td>
-    <a style="color:#800000;" href="docs/corgos_26/slides_ms_14.pdf" target="_blank">slides</a>
-    <br><a style="color:#800000;" href="docs/corgos_26/boardwork_ms_14.pdf" target="_blank">boardwork</a>
-    <br><a style="color:#800000;" href="docs/corgos_26/homeworks_ms_14.txt" target="_blank">homework</a>
-    <br><a style="color:#800000;" href="https://www.youtube.com/watch?v=fGP6VHxqkIM" target="_blank">Ref. video 1</a>
-    <br><a style="color:#800000;" href="https://www.youtube.com/watch?v=A9WLYbE0p-I" target="_blank">Ref. video 2</a>
-  </td>
-</tr>
-
-
-<tr>
-  <th scope="row">15</th>
-  <td>2026-Feb-11</td>
-  <td><strong>Input/output</strong></td>
-  <td>
-    <a style="color:#800000;" href="docs/corgos_26/slides_ms_15.pdf" target="_blank">slides</a>
-  </td>
-</tr>
-
-
-<tr>
-  <th scope="row">16</th>
-  <td>2026-Feb-13</td>
-  <td><strong>Building Datapath</strong></td>
-  <td>
-    <a style="color:#800000;" href="docs/corgos_26/slides_ms_16.pdf" target="_blank">slides</a>
-  </td>
-</tr>
-
-<tr>
-  <th scope="row">17</th>
-  <td>2026-Feb-16</td>
-  <td><strong>Pipelining</strong></td>
-  <td>
-    <a style="color:#800000;" href="docs/corgos_26/slides_ms_16.pdf" target="_blank">slides</a>
-    <br><a style="color:#800000;" href="docs/corgos_26/boardwork_ms_17.pdf" target="_blank">boardwork</a>
-  </td>
-</tr>
-
-
-<tr>
-  <th scope="row">18</th>
-  <td>2026-Feb-18</td>
-  <td>Practice and Clarification<strong></strong></td>
-  <td>
-    <a style="color:#800000;" href="docs/corgos_26/slides_ms_18.pdf" target="_blank">slides</a>
-    <br><a style="color:#800000;" href="docs/corgos_26/boardwork_ms_18.pdf" target="_blank">boardwork</a>
-    <br><a style="color:#800000;" href="docs/corgos_26/homeworks_ms_18.txt" target="_blank">homework</a>
-  </td>
-</tr>
-
-<tr>
-  <th scope="row">19</th>
-  <td>2026-Feb-20</td>
-  <td>Practice and Clarification<strong></strong></td>
-  <td>
-    <a style="color:#800000;" href="docs/corgos_26/slides_ms_19.pdf" target="_blank">slides</a>
-    <br><a style="color:#800000;" href="docs/corgos_26/boardwork_ms_19.pdf" target="_blank">boardwork</a>
-    <br><a style="color:#800000;" href="docs/corgos_26/homeworks_ms_19.txt" target="_blank">homework</a>
-  </td>
-</tr>
-
-<!--------------------------------------------------------------------------------------------------------------------------------
------------------------------------------------------------------------------------------------------------------------------------
--------------------------------------------------------------------------------------------------------------------------------->
-
-        
-<tr>
-    <th scope="row">*</th>
-    <td>2026-Feb-21</td>
-    <td><strong>Mid-Semestral Written Exam</strong></td>
-    <td><a style="color:#800000;" href="docs/corgos_26/midsem_questions.pdf" target="_blank">questions</a> <br>
-    <a style="color:#800000;" href="docs/corgos_26/midsem_sample_solutions.zip" target="_blank">sample_solutions</a> </td>
-</tr>                  
+                    <th scope="row">1</th>
+                    <td>2026-Jan-05</td>
+                    <td><strong>Introduction: </strong><br> What is computer organization, Basic principles of abstraction,<br>Hardware components overview</td>
+                    <td>, <a style="color:#800000;" href="docs/corgos_26/slides_ms_01.pdf" target="_blank">slides_ms_01</a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>2026-Jan-07</td>
+                    <td><strong>Performance Measurement: </strong><br>Latency, throughput, Benchmarks, Evaluating,<br> comparing and summarizing performance</td>
+                    <td><a style="color:#800000;" href="docs/corgos_26/slides_ms_02.pdf" target="_blank">slides_ms_02</a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>2026-Jan-09</td>
+                    <td><strong>Binary Number Representations</td>
+                    <td><a style="color:#800000;" href="docs/corgos_26/slides_ms_03.pdf" target="_blank">slides_ms_03</a><br><a style="color:#800000;" href="docs/corgos_26/boardwork_ms_03.pdf" target="_blank">boardwork</a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>2026-Jan-12</td>
+                    <td>
+                      <strong>
+                        Binary Number Addition and their circuit logic
+                    </td>
+                    <td><a style="color:#800000;" href="docs/corgos_26/slides_ms_04.pdf" target="_blank">slides_ms_04</a><br><a style="color:#800000;" href="docs/corgos_26/boardwork_ms_04.pdf" target="_blank">boardwork</a></td>
+                  </tr>
+                  <tr>
+                  <th scope="row">5</th>
+                  <td>2026-Jan-14</td>
+                  <td><strong>Circuit logic for addition and subtraction for integers<br>Overflow detection <br> Multiplication Algorithm for unsigned int </strong></td>
+                  <td><a style="color:#800000;" href="docs/corgos_26/slides_ms_05.pdf" target="_blank">slides_TBA</a><br><a style="color:#800000;" href="docs/corgos_26/boardwork_ms_05.pdf" target="_blank">boardwork</a></td>
+                  </tr>
+                  <tr>
+                  <th scope="row">6</th>
+                  <td>2026-Jan-16</td>
+                  <td><strong>Hex Representation: <br> Logical/Bitwise operators in C<br>Introduction to Floating Point Representation</strong></td>
+                  <td><a style="color:#800000;" href="docs/corgos_26/slides_ms_06.pdf" target="_blank">slides_TBA</a><br><a style="color:#800000;" href="docs/corgos_26/boardwork_ms_06.pdf" target="_blank">boardwork</a></td>
+                  </tr>
+                  <tr>
+                  <th scope="row">7</th>
+                  <td>2026-Jan-19</td>
+                  <td><strong>Floating Point Representation</strong></td>
+                  <td><a style="color:#800000;" href="docs/corgos_26/slides_ms_07.pdf" target="_blank">slides_TBA</a>
+                  <br><a style="color:#800000;" href="docs/corgos_26/boardwork_ms_07.pdf" target="_blank">boardwork</a>
+                  <br><a style="color:#800000;" href="docs/corgos_26/homeworks_ms_07.txt" target="_blank">homework</a></td>
+                  </tr>
+                  <tr>
+                  <th scope="row">8</th>
+                  <td>2026-Jan-21</td>
+                  <td><strong>Operations over floating Points<br>Inroduction to ASCII and UNICODE</strong></td>
+                  <td><a style="color:#800000;" href="docs/corgos_26/slides_ms_08.pdf" target="_blank">Incomplete slides on floating point</a>
+                  <br><a style="color:#800000;" href="docs/corgos_26/boardwork_ms_08.pdf" target="_blank">boardwork</a>
+                  <br><a style="color:#800000;" href="docs/corgos_26/homeworks_ms_08.txt" target="_blank">homework</a></td>
+                  </tr>
+                  <tr>
+                  <th scope="row">9</th>
+                  <td>2026-Jan-23</td>
+                  <td><strong>Inroduction to MIPS<br>Instruction set & Assembly Language</strong></td>
+                  <td><a style="color:#800000;" href="docs/corgos_26/slides_ms_09.pdf" target="_blank">slides</a>
+                  <br><a style="color:#800000;" href="docs/corgos_26/boardwork_ms_09.pdf" target="_blank">boardwork</a>
+                  <br><a style="color:#800000;" href="docs/corgos_26/homeworks_ms_09.txt" target="_blank">homework</a></td>
+                  </tr>
+                  <tr>
+                  <th scope="row">10</th>
+                  <td>2026-Jan-28</td>
+                  <td><strong>MIPS Instruction Set<br>Basic codes in Assembly Language</strong></td>
+                  <td><a style="color:#800000;" href="docs/corgos_26/slides_ms_10.pdf" target="_blank">slides</a>
+                  <br><a style="color:#800000;" href="docs/corgos_26/boardwork_ms_10.pdf" target="_blank">boardwork</a>
+                  <br><a style="color:#800000;" href="docs/corgos_26/homeworks_ms_10.txt" target="_blank">homework</a></td>
+                  </tr>
+                  <tr>
+                  <th scope="row">11</th>
+                  <td>2026-Feb-02</td>
+                  <td><strong>Addressig Modes<br>C to MIPS Assembly</strong>: Loop and function</td>
+                  <td><a style="color:#800000;" href="docs/corgos_26/slides_ms_11.pdf" target="_blank">slides</a>
+                  <br><a style="color:#800000;" href="docs/corgos_26/boardwork_ms_11.pdf" target="_blank">boardwork</a>
+                  <br><a style="color:#800000;" href="docs/corgos_26/homeworks_ms_11.txt" target="_blank">homework</a></td>
+                  </tr>
+                  <tr>
+                  <th scope="row">12</th>
+                  <td>2026-Feb-04</td>
+                  <td><strong>Memory Hierarchy</strong><br>Introduction to <strong>Cache</strong></td>
+                  <td><a style="color:#800000;" href="docs/corgos_26/slides_ms_12.pdf" target="_blank">slides</a>
+                  <br><a style="color:#800000;" href="docs/corgos_26/boardwork_ms_12.pdf" target="_blank">boardwork</a>
+                  <br><a style="color:#800000;" href="docs/corgos_26/homeworks_ms_12.txt" target="_blank">homework</a></td>
+                  </tr>
+                  <tr>
+                  <th scope="row">13</th>
+                  <td>2026-Feb-06</td>
+                  <td><strong>Measuring Cache Performance</strong></td>
+                  <td><a style="color:#800000;" href="docs/corgos_26/slides_ms_13.pdf" target="_blank">slides</a>
+                  <br><a style="color:#800000;" href="docs/corgos_26/boardwork_ms_13.pdf" target="_blank">boardwork</a>
+                  <br><a style="color:#800000;" href="docs/corgos_26/homeworks_ms_13.txt" target="_blank">homework</a></td>
+                  </tr>
+                  <tr>
+                  <th scope="row">14</th>
+                  <td>2026-Feb-09</td>
+                  <td><strong>Virtual Memory</strong><br> Page table; Page fault; Parallelism</td>
+                  <td>
+                  <a style="color:#800000;" href="docs/corgos_26/slides_ms_14.pdf" target="_blank">slides</a>
+                  <br><a style="color:#800000;" href="docs/corgos_26/boardwork_ms_14.pdf" target="_blank">boardwork</a>
+                  <br><a style="color:#800000;" href="docs/corgos_26/homeworks_ms_14.txt" target="_blank">homework</a>
+                  <br><a style="color:#800000;" href="https://www.youtube.com/watch?v=fGP6VHxqkIM" target="_blank">Ref. video 1</a>
+                  <br><a style="color:#800000;" href="https://www.youtube.com/watch?v=A9WLYbE0p-I" target="_blank">Ref. video 2</a>
+                  </td>
+                  </tr>
+                  <tr>
+                  <th scope="row">15</th>
+                  <td>2026-Feb-11</td>
+                  <td><strong>Input/output</strong></td>
+                  <td>
+                  <a style="color:#800000;" href="docs/corgos_26/slides_ms_15.pdf" target="_blank">slides</a>
+                  </td>
+                  </tr>
+                  <tr>
+                  <th scope="row">16</th>
+                  <td>2026-Feb-13</td>
+                  <td><strong>Building Datapath</strong></td>
+                  <td>
+                  <a style="color:#800000;" href="docs/corgos_26/slides_ms_16.pdf" target="_blank">slides</a>
+                  </td>
+                  </tr>
+                  <tr>
+                  <th scope="row">17</th>
+                  <td>2026-Feb-16</td>
+                  <td><strong>Pipelining</strong></td>
+                  <td>
+                  <a style="color:#800000;" href="docs/corgos_26/slides_ms_16.pdf" target="_blank">slides</a>
+                  <br><a style="color:#800000;" href="docs/corgos_26/boardwork_ms_17.pdf" target="_blank">boardwork</a>
+                  </td>
+                  </tr>
+                  <tr>
+                  <th scope="row">18</th>
+                  <td>2026-Feb-18</td>
+                  <td>Practice and Clarification<strong></strong></td>
+                  <td>
+                  <a style="color:#800000;" href="docs/corgos_26/slides_ms_18.pdf" target="_blank">slides</a>
+                  <br><a style="color:#800000;" href="docs/corgos_26/boardwork_ms_18.pdf" target="_blank">boardwork</a>
+                  <br><a style="color:#800000;" href="docs/corgos_26/homeworks_ms_18.txt" target="_blank">homework</a>
+                  </td>
+                  </tr>
+                  <tr>
+                  <th scope="row">19</th>
+                  <td>2026-Feb-20</td>
+                  <td>Practice and Clarification<strong></strong></td>
+                  <td>
+                  <a style="color:#800000;" href="docs/corgos_26/slides_ms_19.pdf" target="_blank">slides</a>
+                  <br><a style="color:#800000;" href="docs/corgos_26/boardwork_ms_19.pdf" target="_blank">boardwork</a>
+                  <br><a style="color:#800000;" href="docs/corgos_26/homeworks_ms_19.txt" target="_blank">homework</a>
+                  </td>
+                  </tr>
+                  <!--------------------------------------------------------------------------------------------------------------------------------
+                    -----------------------------------------------------------------------------------------------------------------------------------
+                    -------------------------------------------------------------------------------------------------------------------------------->
+                  <tr>
+                  <th scope="row">*</th>
+                  <td>2026-Feb-21</td>
+                  <td><strong>Mid-Semestral Written Exam</strong></td>
+                  <td><a style="color:#800000;" href="docs/corgos_26/midsem_questions.pdf" target="_blank">questions</a> <br>
+                  <a style="color:#800000;" href="docs/corgos_26/midsem_sample_solutions.zip" target="_blank">sample_solutions</a> </td>
+                  </tr>                  
                 </tbody>
               </table>
             </div>
@@ -551,339 +513,310 @@
         </div>
         <!--// end row -->
         <div class="row" >
-          <div class="col-sm-10 col-sm-offset-1">
-            <div id="contentContainer" style = "color: black">
-              <div class="text-left sm-text-left " id = "Schedule:End-sem">
-                <h4 style  = "color:  #800000;">📆 Class Schedule: End-sem</h4>
-                <hr style="border: 1px solid #001f4d">
-              </div>
-              <table class="table table-dark" >
-                <thead>
-                  <tr  style  = "color: white; background-color: #0a465e;">
-                    <th scope="col">#</th>
-                    <th scope="col">Date</th>
-                    <th scope="col">Topics on Operating Systems</th>
-                    <th scope="col">Remarks</th>
-                  </tr>
-                </thead>
-                <tbody>
-<tr>
-  <th scope="row">1</th>
-  <td>2026-Mar-06</td>
-  <td>Introduction to Operating Systems<br></td>
-  <td><a style="color:#800000;" href="docs/corgos_26/slides_es_01.pdf" target="_blank">slides</a></td>
-</tr>
-
-<tr>
-  <th scope="row">2</th>
-  <td>2026-Mar-07</td>
-  <td>Operating Systems Structures<br></td>
-  <td><a style="color:#800000;" href="docs/corgos_26/slides_es_02.pdf" target="_blank">slides</a></td>
-</tr>
-
-<tr>
-  <th scope="row">3</th>
-  <td>2026-Mar-09</td>
-  <td>Processes: <br>Process Concept & Process Scheduling</td>
-  <td><a style="color:#800000;" href="docs/corgos_26/slides_es_03.pdf" target="_blank">slides</a></td>
-</tr>
-
-<tr>
-  <th scope="row">4</th>
-  <td>2026-Mar-11</td>
- <td>Processes: <br>Operations on Processes </td>
-  <td><a style="color:#800000;" href="docs/corgos_26/slides_es_03.pdf" target="_blank">slides</a>, 
-  <a style="color:#800080;" href="docs/corgos_26/homework_es_04.txt" target="_blank">homework</a>, <br>
-  <a style="color:#800080;" href="docs/corgos_26/1_create_process.c" target="_blank">code_1</a>, 
-  <a style="color:#800080;" href="docs/corgos_26/2_multi_fork.c" target="_blank">code_2</a>,
-  <a style="color:#800080;" href="docs/corgos_26/3_see_output.c" target="_blank">code_3</a>, <br>
-  <a style="color:#800080;" href="docs/corgos_26/4_check_pids.c" target="_blank">code_4</a>, 
-  <a style="color:#800080;" href="docs/corgos_26/5_see_output2.c" target="_blank">code_5</a> 
-  <a style="color:#800080;" href="docs/corgos_26/run_one_process_from_another.zip" target="_blank">code_6</a>
-  
-  </td>
-</tr>
-
-<tr>
-  <th scope="row">5</th>
-  <td>2026-Mar-16</td>
-  <td>Processes: Inter-process Communication</td>
-  <td><a style="color:#800000;" href="docs/corgos_26/slides_es_03.pdf" target="_blank">slides</a>
-   <a style="color:#800080;" href="docs/corgos_26/client_server.c" target="_blank">code_7</a></td>
-</tr>
-
-<tr>
-  <th scope="row">6</th>
-  <td>2026-Mar-18</td>
-  <td>Threads & Concurrency</td>
-  <td><a style="color:#800000;" href="docs/corgos_26/slides_es_04.pdf" target="_blank">slides</a>
-  <a style="color:#800000;" href="docs/corgos_26/boardwork_es_06.pdf" target="_blank">boardwork</a>  
-  <a style="color:#800080;" href="docs/corgos_26/1_sum_with_thread.c" target="_blank">code_1</a>,  <br>
-  <a style="color:#800080;" href="docs/corgos_26/2_example_pthread_single_thread.c" target="_blank">code_2</a>,  
-  <a style="color:#800080;" href="docs/corgos_26/3_example_pthread_multiple_theads.c" target="_blank">code_3</a>,  
-  <a style="color:#800080;" href="docs/corgos_26/4_example_windows_thread.c" target="_blank">code_4</a>,  
-  <a style="color:#800080;" href="docs/corgos_26/5_example_matmul_thread.c" target="_blank">code_5</a><br>
-  
-  <a style="color:#800000;" href="docs/corgos_26/homework_es_06.txt" target="_blank">homework</a></td>
-</tr>
-
-<tr>
-  <th scope="row">7</th>
-  <td>2026-Mar-23</td>
-  <td>Threads & Concurrency: Multi-threading<br></td>
-  <td><a style="color:#800000;" href="docs/corgos_26/slides_es_04.pdf" target="_blank">slides</a>,
-  <a style="color:#800000;" href="docs/corgos_26/boardwork_es_07.pdf" target="_blank">boardwork</a></td>
-</tr>
-
-<tr>
-  <th scope="row">8</th>
-  <td>2026-Mar-25</td>
-  <td>Threading Issues.<br>Process Scheduling: Basics & Algorithms</td>
-  <td><a style="color:#800000;" href="docs/corgos_26/slides_es_05.pdf" target="_blank">slides</a>,
-  <a style="color:#800000;" href="docs/corgos_26/boardwork_es_08.pdf" target="_blank">boardwork</a></td>
-</tr>
-
-<tr>
-  <th scope="row">9</th>
-  <td>2026-Mar-27</td>
-  <td>Process Scheduling: Multi-processor Scheduling</td>
-  <td><a style="color:#800000;" href="docs/corgos_26/slides_es_09.pdf" target="_blank">slides</a>
-  <a style="color:#800000;" href="docs/corgos_26/boardwork_es_09.pdf" target="_blank">boardwork</a>
-  <a style="color:#800000;" href="docs/corgos_26/homework_es_09.pdf" target="_blank">homework</a></td>
-</tr>
-
-<tr>
-  <th scope="row">10</th>
-  <td>2026-Mar-30</td>
-  <td><strong></strong><br></td>
-  <td><a style="color:#800000;" href="docs/corgos_26/slides_es_10.pdf" target="_blank">slides</a>
-  <a style="color:#800000;" href="docs/corgos_26/boardwork_es_10.pdf" target="_blank">boardwork</a>
-  <a style="color:#800000;" href="docs/corgos_26/homework_es_10.pdf" target="_blank">homework</a></td>
-</tr>
-
-<tr>
-  <th scope="row">11</th>
-  <td>2026-Apr-01</td>
-  <td><strong></strong><br></td>
-  <td><a style="color:#800000;" href="docs/corgos_26/slides_es_11.pdf" target="_blank">slides</a>
-  <a style="color:#800000;" href="docs/corgos_26/boardwork_es_11.pdf" target="_blank">boardwork</a>
-  <a style="color:#800000;" href="docs/corgos_26/homework_es_11.pdf" target="_blank">homework</a></td>
-</tr>
-
-<tr>
-  <th scope="row">12</th>
-  <td>2026-Apr-06</td>
-  <td><strong></strong><br></td>
-  <td><a style="color:#800000;" href="docs/corgos_26/slides_es_12.pdf" target="_blank">slides</a>
-  <a style="color:#800000;" href="docs/corgos_26/boardwork_es_12.pdf" target="_blank">boardwork</a>
-  <a style="color:#800000;" href="docs/corgos_26/homework_es_12.pdf" target="_blank">homework</a></td>
-</tr>
-
-<tr>
-  <th scope="row">13</th>
-  <td>2026-Apr-08</td>
-  <td><strong></strong><br></td>
-  <td><a style="color:#800000;" href="docs/corgos_26/slides_es_13.pdf" target="_blank">slides</a>
-  <a style="color:#800000;" href="docs/corgos_26/boardwork_es_13.pdf" target="_blank">boardwork</a>
-  <a style="color:#800000;" href="docs/corgos_26/homework_es_13.pdf" target="_blank">homework</a></td>
-</tr>
-
-<tr>
-  <th scope="row">14</th>
-  <td>2026-Apr-10</td>
-  <td><strong></strong><br></td>
-  <td><a style="color:#800000;" href="docs/corgos_26/slides_es_14.pdf" target="_blank">slides</a>
-  <a style="color:#800000;" href="docs/corgos_26/boardwork_es_14.pdf" target="_blank">boardwork</a>
-  <a style="color:#800000;" href="docs/corgos_26/homework_es_14.pdf" target="_blank">homework</a></td>
-</tr>
-
-<tr>
-  <th scope="row">15</th>
-  <td>2026-Apr-13</td>
-  <td><strong></strong><br></td>
-  <td><a style="color:#800000;" href="docs/corgos_26/slides_es_15.pdf" target="_blank">slides</a>
-  <a style="color:#800000;" href="docs/corgos_26/boardwork_es_15.pdf" target="_blank">boardwork</a>
-  <a style="color:#800000;" href="docs/corgos_26/homework_es_15.pdf" target="_blank">homework</a></td>
-</tr>
-
-<tr>
-  <th scope="row">16</th>
-  <td>2026-Apr-17</td>
-  <td><strong></strong><br></td>
-  <td><a style="color:#800000;" href="docs/corgos_26/slides_es_16.pdf" target="_blank">slides</a>
-  <a style="color:#800000;" href="docs/corgos_26/boardwork_es_16.pdf" target="_blank">boardwork</a>
-  <a style="color:#800000;" href="docs/corgos_26/homework_es_16.pdf" target="_blank">homework</a></td>
-</tr>
-
-<tr>
-  <th scope="row">17</th>
-  <td>2026-Apr-20</td>
-  <td><strong></strong><br></td>
-  <td><a style="color:#800000;" href="docs/corgos_26/slides_es_17.pdf" target="_blank">slides</a>
-  <a style="color:#800000;" href="docs/corgos_26/boardwork_es_17.pdf" target="_blank">boardwork</a>
-  <a style="color:#800000;" href="docs/corgos_26/homework_es_17.pdf" target="_blank">homework</a></td>
-</tr>
-
-<tr>
-  <th scope="row">18</th>
-  <td>2026-Apr-22</td>
-  <td><strong></strong><br></td>
-  <td><a style="color:#800000;" href="docs/corgos_26/slides_es_18.pdf" target="_blank">slides</a>
-  <a style="color:#800000;" href="docs/corgos_26/boardwork_es_18.pdf" target="_blank">boardwork</a>
-  <a style="color:#800000;" href="docs/corgos_26/homework_es_18.pdf" target="_blank">homework</a></td>
-</tr>
-
-
-<tr>
-    <th scope="row">*</th>
-    <td>2026-Apr-00</td>
-    <td><strong>End-Semestral Written Exam</strong></td>
-    <td><a style="color:#800000;" href="docs/corgos_26/endsem_questions.pdf" target="_blank">questions</a> <br>
-    <a style="color:#800000;" href="docs/corgos_26/endsem_sample_solutions.zip" target="_blank">sample_solutions</a> </td>
-</tr>   
-                </tbody>
-              </table>
-              <hr style="border: 1px solid #001f4d">
-              <!-- End Masonry Grid -->
-            </div>
-            <!--contentContainer-->
-          </div>
-          <!--contentContainerBox-->
+        <div class="col-sm-10 col-sm-offset-1">
+        <div id="contentContainer" style = "color: black">
+        <div class="text-left sm-text-left " id = "Schedule:End-sem">
+        <h4 style  = "color:  #800000;">📆 Class Schedule: End-sem</h4>
+        <hr style="border: 1px solid #001f4d">
+        </div>
+        <table class="table table-dark" >
+        <thead>
+        <tr  style  = "color: white; background-color: #0a465e;">
+        <th scope="col">#</th>
+        <th scope="col">Date</th>
+        <th scope="col">Topics on Operating Systems</th>
+        <th scope="col">Remarks</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <th scope="row">1</th>
+        <td>2026-Mar-06</td>
+        <td>Introduction to Operating Systems<br></td>
+        <td><a style="color:#800000;" href="docs/corgos_26/slides_es_01.pdf" target="_blank">slides</a></td>
+        </tr>
+        <tr>
+        <th scope="row">2</th>
+        <td>2026-Mar-07</td>
+        <td>Operating Systems Structures<br></td>
+        <td><a style="color:#800000;" href="docs/corgos_26/slides_es_02.pdf" target="_blank">slides</a></td>
+        </tr>
+        <tr>
+        <th scope="row">3</th>
+        <td>2026-Mar-09</td>
+        <td>Processes: <br>Process Concept & Process Scheduling</td>
+        <td><a style="color:#800000;" href="docs/corgos_26/slides_es_03.pdf" target="_blank">slides</a></td>
+        </tr>
+        <tr>
+        <th scope="row">4</th>
+        <td>2026-Mar-11</td>
+        <td>Processes: <br>Operations on Processes </td>
+        <td><a style="color:#800000;" href="docs/corgos_26/slides_es_03.pdf" target="_blank">slides</a>, 
+        <a style="color:#800080;" href="docs/corgos_26/homework_es_04.txt" target="_blank">homework</a>, <br>
+        <a style="color:#800080;" href="docs/corgos_26/1_create_process.c" target="_blank">code_1</a>, 
+        <a style="color:#800080;" href="docs/corgos_26/2_multi_fork.c" target="_blank">code_2</a>,
+        <a style="color:#800080;" href="docs/corgos_26/3_see_output.c" target="_blank">code_3</a>, <br>
+        <a style="color:#800080;" href="docs/corgos_26/4_check_pids.c" target="_blank">code_4</a>, 
+        <a style="color:#800080;" href="docs/corgos_26/5_see_output2.c" target="_blank">code_5</a> 
+        <a style="color:#800080;" href="docs/corgos_26/run_one_process_from_another.zip" target="_blank">code_6</a>
+        </td>
+        </tr>
+        <tr>
+        <th scope="row">5</th>
+        <td>2026-Mar-16</td>
+        <td>Processes: Inter-process Communication</td>
+        <td><a style="color:#800000;" href="docs/corgos_26/slides_es_03.pdf" target="_blank">slides</a>
+        <a style="color:#800080;" href="docs/corgos_26/client_server.c" target="_blank">code_7</a></td>
+        </tr>
+        <tr>
+        <th scope="row">6</th>
+        <td>2026-Mar-18</td>
+        <td>Threads & Concurrency</td>
+        <td><a style="color:#800000;" href="docs/corgos_26/slides_es_04.pdf" target="_blank">slides</a>
+        <a style="color:#800000;" href="docs/corgos_26/boardwork_es_06.pdf" target="_blank">boardwork</a>  
+        <a style="color:#800080;" href="docs/corgos_26/1_sum_with_thread.c" target="_blank">code_1</a>,  <br>
+        <a style="color:#800080;" href="docs/corgos_26/2_example_pthread_single_thread.c" target="_blank">code_2</a>,  
+        <a style="color:#800080;" href="docs/corgos_26/3_example_pthread_multiple_theads.c" target="_blank">code_3</a>,  
+        <a style="color:#800080;" href="docs/corgos_26/4_example_windows_thread.c" target="_blank">code_4</a>,  
+        <a style="color:#800080;" href="docs/corgos_26/5_example_matmul_thread.c" target="_blank">code_5</a><br>
+        <a style="color:#800000;" href="docs/corgos_26/homework_es_06.txt" target="_blank">homework</a></td>
+        </tr>
+        <tr>
+        <th scope="row">7</th>
+        <td>2026-Mar-23</td>
+        <td>Threads & Concurrency: Multi-threading<br></td>
+        <td><a style="color:#800000;" href="docs/corgos_26/slides_es_04.pdf" target="_blank">slides</a>, 
+        <a style="color:#800000;" href="docs/corgos_26/boardwork_es_07.pdf" target="_blank">boardwork</a></td>
+        </tr>
+        <tr>
+        <th scope="row">8</th>
+        <td>2026-Mar-25</td>
+        <td>Threading Issues.<br>Process Scheduling: Basics & Algorithms</td>
+        <td><a style="color:#800000;" href="docs/corgos_26/slides_es_05.pdf" target="_blank">slides</a>, 
+        <a style="color:#800000;" href="docs/corgos_26/boardwork_es_08.pdf" target="_blank">boardwork</a></td>
+        </tr>
+        <tr>
+        <th scope="row">9</th>
+        <td>2026-Mar-27</td>
+        <td>Process Scheduling: Multi-processor Scheduling</td>
+        <td><a style="color:#800000;" href="docs/corgos_26/slides_es_05.pdf" target="_blank">slides</a>, 
+        <a style="color:#800000;" href="docs/corgos_26/boardwork_es_09.pdf" target="_blank">boardwork</a></td>
+        </tr>
+        <tr>
+        <th scope="row">10</th>
+        <td>2026-Mar-30</td>
+        <td>Synchronization Tools: <br>Introduction</td>
+        <td><a style="color:#800000;" href="docs/corgos_26/slides_es_06.pdf" target="_blank">slides</a>, 
+        <a style="color:#800000;" href="docs/corgos_26/boardwork_es_10.pdf" target="_blank">boardwork</a></td>
+        </tr>
+        <tr>
+        <th scope="row">11</th>
+        <td>2026-Apr-01</td>
+        <td>Synchronization Tools<br></td>
+        <td><a style="color:#800000;" href="docs/corgos_26/slides_es_16.pdf" target="_blank">slides</a>, 
+        <a style="color:#800000;" href="docs/corgos_26/boardwork_es_11.pdf" target="_blank">boardwork</a></td>
+        </tr>
+        <tr>
+        <th scope="row">12</th>
+        <td>2026-Apr-06</td>
+        <td><strong></strong><br></td>
+        <td><a style="color:#800000;" href="docs/corgos_26/slides_es_12.pdf" target="_blank">slides</a>
+        <a style="color:#800000;" href="docs/corgos_26/boardwork_es_12.pdf" target="_blank">boardwork</a>
+        <a style="color:#800000;" href="docs/corgos_26/homework_es_12.pdf" target="_blank">homework</a></td>
+        </tr>
+        <tr>
+        <th scope="row">13</th>
+        <td>2026-Apr-08</td>
+        <td><strong></strong><br></td>
+        <td><a style="color:#800000;" href="docs/corgos_26/slides_es_13.pdf" target="_blank">slides</a>
+        <a style="color:#800000;" href="docs/corgos_26/boardwork_es_13.pdf" target="_blank">boardwork</a>
+        <a style="color:#800000;" href="docs/corgos_26/homework_es_13.pdf" target="_blank">homework</a></td>
+        </tr>
+        <tr>
+        <th scope="row">14</th>
+        <td>2026-Apr-10</td>
+        <td><strong></strong><br></td>
+        <td><a style="color:#800000;" href="docs/corgos_26/slides_es_14.pdf" target="_blank">slides</a>
+        <a style="color:#800000;" href="docs/corgos_26/boardwork_es_14.pdf" target="_blank">boardwork</a>
+        <a style="color:#800000;" href="docs/corgos_26/homework_es_14.pdf" target="_blank">homework</a></td>
+        </tr>
+        <tr>
+        <th scope="row">15</th>
+        <td>2026-Apr-13</td>
+        <td><strong></strong><br></td>
+        <td><a style="color:#800000;" href="docs/corgos_26/slides_es_15.pdf" target="_blank">slides</a>
+        <a style="color:#800000;" href="docs/corgos_26/boardwork_es_15.pdf" target="_blank">boardwork</a>
+        <a style="color:#800000;" href="docs/corgos_26/homework_es_15.pdf" target="_blank">homework</a></td>
+        </tr>
+        <tr>
+        <th scope="row">16</th>
+        <td>2026-Apr-17</td>
+        <td><strong></strong><br></td>
+        <td><a style="color:#800000;" href="docs/corgos_26/slides_es_16.pdf" target="_blank">slides</a>
+        <a style="color:#800000;" href="docs/corgos_26/boardwork_es_16.pdf" target="_blank">boardwork</a>
+        <a style="color:#800000;" href="docs/corgos_26/homework_es_16.pdf" target="_blank">homework</a></td>
+        </tr>
+        <tr>
+        <th scope="row">17</th>
+        <td>2026-Apr-20</td>
+        <td><strong></strong><br></td>
+        <td><a style="color:#800000;" href="docs/corgos_26/slides_es_17.pdf" target="_blank">slides</a>
+        <a style="color:#800000;" href="docs/corgos_26/boardwork_es_17.pdf" target="_blank">boardwork</a>
+        <a style="color:#800000;" href="docs/corgos_26/homework_es_17.pdf" target="_blank">homework</a></td>
+        </tr>
+        <tr>
+        <th scope="row">18</th>
+        <td>2026-Apr-22</td>
+        <td><strong></strong><br></td>
+        <td><a style="color:#800000;" href="docs/corgos_26/slides_es_18.pdf" target="_blank">slides</a>
+        <a style="color:#800000;" href="docs/corgos_26/boardwork_es_18.pdf" target="_blank">boardwork</a>
+        <a style="color:#800000;" href="docs/corgos_26/homework_es_18.pdf" target="_blank">homework</a></td>
+        </tr>
+        <tr>
+        <th scope="row">*</th>
+        <td>2026-Apr-00</td>
+        <td><strong>End-Semestral Written Exam</strong></td>
+        <td><a style="color:#800000;" href="docs/corgos_26/endsem_questions.pdf" target="_blank">questions</a> <br>
+        <a style="color:#800000;" href="docs/corgos_26/endsem_sample_solutions.zip" target="_blank">sample_solutions</a> </td>
+        </tr>   
+        </tbody>
+        </table>
+        <hr style="border: 1px solid #001f4d">
+        <!-- End Masonry Grid -->
+        </div>
+        <!--contentContainer-->
+        </div>
+        <!--contentContainerBox-->
         </div>
         <!--// end row -->
         <!------------------------------------- Begin Assignments -->
         <div class="row" id ="Assignments">
-          <div class="col-sm-10 col-sm-offset-1" >
-            <div id="contentContainer" style = "color: black">
-              <div class="text-left sm-text-left " >
-                <h4 style  = "color:  #800000;">✍ Assignments </h4>
-                <hr style="border: 1px solid #001f4d">
-                <br>
-              </div>
-              <h3>Assignment Problems</h3>
-              <!-- Masonry Grid -->
-              <table class="table table-dark">
-                <thead>
-                  <tr  style  = "color: white; background-color: #0a465e;">
-                    <th scope="col">#</th>
-                    <th scope="col">Topic</th>
-                    <th scope="col">Assignments</th>
-                    <th scope="col">Deadline</th>
-                    <th scope="col">Remarks</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row"></th>
-                    <td></td>
-                    <td><u><strong>Mid-semester</strong></u></td>
-                    <td></td>
-                    <td><a style="color:#800000;" href = "https://docs.google.com/spreadsheets/d/121uPqZf1zlEPwf6DsJj-wOCUfFGdS2ZE8DbsiEqVE2U" target="_blank">See marks here</a></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Binary Number Representation, <br>Basic operations and their Logic Circuits</td>
-                    <td> <a style="color:#800000;" href = "docs/corgos_26/assignment_1.html" target="_blank">Assignment 1</a>
-                    </td>
-                    <td>2026-Jan-23</td>
-                    <td> <a style="color:#800000;" href = "docs/corgos_26/assign_01_coding_solutions.c" target="_blank">Sample Coding Solutions</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>Floating Point Representation</td>
-                    <td><a style="color:#800000;" href = "docs/corgos_26/assignment_2.pdf" target="_blank">Assignment 2</a>
-                    </td>
-                    <td>2026-Jan-21</td>
-                    <td>Marks: 6
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row"></th>
-                    <td></td>
-                    <td><u><strong> End-semester</strong></u></td>
-                    <td></td>
-                       <td></td>
-                  </tr>
-<tr>
-                    <th scope="row">--</th>
-                    <td>TBD</td>
-                    <td> <a style="color:#800000;" href = "docs/corgos_26/assignment_0.pdf" target="_blank">Assignment </a>
-                    </td>
-                    <td>2026-Mar-00</td>
-                    <td>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">--</th>
-                    <td>TBD</td>
-                    <td> <a style="color:#800000;" href = "docs/corgos_26/assignment_0.pdf" target="_blank">Assignment </a>
-                    </td>
-                    <td>2026-Apr-00</td>
-                    <td>
-                    </td>
-                  </tr>
-                  
-                </tbody>
-              </table>
-              <br><br><br>
-              <h3 style="color: black">Submission Guidelines</h3>
-              <table class="table table-dark">
-                <thead>
-                  <tr  style  = "color: white; background-color: #0a465e;">
-                    <th scope="col">#</th>
-                    <th scope="col">Points</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td><u>Header</u><br>  &#9755  In the beginning of each file, please include the followings<br>
-                      <code>
-                      /************************************************************<br>
-                      Roll: <br> 
-                      Name: <br>
-                      Frineds discussed with:<br>
-                      Acknowledgements of other source:<br>
-                      ************************************************************/
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td><u>Acknowledgement</u><br>  &#9755 In acknowledgement part, refer books, websites, etc., from where any part of your code is inspired</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <!--td>Submit them to me in the class</td-->
-                    <td><u>Submission File</u><br> &#9755 Assignments must be sent as <strong>zip</strong> format. The name of the zip files must be of the form <strong>roll_assignment_xy.zip</strong> where <strong>xy = assignment id</strong> and <strong> roll = your roll in small case.</strong> For example: abc12345_assignement_01.zip will be the file name for the student with roll abc12345, for assignment 01</td>
-                  </tr>
-                  
-                  <tr>
-                    <th scope="row">5</th>
-                    <td><u>Submission Link</u><br> &#9755 Upload the zip via this <a style="color:#800000;" href = "https://forms.gle/qL7SAqSzbC7gtJEW6" target="_blank">Submission Link</a></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">6</th>
-                    <td><u>Sharing Assignment</u><br>  &#9755 Discussion with friends is allowed. However, <strong>copying</strong> others' codes is <strong>strictly prohibited</strong>.<br>&#9755 For <strong>taker</strong>, <span style="color: red;"><strong>minimum 50%</strong></span>  marks will be deducted.</strong> The <strong>giver</strong> will get  <span style="color: red;"><strong>minimum 25% negative</strong></span> marks.<br>If we can't distinguish giver and taker, both may get <span style="color: red;"><strong>minimum 50% negative</strong></span>, of the allotted marks.</td>
-                  </tr>
-                  
-                  <tr>
-                    <th scope="row">8</th>
-                    <td><u>Late Submission</u><br>  &#9755 Deductions due to late submission: 1 day-- 10%; 2 days-- 20%; 3 days-- 30%; >= 4 days --May not even checked</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <!--contentContainer-->
-          </div>
-          <!--contentContainerBox-->
+        <div class="col-sm-10 col-sm-offset-1" >
+        <div id="contentContainer" style = "color: black">
+        <div class="text-left sm-text-left " >
+        <h4 style  = "color:  #800000;">✍ Assignments </h4>
+        <hr style="border: 1px solid #001f4d">
+        <br>
+        </div>
+        <h3>Assignment Problems</h3>
+        <!-- Masonry Grid -->
+        <table class="table table-dark">
+        <thead>
+        <tr  style  = "color: white; background-color: #0a465e;">
+        <th scope="col">#</th>
+        <th scope="col">Topic</th>
+        <th scope="col">Assignments</th>
+        <th scope="col">Deadline</th>
+        <th scope="col">Remarks</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <th scope="row"></th>
+        <td></td>
+        <td><u><strong>Mid-semester</strong></u></td>
+        <td></td>
+        <td><a style="color:#800000;" href = "https://docs.google.com/spreadsheets/d/121uPqZf1zlEPwf6DsJj-wOCUfFGdS2ZE8DbsiEqVE2U" target="_blank">See marks here</a></td>
+        </tr>
+        <tr>
+        <th scope="row">1</th>
+        <td>Binary Number Representation, <br>Basic operations and their Logic Circuits</td>
+        <td> <a style="color:#800000;" href = "docs/corgos_26/assignment_1.html" target="_blank">Assignment 1</a>
+        </td>
+        <td>2026-Jan-23</td>
+        <td> <a style="color:#800000;" href = "docs/corgos_26/assign_01_coding_solutions.c" target="_blank">Sample Coding Solutions</a>
+        </td>
+        </tr>
+        <tr>
+        <th scope="row">2</th>
+        <td>Floating Point Representation</td>
+        <td><a style="color:#800000;" href = "docs/corgos_26/assignment_2.pdf" target="_blank">Assignment 2</a>
+        </td>
+        <td>2026-Jan-21</td>
+        <td>Marks: 6
+        </td>
+        </tr>
+        <tr>
+        <th scope="row"></th>
+        <td></td>
+        <td><u><strong> End-semester</strong></u></td>
+        <td></td>
+        <td></td>
+        </tr>
+        <tr>
+        <th scope="row">--</th>
+        <td>TBD</td>
+        <td> <a style="color:#800000;" href = "docs/corgos_26/assignment_0.pdf" target="_blank">Assignment </a>
+        </td>
+        <td>2026-Mar-00</td>
+        <td>
+        </td>
+        </tr>
+        <tr>
+        <th scope="row">--</th>
+        <td>TBD</td>
+        <td> <a style="color:#800000;" href = "docs/corgos_26/assignment_0.pdf" target="_blank">Assignment </a>
+        </td>
+        <td>2026-Apr-00</td>
+        <td>
+        </td>
+        </tr>
+        </tbody>
+        </table>
+        <br><br><br>
+        <h3 style="color: black">Submission Guidelines</h3>
+        <table class="table table-dark">
+        <thead>
+        <tr  style  = "color: white; background-color: #0a465e;">
+        <th scope="col">#</th>
+        <th scope="col">Points</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <th scope="row">1</th>
+        <td><u>Header</u><br>  &#9755  In the beginning of each file, please include the followings<br>
+        <code>
+        /************************************************************<br>
+        Roll: <br> 
+        Name: <br>
+        Frineds discussed with:<br>
+        Acknowledgements of other source:<br>
+        ************************************************************/
+        </td>
+        </tr>
+        <tr>
+        <th scope="row">2</th>
+        <td><u>Acknowledgement</u><br>  &#9755 In acknowledgement part, refer books, websites, etc., from where any part of your code is inspired</td>
+        </tr>
+        <tr>
+        <th scope="row">3</th>
+        <!--td>Submit them to me in the class</td-->
+        <td><u>Submission File</u><br> &#9755 Assignments must be sent as <strong>zip</strong> format. The name of the zip files must be of the form <strong>roll_assignment_xy.zip</strong> where <strong>xy = assignment id</strong> and <strong> roll = your roll in small case.</strong> For example: abc12345_assignement_01.zip will be the file name for the student with roll abc12345, for assignment 01</td>
+        </tr>
+        <tr>
+        <th scope="row">5</th>
+        <td><u>Submission Link</u><br> &#9755 Upload the zip via this <a style="color:#800000;" href = "https://forms.gle/qL7SAqSzbC7gtJEW6" target="_blank">Submission Link</a></td>
+        </tr>
+        <tr>
+        <th scope="row">6</th>
+        <td><u>Sharing Assignment</u><br>  &#9755 Discussion with friends is allowed. However, <strong>copying</strong> others' codes is <strong>strictly prohibited</strong>.<br>&#9755 For <strong>taker</strong>, <span style="color: red;"><strong>minimum 50%</strong></span>  marks will be deducted.</strong> The <strong>giver</strong> will get  <span style="color: red;"><strong>minimum 25% negative</strong></span> marks.<br>If we can't distinguish giver and taker, both may get <span style="color: red;"><strong>minimum 50% negative</strong></span>, of the allotted marks.</td>
+        </tr>
+        <tr>
+        <th scope="row">8</th>
+        <td><u>Late Submission</u><br>  &#9755 Deductions due to late submission: 1 day-- 10%; 2 days-- 20%; 3 days-- 30%; >= 4 days --May not even checked</td>
+        </tr>
+        </tbody>
+        </table>
+        </div>
+        <!--contentContainer-->
+        </div>
+        <!--contentContainerBox-->
         </div>
         <!--// end row -->
-        
         <!--// end row -->
         <div class="row"  >
           <div class="col-sm-10 col-sm-offset-1">
-            
             <!--contentContainer-->
           </div>
           <!--contentContainerBox-->
@@ -899,205 +832,178 @@
               <hr style="border: 1px solid #001f4d">
               <!-- Masonry Grid -->
               <h4 style="color: black">Books on Computer Organisation</h4>
-              
-              
-              
-              
-              
               <!-- Book Table -->
-<table class="table table-dark">
-    <thead>
-        <tr style="color: white; background-color: #0a465e;">
-            <th scope="col">#</th>
-            <th scope="col">Title</th>
-            <th scope="col">Author(s)</th>
-            <th scope="col">ISBN</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-    <th scope="row">1</th>
-    <td>Computer Organisation and Design: The Hardware/Software Interface</td>
-    <td>
-        <a style="color:black;" href="#">D. A. Patterson and J. L. Hennesy</a>
-    </td>
-    <td>
-        <a style="color:black;" href="#">978-0-12-374750-1</a>
-    </td>
-</tr>
-
-<tr>
-    <th scope="row">2</th>
-    <td>Computer Organization and Architecture: Designing for Performance</td>
-    <td>
-        <a style="color:black;" href="#"> William Stallings </a>
-    </td>
-    <td>
-        <a style="color:black;" href="#"> 978-9332518704</a>
-    </td>
-</tr>
-
-<tr>
-    <th scope="row">3</th>
-    <td>Computer System Design and Architecture</td>
-    <td>
-        <a style="color:black;" href="#">V. P. Heuring and H. F. Jordan</a>
-    </td>
-    <td>
-        <a style="color:black;" href="#">978-0-13-048440-6</a>
-    </td>
-</tr>
-
-<tr>
-    <th scope="row">4</th>
-    <td>Computer Architecture: A Quantitative Approach</td>
-    <td>
-        <a style="color:black;" href="#">J. L. Hennessy and D. A. Patterson</a>
-    </td>
-    <td>
-        <a style="color:black;" href="#"> 978-0128119051 </a>
-    </td>
-</tr>
-
-<tr>
-    <th scope="row">5</th>
-    <td>Computer Organization</td>
-    <td>
-        <a style="color:black;" href="#">Carl Hamacher, Zvonko Vranesic and Safwat Zaky</a>
-    </td>
-    <td>
-        <a style="color:black;" href="#">978-0-07-232086-2</a>
-    </td>
-</tr>
-
-        
-    </tbody>
-    
-</table>
-** We will follow mainly [1] for the Computer Organisation.
-
- <hr style="border: 1px solid #001f4d">
+              <table class="table table-dark">
+                <thead>
+                  <tr style="color: white; background-color: #0a465e;">
+                    <th scope="col">#</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Author(s)</th>
+                    <th scope="col">ISBN</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Computer Organisation and Design: The Hardware/Software Interface</td>
+                    <td>
+                      <a style="color:black;" href="#">D. A. Patterson and J. L. Hennesy</a>
+                    </td>
+                    <td>
+                      <a style="color:black;" href="#">978-0-12-374750-1</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Computer Organization and Architecture: Designing for Performance</td>
+                    <td>
+                      <a style="color:black;" href="#"> William Stallings </a>
+                    </td>
+                    <td>
+                      <a style="color:black;" href="#"> 978-9332518704</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Computer System Design and Architecture</td>
+                    <td>
+                      <a style="color:black;" href="#">V. P. Heuring and H. F. Jordan</a>
+                    </td>
+                    <td>
+                      <a style="color:black;" href="#">978-0-13-048440-6</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>Computer Architecture: A Quantitative Approach</td>
+                    <td>
+                      <a style="color:black;" href="#">J. L. Hennessy and D. A. Patterson</a>
+                    </td>
+                    <td>
+                      <a style="color:black;" href="#"> 978-0128119051 </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">5</th>
+                    <td>Computer Organization</td>
+                    <td>
+                      <a style="color:black;" href="#">Carl Hamacher, Zvonko Vranesic and Safwat Zaky</a>
+                    </td>
+                    <td>
+                      <a style="color:black;" href="#">978-0-07-232086-2</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              ** We will follow mainly [1] for the Computer Organisation.
+              <hr style="border: 1px solid #001f4d">
               <!-- Masonry Grid -->
               <h4 style="color: black">Books on Operating Systems</h4>
-
               <!-- Book Table for OS -->
-<table class="table table-dark">
-    <thead>
-        <tr style="color: white; background-color: #0a465e;">
-            <th scope="col">#</th>
-            <th scope="col">Title</th>
-            <th scope="col">Author(s)</th>
-            <th scope="col">ISBN</th>
-        </tr>
-    </thead>
-    <tbody>
-   <tr>
-    <th scope="row">6</th>
-    <td>Operating System Concepts [Global Edition]</td>
-    <td>
-        <a style="color:black;" href="#">Abraham Silberschatz, Peter Baer Galvin and Greg Gagne</a>
-    </td>
-    <td>
-        <a style="color:black;" href="#">9781119320913</a>
-    </td>
-</tr>
-<tr>
-    <th scope="row">7</th>
-    <td>Operating Systems: Internals & Design Principles</td>
-    <td>
-        <a style="color:black;" href="#">William Stallings</a>
-    </td>
-    <td>
-        <a style="color:black;" href="#">978-0-13-230998-1</a>
-    </td>
-</tr>
-
-
-
-<tr>
-    <th scope="row">8</th>
-    <td>Modern Operating Systems</td>
-    <td>
-        <a style="color:black;" href="#">Andrew S. Tanenbaum and Herbert Bos</a>
-    </td>
-    <td>
-        <a style="color:black;" href="#">978-0-13-359162-0</a>
-    </td>
-</tr>
-
-<tr>
-    <th scope="row">9</th>
-    <td>Operating Systems - Design Oriented Approach</td>
-    <td>
-        <a style="color:black;" href="#">Charles Crowley</a>
-    </td>
-    <td>
-        <a style="color:black;" href="#">978-0-07-463551-3</a>
-    </td>
-</tr>
-
-        
-    </tbody>
-    
-</table>
-
-** We will follow mainly [6] as textbook for the Operating Systems.
-<br> <br>             
- <h4 style="color: black">Helpful Websites</h4>               
-<table class="table table-dark">
-    <thead>
-        <tr style="color: white; background-color: #0a465e;">
-            <th scope="col">#</th>
-            <th scope="col">Website</th>
-            <th scope="col">Useful for</th>
-        </tr>
-    </thead>
-    <tbody>
-
-  <tr>
-    <td>1</td>
-    <td><a href="https://nptel.ac.in/courses/106106092" target="_blank">https://nptel.ac.in/courses/106106092</a></td>
-    <td>NPTEL Lectures on Computer Organization</td>
-  </tr>
-  <tr>
-    <td>2</td>
-    <td><a href="https://nptel.ac.in/courses/106102132" target="_blank">https://nptel.ac.in/courses/106102132</a></td>
-    <td>NPTEL Lectures on Operating Systems</td>
-  </tr>
-  <tr>
-    <td>3</td>
-    <td><a href="https://www.geeksforgeeks.org/computer-organization-architecture/computer-organization-and-architecture-tutorials/" target="_blank">computer organization and architecture tutorials</a></td>
-    <td>References </td>
-  </tr>
-  <tr>
-    <td>4</td>
-    <td><a href="https://www.geeksforgeeks.org/operating-systems/operating-systems/" target="_blank">operating systems tutorial</a></td>
-    <td>References</td>
-  </tr>
-  
-  <tr>
-    <td>5</td>
-    <td><a href="https://www.youtube.com/playlist?list=PLFt_AvWsXl0dPhqVsKt1Ni_46ARyiCGSq" target="_blank">Youtube Playlist: Exploring How Computers Work</a></td>
-    <td>by Sebastian Lague</td>
-  </tr>
-   <tr>	
-    <td>6</td>
-    <td>Digital Circuit Simulators: 
-    	<a href="https://circuitverse.org/simulator" target="_blank">circuitverse</a>
-	<a href="https://logic.ly/demo/" target="_blank">logicly</a></td>
-    <td>To check how circuits look like</td>
-  </tr>
-  <tr>
-  <td>7</td>
-  <td><a href="https://os-book.com/OS10/slide-dir/index.html" target="_blank">https://os-book.com/OS10/slide-dir/index.html</a></td>
-  <td>Operating System Concepts, 10th Ed.<br> Lecture Slides – Silberschatz, Galvin, and Gagne</td>
-</tr>
-  </tbody>
-</table>
-              
-
-              
-             
+              <table class="table table-dark">
+                <thead>
+                  <tr style="color: white; background-color: #0a465e;">
+                    <th scope="col">#</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Author(s)</th>
+                    <th scope="col">ISBN</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">6</th>
+                    <td>Operating System Concepts [Global Edition]</td>
+                    <td>
+                      <a style="color:black;" href="#">Abraham Silberschatz, Peter Baer Galvin and Greg Gagne</a>
+                    </td>
+                    <td>
+                      <a style="color:black;" href="#">9781119320913</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">7</th>
+                    <td>Operating Systems: Internals & Design Principles</td>
+                    <td>
+                      <a style="color:black;" href="#">William Stallings</a>
+                    </td>
+                    <td>
+                      <a style="color:black;" href="#">978-0-13-230998-1</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">8</th>
+                    <td>Modern Operating Systems</td>
+                    <td>
+                      <a style="color:black;" href="#">Andrew S. Tanenbaum and Herbert Bos</a>
+                    </td>
+                    <td>
+                      <a style="color:black;" href="#">978-0-13-359162-0</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">9</th>
+                    <td>Operating Systems - Design Oriented Approach</td>
+                    <td>
+                      <a style="color:black;" href="#">Charles Crowley</a>
+                    </td>
+                    <td>
+                      <a style="color:black;" href="#">978-0-07-463551-3</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              ** We will follow mainly [6] as textbook for the Operating Systems.
+              <br> <br>             
+              <h4 style="color: black">Helpful Websites</h4>
+              <table class="table table-dark">
+                <thead>
+                  <tr style="color: white; background-color: #0a465e;">
+                    <th scope="col">#</th>
+                    <th scope="col">Website</th>
+                    <th scope="col">Useful for</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td><a href="https://nptel.ac.in/courses/106106092" target="_blank">https://nptel.ac.in/courses/106106092</a></td>
+                    <td>NPTEL Lectures on Computer Organization</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td><a href="https://nptel.ac.in/courses/106102132" target="_blank">https://nptel.ac.in/courses/106102132</a></td>
+                    <td>NPTEL Lectures on Operating Systems</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td><a href="https://www.geeksforgeeks.org/computer-organization-architecture/computer-organization-and-architecture-tutorials/" target="_blank">computer organization and architecture tutorials</a></td>
+                    <td>References </td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td><a href="https://www.geeksforgeeks.org/operating-systems/operating-systems/" target="_blank">operating systems tutorial</a></td>
+                    <td>References</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td><a href="https://www.youtube.com/playlist?list=PLFt_AvWsXl0dPhqVsKt1Ni_46ARyiCGSq" target="_blank">Youtube Playlist: Exploring How Computers Work</a></td>
+                    <td>by Sebastian Lague</td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>Digital Circuit Simulators: 
+                      <a href="https://circuitverse.org/simulator" target="_blank">circuitverse</a>
+                      <a href="https://logic.ly/demo/" target="_blank">logicly</a>
+                    </td>
+                    <td>To check how circuits look like</td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td><a href="https://os-book.com/OS10/slide-dir/index.html" target="_blank">https://os-book.com/OS10/slide-dir/index.html</a></td>
+                    <td>Operating System Concepts, 10th Ed.<br> Lecture Slides – Silberschatz, Galvin, and Gagne</td>
+                  </tr>
+                </tbody>
+              </table>
               <!-- End Masonry Grid -->
             </div>
             <!--contentContainer-->
