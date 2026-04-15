@@ -1,1 +1,256 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuRAC : Quantum-Resilient Applied Cryptography Research Group</title>
+  <meta name="description" content="QuRAC is a research group at IISER Thiruvananthapuram focused on post-quantum cryptography, applied security, cloud computing security, and blockchain security.">
+  <link rel="stylesheet" href="src/qurac_style.css">
+</head>
+<body>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header">
+    <div class="container">
+      <nav>
+        <!-- Logos -->
+        <div class="header-logos">
+          <a href="qurac.html">
+            <img class="header-logo" src="img/logo_inst.png" alt="IISER TVM" />
+          </a>
+          <div class="header-logo-divider"></div>
+          <a href="qurac.html">
+            <img class="header-logo" src="img/logo_qurac.png" alt="QuRAC" />
+          </a>
+        </div>
+
+        <a class="site-title" href="qurac.html">QuRAC</a>
+
+        <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle menu">☰</button>
+
+        <ul>
+          <li><a href="qurac.html" class="active">Home</a></li>
+          <li><a href="#">Research</a></li>
+          <li><a href="#">People</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Resources</a></li>
+          <li><a href="qurac/join.html">Join</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Gallery</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===================== HERO BANNER ===================== -->
+  <div class="hero-banner">
+    <div class="container">
+      <div class="hero-inner">
+
+        <!-- Left: logos stacked -->
+        <div class="hero-logo-block">
+          <img class="hero-logo-inst" src="img/logo_inst.png" alt="IISER Thiruvananthapuram" />
+          <div class="hero-logo-sep"></div>
+          <img class="hero-logo-qurac" src="img/logo_qurac.png" alt="QuRAC" />
+        </div>
+
+        <!-- Right: text -->
+        <div class="hero-text">
+          <div class="hero-label">QuRAC &nbsp;·&nbsp; IISER Thiruvananthapuram</div>
+          <h1>Quantum-Resilient Applied Cryptography Research Group</h1>
+          <p class="hero-tagline">
+            Designing, analyzing, and implementing secure cryptographic protocols for the quantum future.
+          </p>
+          <!--div class="hero-buttons">
+            <a href="qurac/research.html" class="btn btn-primary">Research Areas</a>
+            <a href="qurac/join.html" class="btn btn-outline">Join the Group</a>
+          </div-->
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== MAIN ===================== -->
+  <main class="container">
+
+    <!-- ===== Section 1: About + Photo ===== -->
+    <section class="about-layout" style="margin-top: 2rem;">
+
+      <div>
+        <h2 class="section-heading">About QuRAC</h2>
+        <p style="text-align: justify;">
+          The <b>Qu</b>antum-<b>R</b>esilient <b>A</b>pplied <b>C</b>ryptography (QuRAC) Research Group operates within the School of Data Science at the Indian Institute of Science Education and Research Thiruvananthapuram (IISER TVM), under the leadership of <a href="https://laltu-sardar.github.io/" target="_blank">Dr. Laltu Sardar</a>, starting from 2026. We design, analyze, and deploy cryptographic protocols that withstand quantum adversaries. Our work covers theoretical foundations, including post-quantum cryptographic constructions, and extends to rigorous engineering of systems for real-world cloud infrastructures.
+          </p>
+        <p style="text-align: justify;">
+          We emphasize both provable security and applied security. Our research tackles searchable encryption, privacy-preserving computation, secure cloud computing, and encrypted graph analytics. We combine strong theoretical guarantees with practical prototype implementations. We deliver short-term applied results and pursue long-term fundamental advances, while maintaining open-source implementations for the broader cryptographic research community.
+        </p>
+      </div>
+
+      <div class="about-right"><br><br>
+        <div class="image-slider">
+          <img src="qurac/img/logo_qurac_iiser.png" class="active" alt="QuRAC group photo" />
+          <!--img src="img/qurac/qurac_group_2.jpg" alt="QuRAC at a conference" /-->
+          <!--img src="img/qurac/qurac_group_3.jpg" alt="QuRAC workshop" /-->
+          <button class="slider-btn prev" onclick="prevSlide()">&#10094;</button>
+          <button class="slider-btn next" onclick="nextSlide()">&#10095;</button>
+        </div>
+        <p class="slider-caption">
+          QuRAC Research Group, IISER Thiruvananthapuram
+        </p>
+      </div>
+
+    </section>
+
+    <hr class="section-divider">
+
+
+    <!-- ===== Research Highlights + News (two column) ===== -->
+    <div style="display: grid; grid-template-columns: 60% 40%; gap: 40px; align-items: start;">
+
+      <!-- Research highlights -->
+      <section>
+        <h2 class="section-heading">Research Highlights</h2>
+        <div class="highlights-grid">
+
+          <div class="highlight-card">
+            <h3>Post-Quantum Cryptography</h3>
+            <p>Lattice-based, code-based, and hash-based primitives addressing NIST PQC standardization and beyond.</p>
+            <a href="qurac/research.html#pqc">Learn more →</a>
+          </div>
+
+          
+
+          <div class="highlight-card">
+            <h3>Applied Cryptography</h3>
+            <p>Searchable encryption, privacy-preserving computation, and encrypted data analytics.</p>
+            <a href="qurac/research.html#applied">Learn more →</a>
+          </div>
+
+          <div class="highlight-card">
+            <h3>Secure Cloud Computing</h3>
+            <p>Secure outsourced computation, verifiable queries, and privacy-preserving cloud services.</p>
+            <a href="qurac/research.html#cloud">Learn more →</a>
+          </div>
+
+          <div class="highlight-card">
+            <h3>Consensus &amp; Blockchain Security</h3>
+            <p>Post-quantum blockchain, Ethereum Layer-2 security, VDFs, and distributed consensus protocols.</p>
+            <a href="qurac/research.html#blockchain">Learn more →</a>
+          </div>
+          
+          <div class="highlight-card">
+            <h3>Quantum Cryptography</h3>
+            <p>Quantum key distribution, quantum-secure protocols, and security in quantum adversary models.</p>
+            <a href="qurac/research.html#qc">Learn more →</a>
+          </div>
+          
+
+        </div>
+      </section>
+
+      <!-- Latest News -->
+      <section>
+        <h2 class="section-heading">Latest News</h2>
+        <div class="marquee-vertical">
+          <ol class="news-scroll">
+            <li>
+              Paper <em>"Efficient and Post-Quantum Conjunctive Dynamic SSE with Strong Privacy Guarantees"</em>
+              accepted at <a href="https://pkc.iacr.org/2026/" target="_blank">PKC 2026</a>.
+            </li>
+            <li>
+              Invited talk on <em>"Mitigating Randao Manipulation: Is VDF the Missing Link?"</em>
+              at <a href="https://events.iitbhilai.ac.in/cws" target="_blank">Crypto Winter School 2025</a>, IIT Bhilai.
+            </li>
+            <li>
+              Talk on <em>"From Classical to Quantum Cryptography: The Next Leap in Secure Communication"</em>
+              at Tathva'25, NIT Calicut.
+            </li>
+            <li>
+              Member of Program Committee ,
+              <a href="https://distress-sse.github.io/distress-sse/" target="_blank">
+                 1st Workshop on Decentralized Immutable Secure Tamper-Resistant Encrypted Searchable Storage</a>, (DISTRESS 2026).
+            </li>
+            <li>
+              PhD positions open in Applied Cryptography, Blockchain &amp; Layer-2 Technologies.
+              Candidates with CSIR/UGC NET or INSPIRE fellowships may apply directly.
+            </li>
+            <li>
+              Dr. Laltu Sardar served as Co-organiser of the AI for Science Pre-Summit Event
+              (IndiaAI Mission), IISER TVM, 2025.
+            </li>
+            
+          </ol>
+        </div>
+        <p style="margin-top: 8px; font-size: 0.9rem;">
+          <a href="qurac/news.html">All news →</a>
+        </p>
+      </section>
+
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- ===== Quote ===== -->
+    <section>
+      <div class="quote-block">
+        <p class="quote">
+          Sometimes it is the people no one can imagine anything of who do the things
+          no one can imagine.
+        </p>
+        <p class="quote-author">-- Alan Turing</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>Quantum-Resilient Applied<br> Cryptography Research Group</h4>
+          <address>
+            School of Data Science<br>
+            IISER Thiruvananthapuram<br>
+            Maruthamala PO, Vithura,<br>
+            Thiruvananthapuram, Kerala, India
+          </address>
+          <p style="margin-top: 6px;">
+            <a href="mailto:laltu.sardar@iisertvm.ac.in" style="color:rgba(255,255,255,0.75);">
+              laltu.sardar@iisertvm.ac.in
+            </a>
+          </p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#">Research</a></li>
+            <li><a href="#">People</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="qurac/join.html">Join</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Gallery</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>External Profiles</h4>
+          <ul class="footer-links">
+            <li><a href="https://laltu-sardar.github.io/" target="_blank">Group Leader's Homepage</a></li>
+            <li><a href="https://www.iisertvm.ac.in/faculty/laltusardar" target="_blank">IISER TVM Faculty Page</a></li>
+            <li><a href="https://github.com/laltu-sardar" target="_blank">GitHub</a></li>
+            <li><a href="https://scholar.google.com/citations?user=PLACEHOLDER" target="_blank">Google Scholar</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        © 2026 QuRAC Research Group, IISER Thiruvananthapuram
+      </div>
+    </div>
+  </footer>
+
+  <script src="src/qurac_main.js"></script>
+</body>
+</html>
