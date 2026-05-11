@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>People - QuRAC</title>
+    <meta name="description" content="Members of QuRAC including group leader, PhD students, and collaborators.">
+    <link rel="stylesheet" href="./../src/qurac_style.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <nav>
+          <div class="header-logos">
+            <a href="../qurac.html"><img class="header-logo" src="img/logo_inst.png" alt="IISER TVM" /></a>
+            <div class="header-logo-divider"></div>
+            <a href="../qurac.html"><img class="header-logo" src="img/logo_qurac.png" alt="QuRAC" /></a>
+          </div>
+          <a class="site-title" href="../qurac.html">QuRAC</a>
+          <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+          <ul>
+            <li><a href="../qurac.html">Home</a></li>
+            <li><a href="#">Research</a></li>
+            <li><a href="people.html" class="active">People</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Gallery</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="page-header">
+      <div class="container">
+        <h1>People</h1>
+        <p>The researchers, students, and collaborators who make up the QuRAC team.</p>
+      </div>
+    </div>
+    <main class="container">
+      <!-- Group Leader -->
+      <section class="people-section" style="margin-top:1.5rem;" id="leader">
+        <h2>Group Leader</h2>
+        <div class="leader-layout">
+          <div class="leader-photo">
+            <img src="../img/laltu_dp_0.jpeg" alt="Dr. Laltu Sardar"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+            <div class="leader-photo-placeholder" style="display:none;">LS</div>
+          </div>
+          <div class="leader-info">
+            <h3>Dr. Laltu Sardar</h3>
+            <div class="leader-role">Group Leader &amp; Assistant Professor Grade I (Data Science)</div>
+            <div class="leader-contact">
+              🏢 School of Data Science, IISER Thiruvananthapuram<br>
+              📞 +91 (0)471 – 277-8396<br>
+              ✉️ <a href="mailto:laltu.sardar@iisertvm.ac.in">laltu.sardar@iisertvm.ac.in</a>
+            </div>
+            <p class="leader-bio" style="text-align:justify;">
+              Dr. Laltu Sardar is an Applied Cryptography Researcher and Assistant Professor at the
+              School of Data Science, IISER Thiruvananthapuram. He received his
+              <strong>Ph.D. in Computer Science</strong> with a specialisation in
+              <strong>Searchable Encryption</strong>. His research focuses on secure and efficient
+              solutions for <strong>secure cloud computing</strong>, <strong>data privacy</strong>,
+              and <strong>encrypted graph analytics</strong>, combining rigorous theory with real-world
+              prototype implementations.
+            </p>
+            <!--div class="leader-interests">
+              <strong>Research Interests:</strong>
+              Searchable Encryption · Privacy-Preserving Computation · Secure Cloud Computing · Blockchain &amp; Layer-2 Technologies ·
+              Post-Quantum Cryptography · Quantum Cryptography
+              </div-->
+            <div class="leader-links">
+              <a href="https://laltu-sardar.github.io/" target="_blank">Homepage</a>
+              <a href="https://www.iisertvm.ac.in/faculty/laltusardar" target="_blank">IISER TVM Page</a>
+              <a href="https://www.iisertvm.ac.in/faculty/laltusardar/publications" target="_blank">Publications</a>
+              <a href="https://scholar.google.com/citations?user=odY-etAAAAAJ" target="_blank">Google Scholar</a>
+              <a href="https://github.com/laltu-sardar" target="_blank">GitHub</a>
+            </div>
+          </div>
+        </div>
+        <!--div class="highlights-box">
+          <h4>Recent Highlights</h4>
+          <ul>
+            <li>Paper <em>"Efficient and Post-Quantum Conjunctive Dynamic SSE with Strong Privacy Guarantees"</em> accepted at <a href="https://pkc.iacr.org/2026/" target="_blank">PKC 2026</a>.</li>
+            <li>Invited talk at Crypto Winter School 2025, IIT Bhilai, on randomness manipulation in Ethereum.</li>
+            <li>Co-organiser, AI for Science Pre-Summit Event (IndiaAI Mission), IISER TVM, 2025.</li>
+            <li>Member of Organising Committee, 3rd Frontiers Symposium in Data Science, IISER TVM.</li>
+            <li>Talk at Tathva'25 Annual Techno-Management Fest, NIT Calicut.</li>
+          </ul>
+          </div-->
+      </section>
+      <hr class="section-divider">
+      <!-- PhD Students -->
+      <section class="people-section" id="phd-students">
+        <h2>PhD Students</h2>
+        <div class="phd-grid" style="display: flex; justify-content: flex-start; gap: 40px;">
+       <div class="phd-card" style="max-width: 300px;">
+            <img src="img/dp_mohamed_kasim1.jpeg" alt="Mohamed Kassim" class="phd-photo">
+            <h3>Mohamed Kassim</h3>
+            <div class="phd-role">PhD Candidate</div>
+            <p>Post-Quantum Applied Cryptography</p>
+          </div>
+        </div> 
+        <p class="text-muted" style="margin-top: 30px; font-size: 0.9rem; clear: both; display: block;">
+          Positions available — see <a href="join.html">Join Us</a> for current PhD openings.
+        </p>
+      </section>
+      <hr class="section-divider">
+      <!-- Bachelor’s / Master’s Minor Project Students -->
+      <section class="people-section" id="bsms-project-students">
+        <h2>Bachelor’s / Minor Project Students</h2>
+        <div class="phd-grid" style="display: flex; justify-content: flex-start; gap: 40px;">
+        <div class="phd-card" style="max-width: 300px;">
+            <img src="img/dp_manit_kishor.jpeg" alt="Manit Kishor" class="phd-photo">
+            <h3>Manit Kishor</h3>
+            <div class="phd-role">BSMS Minor Project Student</div>
+            <p>Quantum-Safe VDF</p>
+          </div>
+        </div> 
+       <p class="text-muted" style="margin-top: 30px; font-size: 0.9rem; clear: both; display: block; text-align: left;">
+          Looking for project supervision? Visit <a href="join.html">Join Us</a> for current opportunities.
+        </p>
+      </section>
+      <hr class="section-divider">
+     <!-- Short-Term Interns -->
+      <section class="people-section" id="short-term-interns">
+        <h2>Short-Term Interns</h2>
+        <div class="phd-grid" style="display: flex; justify-content: flex-start; gap: 40px;">
+
+          <div class="phd-card" style="max-width: 300px;">
+            <img src="img/dp_Ameen.jpg" alt="Ameen Ahsan" class="phd-photo">
+            <h3>Ameen Ahsan M H</h3>
+            <div class="phd-role">Summer Intern</div>
+            <p>Implementation of Cryptographic Prototype</p>
+          </div>
+
+          <div class="phd-card" style="max-width: 300px;">
+            <img src="img/dp_Ann.jpg" alt="Ann Maria Benny" class="phd-photo">
+            <h3>Ann Maria Benny</h3>
+            <div class="phd-role">Summer Intern</div>
+            <p>Implementation of Cryptographic Prototype</p>
+          </div>
+       </div>
+       <p class="text-muted" style="margin-top: 30px; font-size: 0.9rem; clear: both; display: block; text-align: left;">
+  Positions available — see <a href="join.html">Join Us</a> for upcoming openings.
+</p>
+      </section>
+      <hr class="section-divider">
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <h4>Quantum-Resilient Applied Cryptography Research Group</h4>
+            <address>School of Data Science, IISER Thiruvananthapuram<br>Maruthamala PO, Vithura, Thiruvananthapuram, Kerala, India</address>
+            <p style="margin-top:6px;"><a href="mailto:laltu.sardar@iisertvm.ac.in" style="color:rgba(255,255,255,0.75);">laltu.sardar@iisertvm.ac.in</a></p>
+          </div>
+          <div>
+            <h4>Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="research.html">Research</a></li>
+              <li><a href="people.html">People</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="resources.html">Resources</a></li>
+              <li><a href="join.html">Join Us</a></li>
+              <li><a href="news.html">News</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>External Profiles</h4>
+            <ul class="footer-links">
+              <li><a href="https://laltu-sardar.github.io/" target="_blank">Group Leader's Homepage</a></li>
+              <li><a href="https://www.iisertvm.ac.in/faculty/laltusardar" target="_blank">IISER TVM Faculty Page</a></li>
+              <li><a href="https://github.com/laltu-sardar" target="_blank">GitHub</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">© 2025 QuRAC Research Group, IISER Thiruvananthapuram</div>
+      </div>
+    </footer>
+    <script src="../src/qurac_main.js"></script>
+  </body>
+</html>
