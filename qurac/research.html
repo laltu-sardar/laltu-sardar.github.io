@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research - QuRAC</title>
+  <link rel="stylesheet" href="../src/qurac_style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <nav>
+        <div class="header-logos">
+          <a href="../qurac.html"><img class="header-logo" src="../img/logo_inst.png" alt="IISER TVM" /></a>
+          <div class="header-logo-divider"></div>
+          <a href="../qurac.html"><img class="header-logo" src="../img/logo_qurac.png" alt="QuRAC" /></a>
+        </div>
+        <a class="site-title" href="../qurac.html">QuRAC</a>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <ul>
+            <li><a href="./../qurac.html">Home</a></li>
+            <li><a href="research.html"class="active">Research</a></li>
+            <li><a href="people.html" >People</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-header">
+    <div class="container">
+      <h1>Research</h1>
+      <!--p>Our work spans foundational cryptographic theory through to real-world security engineering.</p-->
+    </div>	
+  </div>
+
+ 
+
+  <main class="container">
+
+    <!-- In-page nav -->
+    <nav class="page-nav" style="margin-top: 1.5rem;">
+      <a href="#applied">Applied Cryptography</a>
+      <a href="#cloud">Cloud Computing Security</a>    
+      <a href="#pqc">Post-Quantum Cryptography</a>
+      <a href="#blockchain">Blockchain &amp; Consensus</a>
+      <a href="#qc">Quantum Cryptography</a>
+      <a href="#publications">Publications</a>
+    </nav>
+
+    <!-- ===== Research Areas ===== -->
+    <article class="research-area" id="applied">
+      <h2>Applied Cryptography</h2>
+      <p>
+        Applied cryptography bridges the gap between abstract security definitions and
+        real-world deployable systems. Our research focuses on designing and implementing
+        efficient cryptographic solutions for privacy-sensitive applications, with a
+        particular specialisation in searchable encryption.
+      </p>
+      <ul>
+        <li>Searchable encryption (SSE/DSSE): efficient and privacy-preserving encrypted database queries.</li>
+        <li>Dynamic and conjunctive SSE schemes with strong forward and backward privacy.</li>
+        <li>Privacy-preserving computation: oblivious RAM (ORAM), garbled circuits, and secure function evaluation.</li>
+        <li>Encrypted graph analytics and privacy-preserving graph algorithms.</li>
+        <li>Zero-knowledge proofs and their application to authentication and verifiable computation.</li>
+        <li>Prototype implementations and performance evaluation of cryptographic protocols.</li>
+      </ul>
+    </article>
+    <article class="research-area" id="pqc">
+      <h2>Post-Quantum Cryptography</h2>
+      <p>
+        This area investigates cryptographic primitives and systems believed to be secure
+        against both classical and quantum adversaries. We focus on the mathematical
+        foundations underpinning NIST-selected algorithms and emerging candidates, with
+        attention to both theoretical analysis and practical deployment.
+      </p>
+      <ul>
+        <li>Lattice-based cryptography: Learning With Errors (LWE), Ring-LWE, Module-LWE, and NTRU variants.</li>
+        <li>Code-based cryptography: McEliece, BIKE, HQC, and novel code families.</li>
+        <li>Hash-based signatures: SPHINCS+, XMSS, and stateless tree-based schemes.</li>
+        <li>Isogeny-based constructions and post-SIDH protocols.</li>
+        <li>Security proofs under the quantum random oracle model (QROM).</li>
+        <li>Post-quantum searchable encryption and dynamic symmetric searchable encryption (SSE).</li>
+        <li>Cryptanalytic assessments and parameter selection for deployed systems.</li>
+      </ul>
+    </article>
+
+    
+
+    <article class="research-area" id="qc">
+      <h2>Quantum Cryptography</h2>
+      <p>
+        Quantum cryptography exploits the laws of quantum mechanics to provide
+        information-theoretic security guarantees impossible classically. Our work
+        investigates both theoretical underpinnings and practical implications for future
+        communication infrastructure.
+      </p>
+      <ul>
+        <li>Quantum key distribution (QKD): BB84, E91, continuous-variable QKD protocols.</li>
+        <li>Security proofs for quantum protocols in the composability framework.</li>
+        <li>Quantum random number generation and its role in cryptographic applications.</li>
+        <li>Device-independent cryptography and self-testing of quantum devices.</li>
+        <li>Quantum oblivious transfer, commitment, and secure computation.</li>
+        <li>Transition strategies from classical to quantum-safe communication channels.</li>
+      </ul>
+    </article>
+
+    
+
+    <article class="research-area" id="cloud">
+      <h2>Cloud Computing Security</h2>
+      <p>
+        As organisations increasingly outsource computation and data storage to cloud
+        platforms, ensuring confidentiality, integrity, and verifiability becomes critical.
+        QuRAC investigates principled cryptographic solutions to cloud security challenges
+        with a focus on practical deployability.
+      </p>
+      <ul>
+        <li>Secure outsourced computation: verifiable and privacy-preserving cloud services.</li>
+        <li>Encrypted database systems: verifiable query processing and integrity guarantees.</li>
+        <li>Searchable encryption for cloud-hosted databases with dynamic update support.</li>
+        <li>Data provenance and audit trails with cryptographic integrity.</li>
+        <li>Key management and access control in multi-tenant cloud environments.</li>
+        <li>Post-quantum migration strategies for cloud-based public-key infrastructure.</li>
+      </ul>
+    </article>
+
+    <article class="research-area" id="blockchain">
+      <h2>Blockchain and Consensus Security</h2>
+      <p>
+        Distributed ledger technologies present unique security challenges in the
+        post-quantum context. We study security foundations of blockchain platforms —
+        particularly Ethereum and its Layer-2 ecosystem — and design quantum-safe
+        alternatives to critical components.
+      </p>
+      <ul>
+        <li>Ethereum security: RANDAO manipulation, verifiable delay functions (VDFs), and randomness beacons.</li>
+        <li>Layer-2 technologies: security of rollups, state channels, and cross-chain bridges.</li>
+        <li>Post-quantum digital signatures for blockchain transaction authentication.</li>
+        <li>Quantum-resilient consensus protocols for permissioned and permissionless settings.</li>
+        <li>Lattice-based threshold signatures and distributed key generation (DKG).</li>
+        <li>Post-quantum smart contract verification and secure decentralized identity (DID).</li>
+      </ul>
+    </article>
+
+    <hr class="section-divider">
+
+    <!-- ===== Publications ===== -->
+    <section id="publications">
+      <h2 class="section-heading">Publications</h2>
+      <p class="text-muted" style="margin-bottom: 1.5rem; font-size: 0.95rem;">
+        This is a new Group, Members joined in 2026. There is no publication yet.
+      </p>
+<!--
+    <p class="text-muted" style="margin-bottom: 1.5rem; font-size: 0.95rem;">
+        Listed in reverse chronological order. Replace entries with BibTeX-generated content or DBLP exports.
+      </p>
+      <div class="pub-category">
+        <div class="pub-category-heading">Conference Papers</div>
+        <ul class="pub-list">
+          <li>
+            Laltu Sardar, [Co-author(s)].
+            "Efficient and Post-Quantum Conjunctive Dynamic SSE with Strong Privacy Guarantees."
+            In <span class="pub-venue">Public-Key Cryptography — PKC 2026</span>, LNCS, Springer, 2026.
+            <div class="pub-tags">
+              <span class="pub-tag">Post-Quantum</span>
+              <span class="pub-tag">SSE</span>
+              <span class="pub-tag">PKC 2026</span>
+            </div>
+          </li>
+          <li>
+            Laltu Sardar, [Co-author(s)].
+            "Mitigating Randao Manipulation: Verifiable Delay Functions for Ethereum Randomness."
+            In <span class="pub-venue">[Conference Name, Year]</span>.
+            <div class="pub-tags">
+              <span class="pub-tag">Blockchain</span>
+              <span class="pub-tag">VDF</span>
+              <span class="pub-tag">Ethereum</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="pub-category">
+        <div class="pub-category-heading">Journal Articles</div>
+        <ul class="pub-list">
+          <li>
+            Laltu Sardar, [Co-author].
+            "Efficient Dynamic Symmetric Searchable Encryption with Strong Forward and Backward Privacy."
+            <span class="pub-venue">[Journal Name]</span>, [vol., pp., year].
+            <div class="pub-tags">
+              <span class="pub-tag">Searchable Encryption</span>
+              <span class="pub-tag">Cloud Security</span>
+            </div>
+          </li>
+          <li>
+            Laltu Sardar, [Co-author].
+            "Privacy-Preserving Encrypted Graph Analytics: Foundations and Constructions."
+            <span class="pub-venue">[Journal Name]</span>, [vol., no., pp., year].
+            <div class="pub-tags">
+              <span class="pub-tag">Graph Analytics</span>
+              <span class="pub-tag">Encryption</span>
+              <span class="pub-tag">Privacy</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="pub-category">
+        <div class="pub-category-heading">Preprints &amp; Technical Reports</div>
+        <ul class="pub-list">
+          <li>
+            Laltu Sardar, [Co-author].
+            "Towards Post-Quantum Secure Searchable Encryption: Survey and Open Problems."
+            <span class="pub-venue">Cryptology ePrint Archive</span>, Report 20XX/XXXX.
+            [<a href="https://eprint.iacr.org/" target="_blank">ePrint</a>]
+          </li>
+        </ul>
+      </div>
+
+      <div class="pub-category">
+        <div class="pub-category-heading">Standards Contributions</div>
+        <ul class="pub-list">
+          <li>
+            QuRAC Team.
+            "Comments on Post-Quantum Cryptography Standardization for Cloud and Distributed Systems."
+            Submitted to <span class="pub-venue">NIST</span>, [year].
+          </li>
+        </ul>
+      </div>
+-->
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>Quantum-Resilient Applied Cryptography Research Group</h4>
+          <address>School of Data Science, IISER Thiruvananthapuram<br>Maruthamala PO, Vithura, Thiruvananthapuram, Kerala, India</address>
+          <p style="margin-top:6px;"><a href="mailto:laltu.sardar@iisertvm.ac.in" style="color:rgba(255,255,255,0.75);">laltu.sardar@iisertvm.ac.in</a></p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="research.html">Research</a></li>
+            <li><a href="people.html">People</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="join.html">Join Us</a></li>
+            <li><a href="news.html">News</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>External Profiles</h4>
+          <ul class="footer-links">
+            <li><a href="https://laltu-sardar.github.io/" target="_blank">Group Leader's Homepage</a></li>
+            <li><a href="https://www.iisertvm.ac.in/faculty/laltusardar" target="_blank">IISER TVM Faculty Page</a></li>
+            <li><a href="https://github.com/laltu-sardar" target="_blank">GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">© 2025 QuRAC Research Group, IISER Thiruvananthapuram</div>
+    </div>
+  </footer>
+
+  <script src="../src/qurac_main.js"></script>
+</body>
+</html>
