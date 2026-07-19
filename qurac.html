@@ -32,7 +32,7 @@
           <li><a href="qurac.html" class="active">Home</a></li>
           <li><a href="qurac/research.html">Research</a></li>
           <li><a href="qurac/people.html" >People</a></li>
-          <li><a href="qurac/projects.html" class="active">Projects</a></li>
+          <li><a href="qurac/projects.html" >Projects</a></li>
           <li><a href="#">Resources</a></li>
           <li><a href="qurac/join.html">Join</a></li>
           <li><a href="#">Gallery</a></li>
@@ -71,6 +71,8 @@
     </div>
   </div>
 
+
+
   <!-- ===================== MAIN ===================== -->
   <main class="container">
 
@@ -90,7 +92,7 @@
 
       <div class="about-right"><br><br>
         <div class="image-slider">
-          <img src="qurac/img/logo_qurac_iiser.png" class="active" alt="QuRAC group photo" />
+          <img src="qurac/img/logo_qurac_iiser.jpg" class="active" alt="QuRAC group photo" />
           <!--img src="img/qurac/qurac_group_2.jpg" alt="QuRAC at a conference" /-->
           <!--img src="img/qurac/qurac_group_3.jpg" alt="QuRAC workshop" /-->
           <button class="slider-btn prev" onclick="prevSlide()">&#10094;</button>
@@ -107,90 +109,86 @@
 
 
     <!-- ===== Research Highlights + News (two column) ===== -->
-    <div style="display: grid; grid-template-columns: 60% 40%; gap: 40px; align-items: start;">
+    <hr class="section-divider">
 
-      <!-- Research highlights -->
-      <section>
-        <h2 class="section-heading">Research Highlights</h2>
-        <div class="highlights-grid">
+    <!-- ===== Research Highlights ===== -->
+    <section>
+      <h2 class="section-heading">Research Highlights</h2>
+      <div class="highlights-grid">
 
-          <div class="highlight-card">
-            <h3>Applied Cryptography</h3>
-            <p>Searchable encryption, privacy-preserving computation, and encrypted data analytics.</p>
-            <a href="qurac/research.html#applied">Learn more →</a>
-          </div>
-          
-          <div class="highlight-card">
-            <h3>Post-Quantum Cryptography</h3>
-            <p>Lattice-based, code-based, and hash-based primitives addressing NIST PQC standardization and beyond.</p>
-            <a href="qurac/research.html#pqc">Learn more →</a>
-          </div>
-
-          
-            <div class="highlight-card">
-            <h3>Quantum Cryptography</h3>
-            <p>Quantum key distribution, quantum-secure protocols, and security in quantum adversary models.</p>
-            <a href="qurac/research.html#qc">Learn more →</a>
-          </div>
-          
-
-          <div class="highlight-card">
-            <h3>Secure Cloud Computing</h3>
-            <p>Secure outsourced computation, verifiable queries, and privacy-preserving cloud services.</p>
-            <a href="qurac/research.html#cloud">Learn more →</a>
-          </div>
-
-          <div class="highlight-card">
-            <h3>Consensus &amp; Blockchain Security</h3>
-            <p>Post-quantum blockchain, Ethereum Layer-2 security, VDFs, and distributed consensus protocols.</p>
-            <a href="qurac/research.html#blockchain">Learn more →</a>
-          </div>
-          
-          
-          
-
+        <div class="highlight-card">
+          <h3>Applied Cryptography</h3>
+          <p>Searchable encryption, privacy-preserving computation, and encrypted data analytics.</p>
+          <a href="qurac/research.html#applied">Learn more →</a>
         </div>
-      </section>
 
-      <!-- Latest News -->
-      <section>
-        <h2 class="section-heading">Latest News</h2>
-        <div class="marquee-vertical">
-          <ol class="news-scroll">
-            <li>
-              Paper <em>"Efficient and Post-Quantum Conjunctive Dynamic SSE with Strong Privacy Guarantees"</em>
-              accepted at <a href="https://pkc.iacr.org/2026/" target="_blank">PKC 2026</a>.
-            </li>
-            <li>
-              Invited talk on <em>"Mitigating Randao Manipulation: Is VDF the Missing Link?"</em>
-              at <a href="https://events.iitbhilai.ac.in/cws" target="_blank">Crypto Winter School 2025</a>, IIT Bhilai.
-            </li>
-            <li>
-              Talk on <em>"From Classical to Quantum Cryptography: The Next Leap in Secure Communication"</em>
-              at Tathva'25, NIT Calicut.
-            </li>
-            <li>
-              Member of Program Committee ,
-              <a href="https://distress-sse.github.io/distress-sse/" target="_blank">
-                 1st Workshop on Decentralized Immutable Secure Tamper-Resistant Encrypted Searchable Storage</a>, (DISTRESS 2026).
-            </li>
-            <li>
-              PhD positions open in Applied Cryptography, Blockchain &amp; Layer-2 Technologies.
-              Candidates with CSIR/UGC NET or INSPIRE fellowships may apply directly.
-            </li>
-            <li>
-              Dr. Laltu Sardar served as Co-organiser of the AI for Science Pre-Summit Event
-              (IndiaAI Mission), IISER TVM, 2025.
-            </li>
-            
-          </ol>
+        <div class="highlight-card">
+          <h3>Post-Quantum Cryptography</h3>
+          <p>Lattice-based, code-based, and hash-based primitives addressing NIST PQC standardization and beyond.</p>
+          <a href="qurac/research.html#pqc">Learn more →</a>
         </div>
-        <p style="margin-top: 8px; font-size: 0.9rem;">
-          <a href="qurac/news.html">All news →</a>
-        </p>
-      </section>
 
-    </div>
+        <div class="highlight-card">
+          <h3>Quantum Cryptography</h3>
+          <p>Quantum key distribution, quantum-secure protocols, and security in quantum adversary models.</p>
+          <a href="qurac/research.html#qc">Learn more →</a>
+        </div>
+
+        <div class="highlight-card">
+          <h3>Secure Cloud Computing</h3>
+          <p>Secure outsourced computation, verifiable queries, and privacy-preserving cloud services.</p>
+          <a href="qurac/research.html#cloud">Learn more →</a>
+        </div>
+
+        <div class="highlight-card">
+          <h3>Consensus &amp; Blockchain Security</h3>
+          <p>Post-quantum blockchain, Ethereum Layer-2 security, VDFs, and distributed consensus protocols.</p>
+          <a href="qurac/research.html#blockchain">Learn more →</a>
+        </div>
+
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- ===== Latest News ===== -->
+    <section>
+      <h2 class="section-heading">Latest News</h2>
+      <div class="marquee-vertical">
+        <ol class="news-scroll">
+          <li>
+            Paper <em>"Efficient and Post-Quantum Conjunctive Dynamic SSE with Strong Privacy Guarantees"</em>
+            accepted at <a href="https://pkc.iacr.org/2026/" target="_blank">PKC 2026</a>.
+          </li>
+          <li>
+            Invited talk on <em>"Mitigating Randao Manipulation: Is VDF the Missing Link?"</em>
+            at <a href="https://events.iitbhilai.ac.in/cws" target="_blank">Crypto Winter School 2025</a>, IIT Bhilai.
+          </li>
+          <li>
+            Talk on <em>"From Classical to Quantum Cryptography: The Next Leap in Secure Communication"</em>
+            at Tathva'25, NIT Calicut.
+          </li>
+          <li>
+            Member of Program Committee ,
+            <a href="https://distress-sse.github.io/distress-sse/" target="_blank">
+               1st Workshop on Decentralized Immutable Secure Tamper-Resistant Encrypted Searchable Storage</a>, (DISTRESS 2026).
+          </li>
+          <li>
+            PhD positions open in Applied Cryptography, Blockchain &amp; Layer-2 Technologies.
+            Candidates with CSIR/UGC NET or INSPIRE fellowships may apply directly.
+          </li>
+          <li>
+            Dr. Laltu Sardar served as Co-organiser of the AI for Science Pre-Summit Event
+            (IndiaAI Mission), IISER TVM, 2025.
+          </li>
+        </ol>
+      </div>
+      <p style="margin-top: 8px; font-size: 0.9rem;">
+        <a href="qurac/news.html">All news →</a>
+      </p>
+    </section>
+
+    <hr class="section-divider">
 
     <hr class="section-divider">
 
