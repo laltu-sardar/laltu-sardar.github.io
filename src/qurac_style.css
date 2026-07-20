@@ -321,6 +321,16 @@ main {
 }
 .about-layout p { text-align: justify; }
 
+.address-layout {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 20px;
+    align-items: start;
+    background: white;
+}
+.address-layout p { text-align: justify; background: white;} 
+
+
 .about-right {
     justify-content: center;
     align-items: center;
