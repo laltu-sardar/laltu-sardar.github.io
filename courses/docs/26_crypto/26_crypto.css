@@ -1,0 +1,347 @@
+/* ============================================================
+   COrgOS 2026 — Light Professional Theme
+   File: docs/26_data_security/26_ds.css
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600;700&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+/* ── Variables ── */
+:root {
+  --bg:          #f5f7fa;
+  --surface:     #ffffff;
+  --border:      #dde2ea;
+  --navy:        #1a2b4a;
+  --blue:        #1a5fba;
+  --blue-light:  #e8f0fc;
+  --red:         #b91c1c;
+  --red-light:   #fef2f2;
+  --green:       #15803d;
+  --text:        #1e293b;
+  --text-muted:  #5a6a84;
+  --link:        #1a5fba;
+  --link-hover:  #b91c1c;
+  --radius:      6px;
+  --shadow:      0 1px 4px rgba(0,0,0,0.08), 0 4px 16px rgba(0,0,0,0.06);
+}
+
+/* ── Reset ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 15px;
+  background: var(--bg);
+  color: var(--text);
+  padding-top: 58px;
+  line-height: 1.7;
+}
+
+/* ── Navigation ── */
+.myNav {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: var(--navy);
+  border-bottom: 3px solid var(--blue);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+}
+
+.myNav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.15rem;
+  padding: 0.55rem 1rem;
+  margin: 0;
+  background: transparent;
+}
+
+.myNav ul li { display: inline; }
+
+.myNav ul li a {
+  display: inline-block;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 500;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #c8d6f0;
+  text-decoration: none;
+  padding: 0.38rem 0.9rem;
+  border-radius: var(--radius);
+  transition: background 0.18s, color 0.18s;
+}
+
+.myNav ul li a:hover {
+  background: var(--blue);
+  color: #ffffff;
+}
+
+/* ── Main container ── */
+#education { background: var(--bg) !important; }
+
+.container.content-lg {
+  max-width: 1060px;
+  margin: 2rem auto;
+  padding: 2.5rem 2.5rem 3rem;
+  background: var(--surface) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+}
+
+/* ── Page headings ── */
+h2 {
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-weight: 700;
+  font-size: clamp(1.4rem, 3.5vw, 2rem);
+  color: var(--navy) !important;
+  text-align: center;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.3rem;
+}
+
+h4 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 400;
+  font-size: 0.95rem;
+  color: var(--text-muted) !important;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* ── Section headings ── */
+#contentContainer h4 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: var(--navy) !important;
+  text-align: left;
+  border-left: 3px solid var(--blue);
+  padding-left: 0.6rem;
+  margin-bottom: 0.5rem;
+}
+
+#contentContainer h2 {
+  text-align: left;
+  font-size: 1.35rem;
+}
+
+#contentContainer h3 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--navy) !important;
+  margin: 1.2rem 0 0.5rem;
+}
+
+/* ── HR ── */
+hr {
+  border: none !important;
+  border-top: 1px solid var(--border) !important;
+  margin: 1.2rem 0;
+}
+
+/* ── Body text ── */
+#contentContainer p,
+#contentContainer td,
+#contentContainer li {
+  color: var(--text) !important;
+  font-size: 0.9rem;
+}
+
+#contentContainer strong { color: var(--navy) !important; }
+
+/* ── Quick nav links ── */
+p a[href^="#"] {
+  color: var(--blue) !important;
+  font-weight: 500;
+  text-decoration: none;
+  border-bottom: 1px solid var(--blue);
+  transition: color 0.15s;
+}
+p a[href^="#"]:hover { color: var(--red) !important; border-color: var(--red); }
+
+/* ── All links ── */
+.table a,
+#contentContainer a {
+  color: var(--link) !important;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.15s;
+}
+.table a:hover,
+#contentContainer a:hover {
+  color: var(--link-hover) !important;
+  text-decoration: underline;
+}
+
+/* ── Tables ── */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.87rem;
+  margin-bottom: 1.4rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.table thead tr,
+.table thead tr[style] {
+  background: var(--navy) !important;
+}
+
+.table thead th {
+  color: #ffffff !important;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 600;
+  font-size: 0.78rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 0.65rem 0.85rem;
+  border: none;
+}
+
+.table tbody tr {
+  border-bottom: 1px solid var(--border);
+  transition: background 0.12s;
+}
+
+.table tbody tr:nth-child(even),
+tr:nth-child(even) {
+  background-color: #f0f4fa !important;
+}
+
+.table tbody tr:nth-child(odd) {
+  background-color: var(--surface) !important;
+}
+
+.table tbody tr:hover {
+  background-color: var(--blue-light) !important;
+}
+
+.table tbody td,
+.table tbody th {
+  color: var(--text) !important;
+  padding: 0.6rem 0.85rem;
+  vertical-align: middle;
+  border: none;
+}
+
+.table tbody tr th[scope="row"] {
+  color: var(--text-muted) !important;
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
+/* ── Code blocks ── */
+code {
+  display: block;
+  background: #f1f5f9;
+  border-left: 3px solid var(--blue);
+  padding: 0.7rem 1rem;
+  border-radius: var(--radius);
+  color: var(--navy) !important;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.8rem;
+  line-height: 1.65;
+  margin: 0.6rem 0;
+}
+
+/* ── Inline color overrides ── */
+s { color: var(--text-muted) !important; }
+span[style*="color:blue"]   { color: var(--blue) !important; }
+span[style*="color:red"]    { color: var(--red) !important; }
+span[style*="color:gray"]   { color: var(--text-muted) !important; }
+
+/* ── Lists ── */
+ol, ul { padding-left: 1.4rem; color: var(--text); }
+ol li, ul li { margin-bottom: 0.3rem; }
+
+/* ── Institute logo ── */
+img[alt="iiser-tvm-logo"] {
+  height: 60px;
+  border-radius: 4px;
+}
+
+/* ── Group photo ── */
+.group-photo-wrapper { text-align: center; margin: 1.5rem 0; }
+.group-photo {
+  max-width: 100%;
+  border-radius: 8px;
+  border: 2px solid var(--border);
+  box-shadow: var(--shadow);
+}
+
+/* ── Marquee tooltip ── */
+#marquee {
+  position: absolute;
+  font-size: 12px;
+  font-family: 'IBM Plex Mono', monospace;
+  background: var(--navy);
+  color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  pointer-events: none;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+/* ── Footer ── */
+footer {
+  background: var(--navy) !important;
+  border-top: 3px solid var(--blue);
+  margin-top: 3rem;
+}
+
+footer .content { background: transparent !important; padding: 1.4rem 1rem; }
+
+footer h4 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 400;
+  font-size: 0.88rem;
+  color: #a0b0cc !important;
+  text-align: center !important;
+}
+
+footer h4 a { color: #7ab0f0 !important; font-weight: 500; }
+footer h4 a:hover { color: #ffffff !important; text-decoration: none; }
+
+/* ── Back to top ── */
+.js-back-to-top {
+  background: var(--navy) !important;
+  color: #ffffff !important;
+  border-radius: var(--radius);
+  padding: 0.4rem 0.9rem;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 600;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  transition: background 0.2s;
+  position: fixed;
+  bottom: 22px;
+  right: 22px;
+  z-index: 999;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+}
+.js-back-to-top:hover { background: var(--blue) !important; }
+
+/* ── Fade-in animation ── */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.container.content-lg { animation: fadeIn 0.5s ease both; }
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .myNav ul li a { font-size: 0.7rem; padding: 0.3rem 0.55rem; }
+  .container.content-lg { padding: 1rem; margin: 0.8rem; }
+  .table { font-size: 0.8rem; }
+}
