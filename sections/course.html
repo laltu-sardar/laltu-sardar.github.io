@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Laltu Sardar | Course</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../src/style.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <nav>
+            <h2>Laltu Sardar</h2> 
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+            <ul>
+                <li><a href="./../index.html">Home</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="teaching.html">Teaching</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="awards.html">Awards</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+<h1>Computer Organization & Operating System</h1>
+<h2 style="text-align: center;">BS-MS Program, 2nd year, Semester 4 (Session: 2025-26)</h2>
+
+<p style="text-align: center;">
+    <a href="#Information">Information</a> |
+    <a href="#Announcements">Announcements</a> |
+    <a href="#Schedule:Mid-sem">Mid-Sem Classes</a> |
+    <a href="#Schedule:End-sem">End-Sem Classes</a> |
+    <a href="#Assignments">Assignments</a> |
+    <a href="#References">References</a>
+</p>
+
+<hr class="section-divider">
+
+<!-- ================= Course Information ================= -->
+
+<section class="institution">
+    <table class="academic-table">
+        <thead>
+            <tr>
+                <th>Course offered at</th>
+                <th></th>
+                <th>Instructor</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <img style="height:70px;" src="./docs/iisertvmlogo.jpg" alt="iiser-tvm-logo">
+                </td>
+                <td>The School of Data Science,<br>Indian Institute of Science Education and Research Thiruvananthapuram,<br>Thiruvananthapuram, Kerala, India</td>
+                <td>
+                    <a href="https://laltu-sardar.github.io" target="_blank">👤 Dr. Laltu Sardar ✉</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p><strong>Course Objective:</strong> This course aims to build a clear understanding of the fundamental principles that shape modern computer organization and operating systems. Students will explore how programs are structured, stored, and executed through detailed study of memory organization and related architectural concepts. The course also guides learners through the essential ideas involved in designing an operating system, enabling them to connect theoretical foundations with practical system level behavior.</p>
+
+    <p><strong>Prerequisites:</strong> NA</p>
+
+    <p style="text-align: center;">
+        <a href="https://docs.google.com/spreadsheets/d/121uPqZf1zlEPwf6DsJj-wOCUfFGdS2ZE8DbsiEqVE2U" target="_blank"><strong>⬥ Click here to check assignment marks ⬥</strong></a>
+    </p>
+</section>
+
+<hr class="section-divider">
+
+<!-- ================= Information ================= -->
+
+<section class="institution" id="Information">
+    <h2>📋 Information</h2>
+
+    <table class="academic-table">
+        <tbody>
+            <tr>
+                <td>⬥ Class Timing: <strong>Monday</strong>, <span style="color:gray;"><s>Tuesday</s></span>, <strong>Wednesday</strong>, <span style="color:gray;"><s>Thursday</s></span> & <strong>Friday</strong> ; ⬥ <strong><span style="color:blue;">2:00 pm - 3:00 pm</span></strong> ⬥ Place: <strong>LHC-105</strong></td>
+            </tr>
+            <tr>
+                <td>
+                    ⬥<a href="docs/corgos_26/COrgOS_syllabus.pdf" target="_blank">&nbsp COrgOS Syllabus &nbsp</a>
+                    ⬥<a href="docs/corgos_26/DSC_Second-year_Vasanth-2026_Time-Table.pdf" target="_blank">&nbsp Time-Table for DSC 2nd-year: Vasanth-2026 &nbsp</a>
+                    ⬥<a href="https://www.iisertvm.ac.in/beta/schoolcms/writable/uploads/Complete_Course_Catalogue.pdf" target="_blank">&nbsp IISER-TVM Complete Syllabus &nbsp</a>
+                    ⬥<a href="docs/corgos_26/course_page_qr_COrgOS.png" target="_blank">&nbsp Course-page QR Code &nbsp</a>
+                </td>
+            </tr>
+            <tr>
+                <td><strong>⬥ List of courses</strong>:
+                    ⬥ <a href="docs/corgos_26/List_of_courses_offered_Vashant_2026_school-wise.txt" target="_blank"><strong>School-wise offered in Vasanth 2026 (Not Finalized)</strong></a>
+                    ⬥ <a href="docs/corgos_26/List_of_courses_offered_Vashant_2026.txt" target="_blank"><strong>Year-wise offered in Vasanth 2026 (Not Finalized)</strong></a>
+                    ⬥ <a href="docs/corgos_26/iisertvm_all_courses.txt" target="_blank"><strong>All approved in IISER Tvm</strong></a>
+                </td>
+            </tr>
+            <tr>
+                <td>⬥ Marks Distribution: Time-wise--> <strong>[Mid-Sem: 40% + End-Sem: 60%]</strong>; Type-wise --> <strong>[Written Exam: 80% + Assignments: 20%]</strong></td>
+            </tr>
+            <tr>
+                <td>⬥ Pass Marks: According to <a href="https://academics.iisertvm.ac.in/programmes" target="_blank">IISER TVM policy</a></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Marks Distribution Table</h3>
+    <table class="academic-table">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Total Marks 100</th>
+                <th>Written Exam</th>
+                <th>Assignments</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Mid-Semester</td>
+                <td>30</td>
+                <td>10</td>
+                <td>40</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>End-Semester</td>
+                <td>50</td>
+                <td>10</td>
+                <td>60</td>
+            </tr>
+            <tr>
+                <td>⬥</td>
+                <td>Total</td>
+                <td>80</td>
+                <td>20</td>
+                <td>100</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="academic-table">
+        <tbody>
+            <tr>
+                <td>⬥ Attendance: <a href="https://docs.google.com/spreadsheets/d/1jA8ZrI6AJQJdaNm8vXYBxHERqSPWblKWLpsrzXxA3Zo/edit?usp=sharing" target="_blank"><strong>See your attendances here.</strong></a><br>
+                    ⬥ Course Information Handout: <a href="docs/corgos_26/CIH.pdf" target="_blank">See here</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<hr class="section-divider">
+
+<!-- ================= Announcements ================= -->
+
+<section class="institution" id="Announcements">
+    <h2>📢 Announcements</h2>
+
+    <table class="academic-table">
+        <tbody>
+            <tr>
+                <td>☑ The COrgOS classes will be started from January 5, 2026</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Updates</h3>
+    <ol class="academic-list" reversed>
+        <li>Sildes for the 2nd class is added.</li>
+        <li>Viewer permission for attendance sheet is granted.</li>
+        <li>Sildes for the 1st class is added.</li>
+        <li>Webpage QR Code is Updated.</li>
+    </ol>
+</section>
+
+<hr class="section-divider">
+
+<!-- ================= Mid-Sem Class Schedule ================= -->
+
+<section class="institution" id="Schedule:Mid-sem">
+    <h2>📅 Class Schedule: Mid-sem</h2>
+
+    <table class="academic-table">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Date</th>
+                <th>Topics on Computer Organization</th>
+                <th>Remarks</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>2026-Jan-05</td>
+                <td><strong>Introduction:</strong><br>What is computer organization, Basic principles of abstraction,<br>Hardware components overview</td>
+                <td><a href="docs/corgos_26/slides_ms_01.pdf" target="_blank">slides_ms_01</a></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>2026-Jan-07</td>
+                <td><strong>Performance Measurement:</strong><br>Latency, throughput, Benchmarks, Evaluating,<br>comparing and summarizing performance</td>
+                <td><a href="docs/corgos_26/slides_ms_02.pdf" target="_blank">slides_ms_02</a></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>2026-Jan-09</td>
+                <td><strong>Binary Number Representations</strong></td>
+                <td><a href="docs/corgos_26/slides_ms_03.pdf" target="_blank">slides</a>
+                    <br><a href="docs/corgos_26/boardwork_ms_03.pdf" target="_blank">boardwork</a>
+                    <br><a href="docs/corgos_26/homeworks_ms_03.txt" target="_blank">homework</a>
+                </td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>2026-Jan-12</td>
+                <td><strong>Signed Number Representations</strong></td>
+                <td><a href="docs/corgos_26/slides_ms_04.pdf" target="_blank">slides</a>
+                    <br><a href="docs/corgos_26/boardwork_ms_04.pdf" target="_blank">boardwork</a>
+                    <br><a href="docs/corgos_26/homeworks_ms_04.txt" target="_blank">homework</a>
+                </td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>2026-Jan-13</td>
+                <td><strong>IEEE 754: Floating Point Number Representations</strong></td>
+                <td><a href="docs/corgos_26/slides_ms_05.pdf" target="_blank">slides</a>
+                    <br><a href="docs/corgos_26/boardwork_ms_05.pdf" target="_blank">boardwork</a>
+                    <br><a href="docs/corgos_26/homeworks_ms_05.txt" target="_blank">homework</a>
+                </td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>2026-Jan-16</td>
+                <td><strong>Arithmetic Operations</strong><br>Unsigned and Signed addition; Overflow</td>
+                <td><a href="docs/corgos_26/slides_ms_06.pdf" target="_blank">slides</a>
+                    <br><a href="docs/corgos_26/boardwork_ms_06.pdf" target="_blank">boardwork</a>
+                    <br><a href="docs/corgos_26/homeworks_ms_06.txt" target="_blank">homework</a>
+                </td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>2026-Jan-19</td>
+                <td><strong>Boolean Algebra and Boolean Functions</strong></td>
+                <td><a href="docs/corgos_26/slides_ms_07.pdf" target="_blank">slides</a>
+                    <br><a href="docs/corgos_26/boardwork_ms_07.pdf" target="_blank">boardwork</a>
+                    <br><a href="docs/corgos_26/homeworks_ms_07.txt" target="_blank">homework</a>
+                </td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>2026-Jan-22</td>
+                <td><strong>Logic Gates</strong><br>All basic logic gates: and, or, nand, nor, xor, not, xnor; <br>Implementation of boolean function with logic gates</td>
+                <td><a href="docs/corgos_26/slides_ms_08.pdf" target="_blank">slides</a>
+                    <br><a href="docs/corgos_26/boardwork_ms_08.pdf" target="_blank">boardwork</a>
+                    <br><a href="docs/corgos_26/homeworks_ms_08.txt" target="_blank">homework</a>
+                </td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>2026-Jan-23</td>
+                <td><strong>Combinational Circuits</strong><br>Multiplexer, Decoder; <br>Building Adder, Subtractor and Arithmetic Unit</td>
+                <td><a href="docs/corgos_26/slides_ms_09.pdf" target="_blank">slides</a>
+                    <br><a href="docs/corgos_26/boardwork_ms_09.pdf" target="_blank">boardwork</a>
+                    <br><a href="docs/corgos_26/homeworks_ms_09.txt" target="_blank">homework</a>
+                </td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>2026-Jan-29</td>
+                <td><strong>Sequential Circuits</strong><br>SR Latch, D Latch, D flip-flop, Register</td>
+                <td><a href="docs/corgos_26/slides_ms_10.pdf" target="_blank">slides</a>
+                    <br><a href="docs/corgos_26/boardwork_ms_10.pdf" target="_blank">boardwork</a>
+                    <br><a href="docs/corgos_26/homeworks_ms_10.txt" target="_blank">homework</a>
+                </td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>2026-Jan-30</td>
+                <td><strong>Instruction Set Architecture (ISA)</strong><br>Arithmetic, data transfer, logical, conditional branch, <br>unconditional jump, addressing modes</td>
+                <td><a href="docs/corgos_26/slides_ms_11.pdf" target="_blank">slides</a>
+                    <br><a href="docs/corgos_26/boardwork_ms_11.pdf" target="_blank">boardwork</a>
+                    <br><a href="docs/corgos_26/homeworks_ms_11.txt" target="_blank">homework</a>
+                </td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>2026-Feb-02</td>
+                <td><strong>Memory Hierarchy</strong><br>Introduction to <strong>Cache</strong></td>
+                <td><a href="docs/corgos_26/slides_ms_12.pdf" target="_blank">slides</a>
+                    <br><a href="docs/corgos_26/boardwork_ms_12.pdf" target="_blank">boardwork</a>
+                    <br><a href="docs/corgos_26/homeworks_ms_12.txt" target="_blank">homework</a>
+                </td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>2026-Feb-06</td>
+                <td><strong>Measuring Cache Performance</strong></td>
+                <td><a href="docs/corgos_26/slides_ms_13.pdf" target="_blank">slides</a>
+                    <br><a href="docs/corgos_26/boardwork_ms_13.pdf" target="_blank">boardwork</a>
+                    <br><a href="docs/corgos_26/homeworks_ms_13.txt" target="_blank">homework</a>
+                </td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>2026-Feb-09</td>
+                <td><strong>Virtual Memory</strong><br>Page table; Page fault; Parallelism</td>
+                <td><a href="docs/corgos_26/slides_ms_14.pdf" target="_blank">slides</a>
+                    <br><a href="docs/corgos_26/boardwork_ms_14.pdf" target="_blank">boardwork</a>
+                    <br><a href="docs/corgos_26/homeworks_ms_14.txt" target="_blank">homework</a>
+                    <br><a href="https://www.youtube.com/watch?v=fGP6VHxqkIM" target="_blank">Ref. video 1</a>
+                    <br><a href="https://www.youtube.com/watch?v=A9WLYbE0p-I" target="_blank">Ref. video 2</a>
+                </td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>2026-Feb-11</td>
+                <td><strong>Input/output</strong></td>
+                <td><a href="docs/corgos_26/slides_ms_15.pdf" target="_blank">slides</a></td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>2026-Feb-13</td>
+                <td><strong>Building Datapath</strong></td>
+                <td><a href="docs/corgos_26/slides_ms_16.pdf" target="_blank">slides</a></td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>2026-Feb-16</td>
+                <td><strong>Pipelining</strong></td>
+                <td><a href="docs/corgos_26/slides_ms_17.pdf" target="_blank">slides</a>
+                    <br><a href="docs/corgos_26/boardwork_ms_17.pdf" target="_blank">boardwork</a>
+                </td>
+            </tr>
+            <tr>
+                <td>18</td>
+                <td>2026-Feb-18</td>
+                <td>Practice and Clarification</td>
+                <td><a href="docs/corgos_26/slides_ms_18.pdf" target="_blank">slides</a>
+                    <br><a href="docs/corgos_26/boardwork_ms_18.pdf" target="_blank">boardwork</a>
+                    <br><a href="docs/corgos_26/homeworks_ms_18.txt" target="_blank">homework</a>
+                </td>
+            </tr>
+            <tr>
+                <td>19</td>
+                <td>2026-Feb-20</td>
+                <td>Practice and Clarification</td>
+                <td><a href="docs/corgos_26/slides_ms_19.pdf" target="_blank">slides</a>
+                    <br><a href="docs/corgos_26/boardwork_ms_19.pdf" target="_blank">boardwork</a>
+                    <br><a href="docs/corgos_26/homeworks_ms_19.txt" target="_blank">homework</a>
+                </td>
+            </tr>
+            <tr>
+                <td>*</td>
+                <td>2026-Feb-21</td>
+                <td><strong>Mid-Semestral Written Exam</strong></td>
+                <td><a href="docs/corgos_26/midsem_questions.pdf" target="_blank">questions</a>
+                    <br><a href="docs/corgos_26/midsem_sample_solutions.zip" target="_blank">sample_solutions</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<hr class="section-divider">
+
+<!-- ================= End-Sem Class Schedule ================= -->
+
+<section class="institution" id="Schedule:End-sem">
+    <h2>📅 Class Schedule: End-sem</h2>
+
+    <table class="academic-table">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Date</th>
+                <th>Topics on Operating Systems</th>
+                <th>Remarks</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>2026-Mar-00</td>
+                <td><strong>OS Introductory Concepts:</strong><br>Computer system organization, Operating system structure, Operations of OS</td>
+                <td><a href="docs/os_26/slides_es_01.pdf" target="_blank">slides_es_01</a></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>2026-Mar-00</td>
+                <td><strong>Functional Areas of OS:</strong><br>Process management, Memory management, Storage management,<br>Protection and security, Distributed systems</td>
+                <td><a href="docs/os_26/slides_es_02.pdf" target="_blank">slides_es_02</a></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>2026-Mar-00</td>
+                <td><strong>Process Fundamentals:</strong><br>Process concept, Process states, Process control block</td>
+                <td><a href="docs/os_26/slides_es_03.pdf" target="_blank">slides_es_03</a></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>2026-Mar-00</td>
+                <td><strong>Process Scheduling and Operations:</strong><br>Process scheduling, CPU bursts, Operations on processes</td>
+                <td><a href="docs/os_26/slides_es_04.pdf" target="_blank">slides_es_04</a></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>2026-Mar-00</td>
+                <td><strong>Cooperating Processes and IPC:</strong><br>Cooperating processes, Inter-process communication, Message passing and shared memory</td>
+                <td><a href="docs/os_26/slides_es_05.pdf" target="_blank">slides_es_05</a></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>2026-Mar-00</td>
+                <td><strong>Thread Basics:</strong><br>Overview of threads, Benefits of multi-threading</td>
+                <td><a href="docs/os_26/slides_es_06.pdf" target="_blank">slides_es_06</a></td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>2026-Mar-00</td>
+                <td><strong>Thread Models and Issues:</strong><br>Multi-threading models, Threading issues, Thread pools, Signal handling</td>
+                <td><a href="docs/os_26/slides_es_07.pdf" target="_blank">slides_es_07</a></td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>2026-Mar-00</td>
+                <td><strong>Thread Implementations:</strong><br>Pthreads model, Windows XP threads</td>
+                <td><a href="docs/os_26/slides_es_08.pdf" target="_blank">slides_es_08</a></td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>2026-Mar-00</td>
+                <td><strong>Scheduling Basics:</strong><br>Scheduling objectives, CPU scheduler, Scheduling criteria</td>
+                <td><a href="docs/os_26/slides_es_09.pdf" target="_blank">slides_es_09</a></td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>2026-Mar-00</td>
+                <td><strong>Scheduling Algorithms Part 1:</strong><br>FCFS, SJF, Priority scheduling, Preemptive and non-preemptive scheduling</td>
+                <td><a href="docs/os_26/slides_es_10.pdf" target="_blank">slides_es_10</a></td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>2026-Mar-00</td>
+                <td><strong>Scheduling Algorithms Part 2 and Multiprocessors:</strong><br>Round Robin, Multilevel queues, Multiprocessor scheduling</td>
+                <td><a href="docs/os_26/slides_es_11.pdf" target="_blank">slides_es_11</a></td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>2026-Mar-00</td>
+                <td><strong>Critical Section and Hardware Support:</strong><br>Critical section problem, Peterson's solution, Synchronization hardware</td>
+                <td><a href="docs/os_26/slides_es_12.pdf" target="_blank">slides_es_12</a></td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>2026-Mar-00</td>
+                <td><strong>Semaphores, Monitors and Examples:</strong><br>Semaphores, Monitors, Classic synchronization examples</td>
+                <td><a href="docs/os_26/slides_es_13.pdf" target="_blank">slides_es_13</a></td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>2026-Mar-00</td>
+                <td><strong>Deadlock Handling:</strong><br>Methods for handling deadlocks, Prevention, Avoidance, Recovery</td>
+                <td><a href="docs/os_26/slides_es_14.pdf" target="_blank">slides_es_14</a></td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>2026-Mar-00</td>
+                <td><strong>Basic Memory Management:</strong><br>Swapping, Contiguous memory allocation</td>
+                <td><a href="docs/os_26/slides_es_15.pdf" target="_blank">slides_es_15</a></td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>2026-Mar-00</td>
+                <td><strong>Paging:</strong><br>Paging mechanism, Page tables, Hardware support for paging</td>
+                <td><a href="docs/os_26/slides_es_16.pdf" target="_blank">slides_es_16</a></td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>2026-Mar-00</td>
+                <td><strong>Segmentation and Virtual Memory:</strong><br>Segmentation, Segmentation with paging, Virtual memory concepts</td>
+                <td><a href="docs/os_26/slides_es_17.pdf" target="_blank">slides_es_17</a></td>
+            </tr>
+            <tr>
+                <td>18</td>
+                <td>2026-Mar-00</td>
+                <td><strong>Demand Paging and Page Replacement:</strong><br>Demand paging, Page faults, Page replacement algorithms</td>
+                <td><a href="docs/os_26/slides_es_18.pdf" target="_blank">slides_es_18</a></td>
+            </tr>
+            <tr>
+                <td>19</td>
+                <td>2026-Mar-00</td>
+                <td><strong>I/O Hardware:</strong><br>I/O devices, Device controllers, Interrupts</td>
+                <td><a href="docs/os_26/slides_es_19.pdf" target="_blank">slides_es_19</a></td>
+            </tr>
+            <tr>
+                <td>20</td>
+                <td>2026-Mar-00</td>
+                <td><strong>Application I/O Interface:</strong><br>I/O system calls, Blocking and non-blocking I/O, Device-independent I/O</td>
+                <td><a href="docs/os_26/slides_es_20.pdf" target="_blank">slides_es_20</a></td>
+            </tr>
+            <tr>
+                <td>21</td>
+                <td>2026-Mar-00</td>
+                <td><strong>Kernel I/O Subsystem:</strong><br>Scheduling, Buffering, Caching, Spooling</td>
+                <td><a href="docs/os_26/slides_es_21.pdf" target="_blank">slides_es_21</a></td>
+            </tr>
+            <tr>
+                <td>22</td>
+                <td>2026-Mar-00</td>
+                <td><strong>I/O Request to Hardware Operations:</strong><br>Transforming I/O requests to hardware actions, Device driver flow</td>
+                <td><a href="docs/os_26/slides_es_22.pdf" target="_blank">slides_es_22</a></td>
+            </tr>
+            <tr>
+                <td>*</td>
+                <td>2026-Apr-00</td>
+                <td><strong>End-Semestral Written Exam</strong></td>
+                <td><a href="docs/corgos_26/endsem_questions.pdf" target="_blank">questions</a>
+                    <br><a href="docs/corgos_26/endsem_sample_solutions.zip" target="_blank">sample_solutions</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<hr class="section-divider">
+
+<!-- ================= Assignments ================= -->
+
+<section class="institution" id="Assignments">
+    <h2>✍ Assignments</h2>
+
+    <h3>Assignment Problems</h3>
+
+    <table class="academic-table">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Topic</th>
+                <th>Assignments</th>
+                <th>Deadline</th>
+                <th>Remarks</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td><u><strong>Mid-semester</strong></u></td>
+                <td></td>
+                <td><a href="https://docs.google.com/spreadsheets/d/121uPqZf1zlEPwf6DsJj-wOCUfFGdS2ZE8DbsiEqVE2U" target="_blank">See marks here</a></td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Binary Number Representation,<br>Basic operations and their Logic Circuits</td>
+                <td><a href="docs/corgos_26/assignment_1.html" target="_blank">Assignment 1</a></td>
+                <td>2026-Jan-23</td>
+                <td>Marks: 4</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Floating Point Representation</td>
+                <td><a href="docs/corgos_26/assignment_2.txt" target="_blank">Assignment 2</a></td>
+                <td>2026-Jan-21</td>
+                <td>Marks: 6</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td><u><strong>End-semester</strong></u></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>--</td>
+                <td>TBD</td>
+                <td><a href="docs/corgos_26/assignment_0.pdf" target="_blank">Assignment</a></td>
+                <td>2026-Mar-00</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>--</td>
+                <td>TBD</td>
+                <td><a href="docs/corgos_26/assignment_0.pdf" target="_blank">Assignment</a></td>
+                <td>2026-Apr-00</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Submission Guidelines</h3>
+
+    <table class="academic-table">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Points</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td><u>Header</u><br>☛ In the beginning of each file, please include the followings<br>
+                    <code>
+                    /************************************************************<br>
+                    Roll: <br>
+                    Name: <br>
+                    Frineds discussed with:<br>
+                    Acknowledgements of other source:<br>
+                    ************************************************************/
+                    </code>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td><u>Acknowledgement</u><br>☛ In acknowledgement part, refer books, websites, etc., from where any part of your code is inspired</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td><u>Submission File</u><br>☛ Assignments must be sent as <strong>zip</strong> format. The name of the zip files must be of the form <strong>roll_assignment_xy.zip</strong> where <strong>xy = assignment id</strong> and <strong>roll = your roll in small case.</strong> For example: abc12345_assignement_01.zip will be the file name for the student with roll abc12345, for assignment 01</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td><u>Submission Link</u><br>☛ Upload the zip via this <a href="https://forms.gle/qL7SAqSzbC7gtJEW6" target="_blank">Submission Link</a></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td><u>Sharing Assignment</u><br>☛ Discussion with friends is allowed. However, <strong>copying</strong> others' codes is <strong>strictly prohibited</strong>.<br>☛ For <strong>taker</strong>, <span style="color: red;"><strong>minimum 50%</strong></span> marks will be deducted. The <strong>giver</strong> will get <span style="color: red;"><strong>minimum 25% negative</strong></span> marks.<br>If we can't distinguish giver and taker, both may get <span style="color: red;"><strong>minimum 50% negative</strong></span>, of the allotted marks.</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td><u>Late Submission</u><br>☛ Deductions due to late submission: 1 day-- 10%; 2 days-- 20%; 3 days-- 30%; >= 4 days --May not even checked</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<hr class="section-divider">
+
+<!-- ================= References ================= -->
+
+<section class="institution" id="References">
+    <h2>📚 References</h2>
+
+    <h3>Books on Computer Organisation</h3>
+
+    <table class="academic-table">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Title</th>
+                <th>Author(s)</th>
+                <th>ISBN</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Computer Organisation and Design: The Hardware/Software Interface</td>
+                <td><a href="#">D. A. Patterson and J. L. Hennesy</a></td>
+                <td><a href="#">978-0-12-374750-1</a></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Computer Organization and Architecture: Designing for Performance</td>
+                <td><a href="#">William Stallings</a></td>
+                <td><a href="#">978-9332518704</a></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Computer System Design and Architecture</td>
+                <td><a href="#">V. P. Heuring and H. F. Jordan</a></td>
+                <td><a href="#">978-0-13-048440-6</a></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Computer Architecture: A Quantitative Approach</td>
+                <td><a href="#">J. L. Hennessy and D. A. Patterson</a></td>
+                <td><a href="#">978-0128119051</a></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Computer Organization</td>
+                <td><a href="#">Carl Hamacher, Zvonko Vranesic and Safwat Zaky</a></td>
+                <td><a href="#">978-0-07-232086-2</a></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p><strong>** We will follow mainly [1] for the Computer Organisation.</strong></p>
+
+    <h3>Books on Operating Systems</h3>
+
+    <table class="academic-table">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Title</th>
+                <th>Author(s)</th>
+                <th>ISBN</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>6</td>
+                <td>Operating Systems: Internals & Design Principles</td>
+                <td><a href="#">William Stallings</a></td>
+                <td><a href="#">978-0-13-230998-1</a></td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Operating System Concepts</td>
+                <td><a href="#">Abraham Silberschatz, Peter Baer Galvin and Greg Gagne</a></td>
+                <td><a href="#">978-1-118-06333-0</a></td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Modern Operating Systems</td>
+                <td><a href="#">Andrew S. Tanenbaum and Herbert Bos</a></td>
+                <td><a href="#">978-0-13-359162-0</a></td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Operating Systems - Design Oriented Approach</td>
+                <td><a href="#">Charles Crowley</a></td>
+                <td><a href="#">978-0-07-463551-3</a></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p><strong>** We will follow mainly [7] for the Operating System</strong></p>
+
+    <h3>Helpful Websites</h3>
+
+    <table class="academic-table">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Website</th>
+                <th>Useful for</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td><a href="https://nptel.ac.in/courses/106106092" target="_blank">https://nptel.ac.in/courses/106106092</a></td>
+                <td>NPTEL Lectures on Computer Organization</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td><a href="https://nptel.ac.in/courses/106102132" target="_blank">https://nptel.ac.in/courses/106102132</a></td>
+                <td>NPTEL Lectures on Operating Systems</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td><a href="https://www.geeksforgeeks.org/computer-organization-architecture/computer-organization-and-architecture-tutorials/" target="_blank">computer organization and architecture tutorials</a></td>
+                <td>References</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td><a href="https://www.geeksforgeeks.org/operating-systems/operating-systems/" target="_blank">operating systems tutorial</a></td>
+                <td>References</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td><a href="https://www.youtube.com/playlist?list=PLFt_AvWsXl0dPhqVsKt1Ni_46ARyiCGSq" target="_blank">Youtube Playlist: Exploring How Computers Work</a></td>
+                <td>by Sebastian Lague</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Digital Circuit Simulators: 
+                    <a href="https://circuitverse.org/simulator" target="_blank">circuitverse</a>
+                    <a href="https://logic.ly/demo/" target="_blank">logicly</a>
+                </td>
+                <td>To check how circuits look like</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<hr class="section-divider">
+
+<section class="teaching-header">
+    <p class="quote">
+        A conclusion is the place where you got tired thinking.
+    </p>
+    <p class="quote-author">Martin H. Fischer</p>
+</section>
+
+</main>
+
+<footer>
+    <p>© 2026 Laltu Sardar <a href="sections/crypto_venues.html" target="_blank" style="color:white;">|</a> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="94f8f5f8e0e1bae7f5e6f0f5e6baf7e6ede
