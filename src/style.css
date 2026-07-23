@@ -620,3 +620,16 @@ marquee
     border-radius: 8px;
   }
 }
+
+.black-link {
+    color: black;
+    text-decoration: none;
+    font-style: italic;
+}
+
+.black-link:visited,
+.black-link:hover,
+.black-link:active {
+    color: black;
+    text-decoration: none;
+}
