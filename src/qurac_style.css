@@ -116,7 +116,7 @@ header.site-header nav {
     flex-shrink: 0;
     letter-spacing: 0.01em;
 }
-.site-title:hover { text-decoration: none; color: #ffffff; }
+.site-title:hover { text-decoration: none; color: brown; }
 
 nav ul {
     display: flex;
@@ -315,7 +315,7 @@ main {
 ============================== */
 .about-layout {
     display: grid;
-    grid-template-columns: 70% 30%;
+    grid-template-columns: 80% 20%;
     gap: 20px;
     align-items: start;
 }
