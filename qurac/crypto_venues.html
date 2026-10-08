@@ -1,111 +1,144 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <title>Laltu Sardar | Crypto Venues</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./../src/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QuRAC-Crypto-Venues</title>
+    <meta name="description" content="PhD, internship, and research opportunities at QuRAC, IISER TVM." />
+    <link rel="stylesheet" href="../src/qurac_style.css" />
   </head>
   <body>
-    <header>
+    <header class="site-header">
       <div class="container">
         <nav>
-          <h2>Laltu Sardar</h2>
-          <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+          <div class="header-logos">
+            <a href="../qurac.html"><img class="header-logo" src="img/logo_qurac.png" alt="QuRAC" /></a>
+          </div>
+          <a class="site-title" href="../qurac.html">QuRAC</a>
+          <button class="menu-toggle" onclick="toggleMenu()">☰</button>
           <ul>
-            <li><a href="./../index.html">Home</a></li>
-            <li><a href="education.html">Education</a></li>
+            <li><a href="./../qurac.html">Home</a></li>
             <li><a href="research.html">Research</a></li>
-            <li><a href="teaching.html">Teaching</a></li>
-            <li><a href="activities.html">Activities</a></li>
-            <li><a href="awards.html">Awards</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="people.html">People</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="join.html" class="active">Join</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
       </div>
     </header>
+
+    <div class="page-header">
+      <div class="container">
+        <h1>Crypto & Security Venues</h1>
+        <p>List of Journals and Conferences related to Cryptography and Security.</p>
+      </div>
+    </div>
+
     <main class="container">
-      <h1>Conferences and Journals</h1>
-      <hr class="section-divider">
-      <section class="institution">
-        <h2>Security & Crypto Conference Lists and Rankings</h2>
+
+      <!-- ===== PhD ===== -->
+      <section class="join-section" id="phd">
+        <h2>Live Deadline Trackers</h2><hr>
         <table class="academic-table">
           <tbody>
             <tr>
               <td>1</td>
               <td>
-                <a href="https://sec-deadlines.github.io/" target="_blank">
-                GitHub Security Deadlines Tracker
-                </a> by Bogdan Kulynych.
+                <a href="https://iacr.org/events/?order=submission" target="_blank"> Calendar of events </a> by IACR.
               </td>
             </tr>
             <tr>
               <td>2</td>
               <td>
-                <a href="http://faculty.cs.tamu.edu/guofei/sec_conf_stat.htm" target="_blank">
-                Computer Security Conference Ranking and Statistic
-                </a> by Guofei Gu.
+                <a href="https://sec-deadlines.github.io/" target="_blank"> GitHub Security Deadlines Tracker </a> by
+                Bogdan Kulynych.
               </td>
             </tr>
             <tr>
               <td>3</td>
               <td>
-                <a href="http://jianying.space/conference-ranking.html" target="_blank">
-                Conference Rankings
-                </a> by Jianying Zhou.
+                <strong>WikiCFP Cryptography Conferences:</strong> Titles containing
+                <a href="http://www.wikicfp.com/cfp/servlet/tool.search?q=cryptography&year=a" target="_blank"
+                  >cryptography</a
+                >,
+                <a href="http://www.wikicfp.com/cfp/servlet/tool.search?q=security&year=a" target="_blank">security</a>,
+                <a href="http://www.wikicfp.com/cfp/servlet/tool.search?q=privacy&year=a" target="_blank">privacy</a>.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <h2>Rankings</h2>
+        <hr>
+        <table class="academic-table">
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>
+                <strong>CORE Conference</strong> Ranking: by keyword
+                <a
+                  href="https://portal.core.edu.au/conf-ranks/?search=security&by=all&source=CORE2023&sort=arank&page=1"
+                  target="_blank"
+                >
+                  Security
+                </a>
+                and
+                <a
+                  href="https://portal.core.edu.au/conf-ranks/?search=privacy&by=all&source=CORE2023&sort=arank&page=1"
+                  target="_blank"
+                >
+                  Privacy </a
+                >.
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>
+                <strong>CORE Journal</strong> Ranking by keyword "<a
+                  href="https://portal.core.edu.au/jnl-ranks/?search=security&by=all&source=CORE2020&sort=arank&page=1"
+                  target="_blank"
+                >
+                  Security </a
+                >".
+              </td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>
+                Computer Security
+                <a href="http://faculty.cs.tamu.edu/guofei/sec_conf_stat.htm" target="_blank">
+                  Conference Ranking and Statistic
+                </a>
+                by Guofei Gu.
               </td>
             </tr>
             <tr>
               <td>4</td>
               <td>
-                <strong>CORE Conference Ranking:</strong> by keyword 
-                <a href="https://portal.core.edu.au/conf-ranks/?search=security&by=all&source=CORE2023&sort=arank&page=1" target="_blank">
-                Security
-                </a> and 
-                <a href="https://portal.core.edu.au/conf-ranks/?search=privacy&by=all&source=CORE2023&sort=arank&page=1" target="_blank">
-                Privacy
-                </a>.
+                <a href="http://jianying.space/conference-ranking.html" target="_blank"> Conference Rankings </a> by
+                Jianying Zhou.
               </td>
             </tr>
-            <tr>
-              <td>5</td>
-              <td>
-                <a href="https://portal.core.edu.au/jnl-ranks/?search=security&by=all&source=CORE2020&sort=arank&page=1" target="_blank">
-                CORE Journal Ranking
-                </a> by keyword “Security”.
-              </td>
-            </tr>
-            <tr>
-              <td>6</td>
-              <td>
-                <a href="https://en.wikipedia.org/wiki/Category:Computer_science_journals" target="_blank">
-                List of Computer Science Journals
-                </a> (Wikipedia).
-              </td>
-            </tr>
-            <tr>
-              <td>7</td>
-              <td>
-                <strong>WikiCFP Cryptography Conferences:</strong> Titles containing 
-                <a href="http://www.wikicfp.com/cfp/servlet/tool.search?q=cryptography&year=t" target="_blank">cryptography</a>, 
-                <a href="http://www.wikicfp.com/cfp/servlet/tool.search?q=security&year=t" target="_blank">security</a>, 
-                <a href="http://www.wikicfp.com/cfp/servlet/tool.search?q=privacy&year=t" target="_blank">privacy</a>.
-              </td>
-            </tr>
+
             <tr>
               <td>8</td>
               <td>
                 <a href="https://laltu-sardar.github.io/docs/top_crypto_venues.html" target="_blank">
-                Page Limits in Different Venues
-                </a>.
+                  Page Limits in Different Venues </a
+                >.
               </td>
             </tr>
           </tbody>
         </table>
       </section>
-      <hr class="section-divider">
-      <section class="institution">
-        <h2>Cryptography and Security Conferences</h2>
+ 
+
+      <!-- ===== PhD ===== -->
+      <section class="join-section" id="phd">
+        <h2>Popular Conferences</h2><hr>
         <table class="academic-table">
           <thead>
             <tr>
@@ -377,9 +410,10 @@
           </tbody>
         </table>
       </section>
-      <hr class="section-divider">
-      <section class="institution">
-        <h2>Cryptography and Security Journals</h2>
+
+      <!-- ===== PhD ===== -->
+      <section class="join-section" id="phd">
+        <h2>Popular Journals</h2><hr>
         <table class="academic-table">
           <thead>
             <tr>
@@ -392,7 +426,11 @@
           </thead>
           <tbody id="conferenceTable">
             <tr>
-              <td><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=18">IEEE Transactions on Information Theory</a></td>
+              <td>
+                <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=18"
+                  >IEEE Transactions on Information Theory</a
+                >
+              </td>
               <td data-deadline="N/A">N/A</td>
               <td>Monthly publication</td>
               <td>N/A</td>
@@ -406,7 +444,11 @@
               <td class="countdown"></td>
             </tr>
             <tr>
-              <td><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8858">IEEE Transactions on Dependable and Secure Computing</a></td>
+              <td>
+                <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8858"
+                  >IEEE Transactions on Dependable and Secure Computing</a
+                >
+              </td>
               <td data-deadline="N/A">N/A</td>
               <td>Bimonthly publication</td>
               <td>N/A</td>
@@ -420,7 +462,11 @@
               <td class="countdown"></td>
             </tr>
             <tr>
-              <td><a href="https://www.journals.elsevier.com/information-security-technical-report">Information Security Technical Report</a></td>
+              <td>
+                <a href="https://www.journals.elsevier.com/information-security-technical-report"
+                  >Information Security Technical Report</a
+                >
+              </td>
               <td data-deadline="N/A">N/A</td>
               <td>Quarterly publication</td>
               <td>N/A</td>
@@ -434,7 +480,11 @@
               <td class="countdown"></td>
             </tr>
             <tr>
-              <td><a href="https://www.usenix.org/conference/soups2025">Symposium on Usable Privacy and Security (SOUPS) 2025</a></td>
+              <td>
+                <a href="https://www.usenix.org/conference/soups2025"
+                  >Symposium on Usable Privacy and Security (SOUPS) 2025</a
+                >
+              </td>
               <td data-deadline="January 15, 2025">January 15, 2025</td>
               <td>Annual conference</td>
               <td>San Francisco, CA, USA</td>
@@ -448,7 +498,11 @@
               <td class="countdown"></td>
             </tr>
             <tr>
-              <td><a href="https://dl.acm.org/journal/tissec">ACM Transactions on Information and System Security (TISSEC)</a></td>
+              <td>
+                <a href="https://dl.acm.org/journal/tissec"
+                  >ACM Transactions on Information and System Security (TISSEC)</a
+                >
+              </td>
               <td data-deadline="N/A">N/A</td>
               <td>Quarterly publication</td>
               <td>N/A</td>
@@ -462,21 +516,31 @@
               <td class="countdown"></td>
             </tr>
             <tr>
-              <td><a href="https://link.springer.com/journal/10207">International Journal of Information Security</a></td>
+              <td>
+                <a href="https://link.springer.com/journal/10207">International Journal of Information Security</a>
+              </td>
               <td data-deadline="N/A">N/A</td>
               <td>Monthly publication</td>
               <td>N/A</td>
               <td class="countdown"></td>
             </tr>
             <tr>
-              <td><a href="https://content.iospress.com/journals/journal-of-computer-security">Journal of Computer Security</a></td>
+              <td>
+                <a href="https://content.iospress.com/journals/journal-of-computer-security"
+                  >Journal of Computer Security</a
+                >
+              </td>
               <td data-deadline="N/A">N/A</td>
               <td>Bimonthly publication</td>
               <td>N/A</td>
               <td class="countdown"></td>
             </tr>
             <tr>
-              <td><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=10206">IEEE Transactions on Information Forensics and Security</a></td>
+              <td>
+                <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=10206"
+                  >IEEE Transactions on Information Forensics and Security</a
+                >
+              </td>
               <td data-deadline="N/A">N/A</td>
               <td>Monthly publication</td>
               <td>N/A</td>
@@ -490,14 +554,20 @@
               <td class="countdown"></td>
             </tr>
             <tr>
-              <td><a href="https://www.ieee-security.org/EuroSP2025/">European Symposium on Security and Privacy (EuroS&P) 2025</a></td>
+              <td>
+                <a href="https://www.ieee-security.org/EuroSP2025/"
+                  >European Symposium on Security and Privacy (EuroS&P) 2025</a
+                >
+              </td>
               <td data-deadline="October 24, 2024">October 24, 2024</td>
               <td>Annual conference</td>
               <td>Vienna, Austria</td>
               <td class="countdown"></td>
             </tr>
             <tr>
-              <td><a href="https://www.ieee-security.org/TC/SP2025/">IEEE Symposium on Security and Privacy (S&P) 2025</a></td>
+              <td>
+                <a href="https://www.ieee-security.org/TC/SP2025/">IEEE Symposium on Security and Privacy (S&P) 2025</a>
+              </td>
               <td data-deadline="November 15, 2024">November 15, 2024</td>
               <td>Annual conference</td>
               <td>San Francisco, CA, USA</td>
@@ -506,11 +576,65 @@
           </tbody>
         </table>
       </section>
+
+      <hr class="section-divider" />
+
+      <!-- ===== Important Points ===== -->
+      <section class="join-section" id="important">
+        <h2>Important Points</h2>
+        <ul class="requirements-list">
+          <li><strong>Limitation:</strong> Rankings keep changing</li>
+          <li>
+            <strong>Restriction:</strong> Some information is compiled with LLM, It does not garauntee correctness.
+          </li>
+          <li><strong>Last Update:</strong> September 2026</li>
+        </ul>
+      </section>
+
+      <hr class="section-divider" />
     </main>
-    <footer>
-      <p>© 2026 Laltu Sardar <a href="sections/crypto_venues.html" target="_blank" style="color:white;">|</a> laltu.sardar.crypto@gmail.com  </p>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <h4>Quantum-Resilient Applied Cryptography Research Group</h4>
+            <address>
+              School of Data Science, IISER Thiruvananthapuram<br />Maruthamala PO, Vithura, Thiruvananthapuram, Kerala,
+              India
+            </address>
+            <p style="margin-top: 6px">
+              <a href="mailto:laltu.sardar@iisertvm.ac.in" style="color: rgba(255, 255, 255, 0.75)">
+                laltu.sardar@iisertvm.ac.in
+              </a>
+            </p>
+          </div>
+          <div>
+            <h4>Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="../qurac.html">Home</a> &nbsp &nbsp &nbsp &nbsp <a href="research.html">Research</a></li>
+              <li><a href="people.html">People</a> &nbsp &nbsp &nbsp &nbsp <a href="projects.html">Projects</a></li>
+              <li><a href="#">Resources</a> &nbsp &nbsp &nbsp &nbsp <a href="join.html" class="active">Join</a></li>
+              <li><a href="#">Gallery</a>&nbsp &nbsp &nbsp &nbsp <a href="contact.html">Contact</a></li>
+              <li></li>
+            </ul>
+          </div>
+          <div>
+            <h4>External Profiles</h4>
+            <ul class="footer-links">
+              <li><a href="https://laltu-sardar.github.io/" target="_blank">Group Leader's Homepage</a></li>
+              <li>
+                <a href="https://www.iisertvm.ac.in/faculty/laltusardar" target="_blank">IISER TVM Faculty Page</a>
+              </li>
+              <li><a href="https://github.com/laltu-sardar" target="_blank">GitHub</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">© 2025 QuRAC Research Group, IISER Thiruvananthapuram</div>
+      </div>
     </footer>
-    <script src="./../src/script.js"></script>
+
+    <script src="../src/qurac_main.js"></script>
   </body>
 </html>
 
