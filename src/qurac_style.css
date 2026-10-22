@@ -2197,3 +2197,106 @@ footer.site-footer::before {
     .hero-banner::after { width: 320px; height: 320px; right: -140px; top: -140px; }
     .hero-logo-block { padding: .7rem .8rem; }
 }
+
+/* ============================================================
+   PEOPLE PAGE — category-specific grids & photo sizes
+   PhD (3/row, biggest photo) · JRF (3/row) · BSMS (4/row) · Interns (5/row, smallest photo)
+   Colours are untouched; only layout and sizes are set here.
+   ============================================================ */
+.phd-grid.phd-grid--phd,
+.phd-grid.phd-grid--jrf,
+.phd-grid.phd-grid--bsms,
+.phd-grid.phd-grid--intern {
+    display: grid;                       /* replaces the old inline flex */
+    grid-template-columns: repeat(var(--cols), minmax(0, 1fr));
+    justify-content: stretch;
+    align-items: stretch;
+    gap: 1.25rem;
+}
+.phd-grid + .phd-grid { margin-top: 1.25rem; }
+
+/* columns per row + photo size */
+.phd-grid--phd    { --cols: 3; --photo: 200px; }
+.phd-grid--jrf    { --cols: 3; --photo: 170px; }
+.phd-grid--bsms   { --cols: 4; --photo: 115px; }
+.phd-grid--intern { --cols: 5; --photo: 72px;  }
+
+/* cards: no fixed widths any more, grid decides */
+.phd-grid--phd .phd-card,
+.phd-grid--jrf .phd-card,
+.phd-grid--bsms .phd-card,
+.phd-grid--intern .phd-card { max-width: none; width: 100%; height: auto; }
+
+/* photos: fixed square that never overflows its card */
+.phd-grid--phd .phd-photo,
+.phd-grid--jrf .phd-photo,
+.phd-grid--bsms .phd-photo,
+.phd-grid--intern .phd-photo {
+    width: var(--photo);
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+}
+
+/* per-category card density & text */
+.phd-grid--phd .phd-card   { padding: 1.6rem 1.1rem 1.5rem; }
+.phd-grid--phd .phd-card h3 { font-size: 1.2rem; }
+
+.phd-grid--jrf .phd-card   { padding: 1.4rem 1rem 1.3rem; }
+
+.phd-grid--bsms .phd-card  { padding: 1.1rem .8rem; }
+.phd-grid--bsms .phd-card h3 { font-size: 1rem; }
+.phd-grid--bsms .phd-card p  { font-size: .88rem; }
+
+.phd-grid--intern .phd-card { padding: .85rem .5rem; border-radius: 12px; border-top-width: 4px; }
+.phd-grid--intern .phd-card h3 { font-size: .9rem; line-height: 1.25; }
+.phd-grid--intern .phd-photo { border-width: 2px; margin-bottom: 8px; }
+
+/* role labels: allow multi-line text inside the pill */
+.phd-grid--jrf .phd-role,
+.phd-grid--bsms .phd-role,
+.phd-grid--intern .phd-role {
+    display: inline-block;
+    max-width: 100%;
+    border-radius: 14px;
+    line-height: 1.35;
+    padding: .25rem .65rem;
+}
+.phd-grid--intern .phd-role { font-size: .62rem; padding: .2rem .5rem; }
+.phd-grid--bsms   .phd-role { font-size: .68rem; }
+
+/* "Alumni →" tile */
+.phd-card.alumni-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 120px;
+    border-style: dashed;
+}
+.phd-card.alumni-card h3 { margin: 0; }
+
+/* ---------- Tablets ---------- */
+@media (max-width: 900px) {
+    .phd-grid--phd    { --cols: 2; --photo: 180px; }
+    .phd-grid--jrf    { --cols: 2; --photo: 160px; }
+    .phd-grid--bsms   { --cols: 2; --photo: 110px; }
+    .phd-grid--intern { --cols: 3; --photo: 72px;  }
+}
+
+/* ---------- Phones ---------- */
+@media (max-width: 560px) {
+    .phd-grid.phd-grid--phd,
+    .phd-grid.phd-grid--jrf,
+    .phd-grid.phd-grid--bsms,
+    .phd-grid.phd-grid--intern { gap: .8rem; }
+
+    .phd-grid--phd    { --cols: 1; --photo: 170px; }
+    .phd-grid--jrf    { --cols: 1; --photo: 150px; }
+    .phd-grid--bsms   { --cols: 2; --photo: 96px; }
+    .phd-grid--intern { --cols: 2; --photo: 64px; }
+
+    .phd-grid--phd .phd-card,
+    .phd-grid--jrf .phd-card { max-width: 420px; margin-inline: auto; }
+    .phd-card.alumni-card { min-height: 90px; }
+}
