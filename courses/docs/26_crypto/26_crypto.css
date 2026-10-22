@@ -1,27 +1,40 @@
 /* ============================================================
-   COrgOS 2026 — Light Professional Theme
-   File: docs/26_data_security/26_ds.css
+   COrgOS 2026 — Colorful Professional Theme (QuRAC look)
+   File: docs/26_crypto/26_crypto.css
    ============================================================ */
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600;700&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap');
 
 /* ── Variables ── */
 :root {
-  --bg:          #e8f0fc;
+  --bg:          #eef3ff;
   --surface:     #ffffff;
-  --border:      #dde2ea;
-  --navy:        #1a2b4a;
-  --blue:        #1a5fba;
-  --blue-light:  #e8f0fc;
-  --red:         #b91c1c;
-  --red-light:   #fef2f2;
+  --border:      #d5def0;
+  --navy:        #0a1730;
+  --blue:        #1769d2;
+  --blue-light:  #eef3ff;
+  --violet:      #7257d9;
+  --pink:        #e0449b;
+  --cyan:        #20b8d5;
+  --teal:        #0d9488;
+  --coral:       #ff5d73;
+  --amber:       #ffb020;
+  --red:         #d92f4c;
+  --red-light:   #fff0f2;
   --green:       #15803d;
-  --text:        #000000;
-  --text-muted:  #5a6a84;
-  --link:        #1a5fba;
-  --link-hover:  #b91c1c;
-  --radius:      6px;
-  --shadow:      0 1px 4px rgba(0,0,0,0.08), 0 4px 16px rgba(0,0,0,0.06);
+  --text:        #0a1730;
+  --text-muted:  #3b4a63;
+  --link:        #1769d2;
+  --link-hover:  #d92f4c;
+  --radius:      8px;
+  --shadow:      0 8px 26px rgba(16,40,74,0.12);
+  --shadow-hover:0 16px 34px rgba(114,87,217,0.22);
+
+  --grad-brand: linear-gradient(90deg, #1769d2, #7257d9 55%, #e0449b);
+  --grad-warm:  linear-gradient(90deg, #ff5d73, #ffb020);
+  --grad-cool:  linear-gradient(90deg, #20b8d5, #1769d2);
+
+  --sec-color:  var(--blue);          /* per-section accent (set below) */
 }
 
 /* ── Reset ── */
@@ -31,11 +44,20 @@ html { scroll-behavior: smooth; }
 body {
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 15px;
-  background: var(--bg);
   color: var(--text);
   padding-top: 58px;
   line-height: 1.7;
+  background:
+    radial-gradient(rgba(23,105,210,.10) 1.2px, transparent 1.4px) 0 0 / 24px 24px,
+    radial-gradient(circle at 95% 0%,  rgba(255,93,115,.14), transparent 35%),
+    radial-gradient(circle at 0% 60%,  rgba(32,184,213,.14), transparent 38%),
+    radial-gradient(circle at 100% 100%, rgba(114,87,217,.16), transparent 40%),
+    linear-gradient(160deg, #eef3ff, #f4efff);
+  background-attachment: fixed;
 }
+
+/* anchors land below the fixed nav */
+.row[id], [id="education"] { scroll-margin-top: 78px; }
 
 /* ── Navigation ── */
 .myNav {
@@ -43,9 +65,20 @@ body {
   top: 0; left: 0;
   width: 100%;
   z-index: 1000;
-  background: var(--navy);
-  border-bottom: 3px solid var(--blue);
-  box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+  border-bottom: 0;
+  box-shadow: 0 6px 20px rgba(10,23,48,0.30);
+  background:
+    radial-gradient(rgba(255,255,255,.18) 1.2px, transparent 1.4px) 0 0 / 22px 22px,
+    repeating-linear-gradient(135deg, rgba(255,255,255,.05) 0 2px, transparent 2px 24px),
+    repeating-radial-gradient(circle at 94% -80%, transparent 0 46px, rgba(255,255,255,.07) 46px 48px),
+    radial-gradient(circle at 92% 0%,   rgba(255,93,115,.50), transparent 34%),
+    radial-gradient(circle at 60% 150%, rgba(32,184,213,.50), transparent 42%),
+    linear-gradient(120deg, #0a1730 0%, #14357a 45%, #5a3fc9 100%);
+}
+.myNav::after {                       /* rainbow strip */
+  content: "";
+  position: absolute; left: 0; right: 0; bottom: 0; height: 4px;
+  background: var(--grad-brand);
 }
 
 .myNav ul {
@@ -53,8 +86,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 0.15rem;
-  padding: 0.55rem 1rem;
+  gap: 0.25rem;
+  padding: 0.55rem 1rem 0.7rem;
   margin: 0;
   background: transparent;
 }
@@ -64,33 +97,96 @@ body {
 .myNav ul li a {
   display: inline-block;
   font-family: 'IBM Plex Sans', sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 0.78rem;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #c8d6f0;
+  color: #ffffff;
   text-decoration: none;
   padding: 0.38rem 0.9rem;
-  border-radius: var(--radius);
-  transition: background 0.18s, color 0.18s;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  transition: background 0.18s, color 0.18s, transform 0.18s, border-color 0.18s;
 }
 
 .myNav ul li a:hover {
-  background: var(--blue);
+  background: rgba(255,255,255,.18);
+  border-color: rgba(255,255,255,.40);
   color: #ffffff;
+  transform: translateY(-1px);
 }
 
+/* first / last links stand out */
+.myNav ul li:first-child a { background: rgba(255,255,255,.12); border-color: rgba(255,255,255,.30); }
+.myNav ul li:last-child a  { background: var(--grad-warm); color: var(--navy); border-color: transparent; }
+.myNav ul li:last-child a:hover { filter: brightness(1.08); color: var(--navy); }
+
 /* ── Main container ── */
-#education { background: var(--bg) !important; }
+#education { background: transparent !important; }
 
 .container.content-lg {
+  position: relative;
   max-width: 1060px;
   margin: 2rem auto;
   padding: 2.5rem 2.5rem 3rem;
   background: var(--surface) !important;
   border: 1px solid var(--border) !important;
-  border-radius: 10px;
+  border-radius: 16px;
   box-shadow: var(--shadow);
+  overflow: hidden;
+}
+.container.content-lg::before {       /* gradient cap on top of the card */
+  content: "";
+  position: absolute; left: 0; right: 0; top: 0; height: 6px;
+  background: var(--grad-brand);
+}
+
+/* ── Course hero (title block) ── */
+.course-hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  text-align: center;
+  padding: 2.2rem 1.5rem 1.8rem;
+  margin: 0.5rem 0 1rem;
+  border-radius: 16px;
+  background:
+    radial-gradient(circle at 92% 8%,   rgba(255,176,32,.45), transparent 32%),
+    radial-gradient(circle at 68% 125%, rgba(126,217,87,.45), transparent 40%),
+    radial-gradient(circle at 4% 100%,  rgba(32,184,213,.35), transparent 36%),
+linear-gradient(120deg,#0a1730 0%, #14357a 45%, #5a3fc9 100%);
+  box-shadow: 0 12px 28px rgba(10,23,48,.25);
+}
+.course-hero::before {                /* dotted + diagonal pattern */
+  content: "";
+  position: absolute; inset: 0; z-index: -1;
+  background-image:
+    radial-gradient(rgba(255,255,255,.24) 1.2px, transparent 1.4px),
+    repeating-linear-gradient(135deg, rgba(255,255,255,.055) 0 2px, transparent 2px 24px);
+  background-size: 22px 22px, auto;
+}
+.course-hero::after {                 /* glowing rings */
+  content: "";
+  position: absolute; z-index: -1;
+  width: 420px; height: 420px; right: -130px; top: -190px;
+  border-radius: 50%;
+  border: 2px solid rgba(255,255,255,.2);
+  box-shadow: 0 0 0 40px rgba(255,255,255,.04), 0 0 0 85px rgba(255,255,255,.03);
+}
+.course-hero h2::before {
+  content: "";
+  display: block;
+  width: 84px; height: 5px; border-radius: 3px;
+  margin: 0 auto 1rem;
+  background: var(--grad-warm);
+}
+.course-hero h2 {
+  color: #ffffff !important;
+  text-shadow: 0 3px 16px rgba(0,0,0,.35);
+}
+.course-hero h4 {
+  color: #e9f1ff !important;
+  margin-bottom: 0;
 }
 
 /* ── Page headings ── */
@@ -113,16 +209,26 @@ h4 {
   margin-bottom: 1rem;
 }
 
+/* ── Section accents (colour-cycled per section) ── */
+.container.content-lg > .row:nth-of-type(2) { --sec-color: #1769d2; }   /* Information   */
+.container.content-lg > .row:nth-of-type(3) { --sec-color: #ff5d73; }   /* Announcements */
+.container.content-lg > .row:nth-of-type(4) { --sec-color: #20a5c4; }   /* Mid-sem       */
+.container.content-lg > .row:nth-of-type(5) { --sec-color: #7257d9; }   /* End-sem       */
+.container.content-lg > .row:nth-of-type(6) { --sec-color: #e0891a; }   /* Assignments   */
+.container.content-lg > .row:nth-of-type(7) { --sec-color: #0d9488; }   /* References    */
+
 /* ── Section headings ── */
 #contentContainer h4 {
   font-family: 'IBM Plex Sans', sans-serif;
-  font-weight: 600;
-  font-size: 1.05rem;
+  font-weight: 700;
+  font-size: 1.1rem;
   color: var(--navy) !important;
   text-align: left;
-  border-left: 3px solid var(--blue);
-  padding-left: 0.6rem;
-  margin-bottom: 0.5rem;
+  border-left: 6px solid var(--sec-color);
+  padding: 0.35rem 0.8rem;
+  margin-bottom: 0.6rem;
+  border-radius: 0 var(--radius) var(--radius) 0;
+  background: linear-gradient(90deg, color-mix(in srgb, var(--sec-color) 16%, white), transparent 80%);
 }
 
 #contentContainer h2 {
@@ -141,7 +247,9 @@ h4 {
 /* ── HR ── */
 hr {
   border: none !important;
-  border-top: 1px solid var(--border) !important;
+  height: 3px;
+  border-radius: 3px;
+  background: linear-gradient(90deg, #cfd9f3, #e3dcff 60%, transparent) !important;
   margin: 1.2rem 0;
 }
 
@@ -153,7 +261,8 @@ hr {
   font-size: 0.9rem;
 }
 
-#contentContainer strong { color: var(--navy) !important; }
+#contentContainer strong { color: var(--violet) !important; }
+#contentContainer td strong, #contentContainer td b { color: var(--navy) !important; }
 
 /* ── Quick nav links ── */
 p a[href^="#"] {
@@ -170,7 +279,7 @@ p a[href^="#"]:hover { color: var(--red) !important; border-color: var(--red); }
 #contentContainer a {
   color: var(--link) !important;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
   transition: color 0.15s;
 }
 .table a:hover,
@@ -182,18 +291,20 @@ p a[href^="#"]:hover { color: var(--red) !important; border-color: var(--red); }
 /* ── Tables ── */
 .table {
   width: 100%;
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0;
   font-size: 0.87rem;
   margin-bottom: 1.4rem;
   background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: var(--radius);
+  border-radius: 12px;
   overflow: hidden;
+  box-shadow: 0 6px 18px rgba(16,40,74,.08);
 }
 
 .table thead tr,
 .table thead tr[style] {
-  background: var(--navy) !important;
+  background: linear-gradient(100deg, #0a1730, #3b2f9e 60%, #7257d9) !important;
 }
 
 .table thead th {
@@ -203,18 +314,21 @@ p a[href^="#"]:hover { color: var(--red) !important; border-color: var(--red); }
   font-size: 0.78rem;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  padding: 0.65rem 0.85rem;
+  padding: 0.7rem 0.85rem;
   border: none;
+  text-align: left;
 }
 
 .table tbody tr {
-  border-bottom: 1px solid var(--border);
   transition: background 0.12s;
 }
+.table tbody td, .table tbody th { border-bottom: 1px solid #e3e9f6; }
+.table tbody tr:last-child td,
+.table tbody tr:last-child th { border-bottom: 0; }
 
 .table tbody tr:nth-child(even),
 tr:nth-child(even) {
-  background-color: #f0f4fa !important;
+  background-color: #f1edff !important;
 }
 
 .table tbody tr:nth-child(odd) {
@@ -222,29 +336,41 @@ tr:nth-child(even) {
 }
 
 .table tbody tr:hover {
-  background-color: var(--blue-light) !important;
+  background-color: #ffe9ed !important;
 }
 
 .table tbody td,
 .table tbody th {
   color: var(--text) !important;
-  padding: 0.6rem 0.85rem;
+  padding: 0.65rem 0.85rem;
   vertical-align: middle;
-  border: none;
 }
 
+/* key/value rows: coloured left edge */
+.table td:only-child { border-left: 5px solid var(--sec-color); }
+
 .table tbody tr th[scope="row"] {
-  color: var(--text-muted) !important;
+  color: var(--violet) !important;
   font-family: 'IBM Plex Mono', monospace;
-  font-weight: 500;
-  font-size: 0.8rem;
+  font-weight: 600;
+  font-size: 0.82rem;
+  text-align: left;
 }
+
+/* total row in the marks table */
+.table tbody tr.total-row,
+.table tbody tr.total-row:hover {
+  background: linear-gradient(90deg, #e1ecff, #ece5ff) !important;
+  font-weight: 700;
+}
+.table tbody tr.total-row td,
+.table tbody tr.total-row th { color: var(--navy) !important; font-weight: 700; border-top: 2px solid var(--violet); }
 
 /* ── Code blocks ── */
 code {
   display: block;
   background: #f1f5f9;
-  border-left: 3px solid var(--blue);
+  border-left: 4px solid var(--violet);
   padding: 0.7rem 1rem;
   border-radius: var(--radius);
   color: var(--navy) !important;
@@ -262,21 +388,25 @@ span[style*="color:gray"]   { color: var(--text-muted) !important; }
 
 /* ── Lists ── */
 ol, ul { padding-left: 1.4rem; color: var(--text); }
-ol li, ul li { margin-bottom: 0.3rem; }
+ol li, ul li { margin-bottom: 0.35rem; }
+ol li::marker, ul li::marker { color: var(--violet); font-weight: 700; }
+ol li:nth-child(3n + 2)::marker, ul li:nth-child(3n + 2)::marker { color: var(--coral); }
+ol li:nth-child(3n + 3)::marker, ul li:nth-child(3n + 3)::marker { color: var(--teal); }
 
 /* ── Institute logo ── */
 img[alt="iiser-tvm-logo"] {
   height: 60px;
-  border-radius: 4px;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(16,40,74,.18);
 }
 
 /* ── Group photo ── */
 .group-photo-wrapper { text-align: center; margin: 1.5rem 0; }
 .group-photo {
   max-width: 100%;
-  border-radius: 8px;
-  border: 2px solid var(--border);
-  box-shadow: var(--shadow);
+  border-radius: 12px;
+  border: 4px solid #fff;
+  box-shadow: 0 0 0 3px var(--violet), var(--shadow);
 }
 
 /* ── Marquee tooltip ── */
@@ -294,43 +424,53 @@ img[alt="iiser-tvm-logo"] {
 
 /* ── Footer ── */
 footer {
-  background: var(--navy) !important;
-  border-top: 3px solid var(--blue);
+  position: relative;
+  background:
+    radial-gradient(rgba(255,255,255,.14) 1.2px, transparent 1.4px) 0 0 / 22px 22px,
+    radial-gradient(circle at 90% 0%,  rgba(32,184,213,.30), transparent 38%),
+    radial-gradient(circle at 5% 120%, rgba(255,93,115,.28), transparent 40%),
+    linear-gradient(125deg, #0a1730 0%, #14357a 60%, #3b2f9e 100%) !important;
+  border-top: 0;
   margin-top: 3rem;
 }
+footer::before {
+  content: "";
+  position: absolute; left: 0; right: 0; top: 0; height: 5px;
+  background: var(--grad-brand);
+}
 
-footer .content { background: transparent !important; padding: 1.4rem 1rem; }
+footer .content { background: transparent !important; padding: 1.6rem 1rem; }
 
 footer h4 {
   font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 400;
   font-size: 0.88rem;
-  color: #a0b0cc !important;
+  color: #e9f1ff !important;
   text-align: center !important;
 }
 
-footer h4 a { color: #7ab0f0 !important; font-weight: 500; }
+footer h4 a { color: #9fe9f5 !important; font-weight: 600; }
 footer h4 a:hover { color: #ffffff !important; text-decoration: none; }
 
 /* ── Back to top ── */
 .js-back-to-top {
-  background: var(--navy) !important;
+  background: var(--grad-brand) !important;
   color: #ffffff !important;
-  border-radius: var(--radius);
-  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  padding: 0.45rem 1rem;
   font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 600;
   font-size: 0.78rem;
   letter-spacing: 0.04em;
   text-decoration: none;
-  transition: background 0.2s;
+  transition: filter 0.2s, transform 0.2s;
   position: fixed;
   bottom: 22px;
   right: 22px;
   z-index: 999;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+  box-shadow: 0 6px 16px rgba(10,23,48,0.30);
 }
-.js-back-to-top:hover { background: var(--blue) !important; }
+.js-back-to-top:hover { filter: brightness(1.12); transform: translateY(-2px); }
 
 /* ── Fade-in animation ── */
 @keyframes fadeIn {
@@ -341,7 +481,25 @@ footer h4 a:hover { color: #ffffff !important; text-decoration: none; }
 
 /* ── Responsive ── */
 @media (max-width: 768px) {
-  .myNav ul li a { font-size: 0.7rem; padding: 0.3rem 0.55rem; }
-  .container.content-lg { padding: 1rem; margin: 0.8rem; }
-  .table { font-size: 0.8rem; }
+  /* nav becomes one horizontally-scrollable line */
+  .myNav ul {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding: 0.5rem 0.6rem 0.65rem;
+  }
+  .myNav ul::-webkit-scrollbar { display: none; }
+  .myNav ul li { flex: 0 0 auto; }
+  .myNav ul li a { font-size: 0.7rem; padding: 0.3rem 0.7rem; white-space: nowrap; }
+
+  .container.content-lg { padding: 1.2rem 1rem 1.6rem; margin: 0.8rem; border-radius: 14px; }
+  .course-hero { padding: 1.6rem 1rem 1.3rem; }
+  .row[id], [id="education"] { scroll-margin-top: 70px; }
+
+  /* wide tables scroll sideways instead of squeezing */
+  .table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; font-size: 0.8rem; }
+  .table thead, .table tbody { white-space: normal; }
+  #contentContainer h4 { font-size: 1rem; }
 }
