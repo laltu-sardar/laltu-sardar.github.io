@@ -73,9 +73,23 @@
   <main class="container">
 
     <!-- ===== Section 1: About + Photo ===== -->
-    <section class="about-layout" style="margin-top: 2rem;">
+    <section class="about-wrap" style="margin-top: 2rem;">
 
-      <div>
+      <!-- Image block: floats right on desktop (text wraps around it); drops below the text on mobile -->
+      <div class="about-right">
+        <div class="image-slider">
+          <img src="qurac/img/logo_qurac_iiser.jpg" class="active" alt="QuRAC group photo" />
+          <img src="qurac/img/cartoon_qurac.png" alt="QuRAC group" />
+          <!--img src="img/qurac/qurac_group_3.jpg" alt="QuRAC workshop" /-->
+          <button class="slider-btn prev" onclick="prevSlide()">&#10094;</button>
+          <button class="slider-btn next" onclick="nextSlide()">&#10095;</button>
+        </div>
+        <p class="slider-caption">
+          QuRAC Research Group, IISER Thiruvananthapuram
+        </p>
+      </div>
+
+      <div class="about-text">
 
 <h2 class="section-heading">About QuRAC</h2>
 <p style="text-align: justify;">
@@ -103,23 +117,7 @@ Through this combination of foundational research and applied development, QuRAC
 </p>
       </div>
 
-      <div class="about-right"><br><br>
-        <div class="image-slider">
-          <img src="qurac/img/logo_qurac_iiser.jpg" class="active" alt="QuRAC group photo" />
-          <img src="qurac/img/cartoon_qurac.png" alt="QuRAC group" />
-          <!--img src="img/qurac/qurac_group_3.jpg" alt="QuRAC workshop" /-->
-          <button class="slider-btn prev" onclick="prevSlide()">&#10094;</button>
-          <button class="slider-btn next" onclick="nextSlide()">&#10095;</button>
-        </div>
-        <p class="slider-caption">
-          QuRAC Research Group, IISER Thiruvananthapuram
-        </p>
-      </div>
-
     </section>
-
-    <hr class="section-divider">
-
 
     <!-- ===== Research Highlights + News (two column) ===== -->
     <hr class="section-divider">
@@ -200,8 +198,6 @@ Through this combination of foundational research and applied development, QuRAC
         <a href="qurac/news.html">All news →</a>
       </p>
     </section>
-
-    <hr class="section-divider">
 
     <hr class="section-divider">
 
