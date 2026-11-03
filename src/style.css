@@ -925,3 +925,78 @@ footer a { color: #9fe9f5; }
     header { padding: .8rem 0; }
     main { padding: 1.5rem 0; }
 }
+
+/* ============================================================
+   PORTRAIT IMAGE SLIDER  (final override: fixes cropped photos)
+   Frame is now 3:4 portrait; images keep faces in view.
+   ============================================================ */
+.image-slider {
+    width: 100%;
+    max-width: 280px;          /* portrait card width */
+    height: auto;              /* height comes from aspect-ratio */
+    aspect-ratio: 3 / 4;       /* portrait */
+    margin: 0 auto;
+    background: #0a1730;       /* neutral backdrop if a photo is narrower */
+}
+
+.image-slider img {
+    object-fit: cover;
+    object-position: center 20%;   /* bias toward head/face, avoids cutting it off */
+}
+
+/* Tablet / mobile: slightly smaller portrait, still centered */
+@media (max-width: 768px) {
+    .image-slider {
+        width: 100%;
+        max-width: 240px;
+        height: auto;
+        aspect-ratio: 3 / 4;
+        margin: 0 auto;
+    }
+}
+
+/* ============================================================
+   SOFT FEATHERED PHOTO EDGES + SLOW FADE  (final override)
+   No hard frame: photo edges melt into the page background.
+   Mask is applied to the images only, so arrow buttons stay crisp.
+   ============================================================ */
+.image-slider {
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    background: transparent;
+    overflow: visible;
+}
+
+.image-slider img {
+    border-radius: 0;
+    /* feather all four edges: horizontal fade x vertical fade, intersected */
+    -webkit-mask-image:
+        linear-gradient(to right,  transparent 0, #000 6%, #000 94%, transparent 100%),
+        linear-gradient(to bottom, transparent 0, #000 5%, #000 95%, transparent 100%);
+    -webkit-mask-composite: source-in;
+    mask-image:
+        linear-gradient(to right,  transparent 0, #000 6%, #000 94%, transparent 100%),
+        linear-gradient(to bottom, transparent 0, #000 5%, #000 95%, transparent 100%);
+    mask-composite: intersect;
+    /* slow, gentle cross-fade between photos */
+    transition: opacity 2s ease-in-out;
+}
+
+/* Arrows: subtle, visible mainly on hover */
+.slider-btn {
+    opacity: .55;
+    transition: opacity .3s;
+}
+.image-slider:hover .slider-btn { opacity: 1; }
+
+/* ============================================================
+   DESKTOP: start the photo below the "About Me" heading
+   so it lines up with the beginning of the paragraph text.
+   (Mobile layout is unchanged.)
+   ============================================================ */
+@media (min-width: 769px) {
+    .home-top-right {
+        margin-top: 4.2rem;   /* ≈ height of the "About Me" heading + gap */
+    }
+}
