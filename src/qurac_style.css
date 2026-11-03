@@ -2300,3 +2300,104 @@ footer.site-footer::before {
     .phd-grid--jrf .phd-card { max-width: 420px; margin-inline: auto; }
     .phd-card.alumni-card { min-height: 90px; }
 }
+
+/* ============================================================
+   PEOPLE PAGE — Group Leader block, responsive
+   Same approach as the other people cards: photo size is driven
+   by --leader-photo, layout switches at tablet / phone widths.
+   ============================================================ */
+.leader-layout {
+    --leader-photo: 200px;
+    grid-template-columns: var(--leader-photo) minmax(0, 1fr);
+    align-items: start;
+}
+.leader-photo img,
+.leader-photo-placeholder {
+    width: var(--leader-photo);
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1.15;
+}
+.leader-info { min-width: 0; }
+.leader-contact,
+.leader-contact a { overflow-wrap: anywhere; }
+
+/* ---------- Tablets ---------- */
+@media (max-width: 900px) {
+    .leader-layout { --leader-photo: 170px; gap: 1.25rem; }
+}
+
+/* ---------- Phones: stack, centre photo and text ---------- */
+@media (max-width: 640px) {
+    .leader-layout {
+        --leader-photo: 170px;
+        grid-template-columns: minmax(0, 1fr);
+        justify-items: center;
+        text-align: center;
+        gap: 1rem;
+        padding: 1.1rem .9rem 1.2rem;
+        border-left-width: 3px;
+    }
+    .leader-photo { display: flex; justify-content: center; width: 100%; }
+    .leader-photo img,
+    .leader-photo-placeholder {
+        width: var(--leader-photo);
+        height: auto;
+        aspect-ratio: 1 / 1.15;
+        margin-inline: auto;
+    }
+    .leader-info { width: 100%; }
+    .leader-info h3 { font-size: 1.3rem; }
+    .leader-contact { font-size: .95rem; line-height: 1.8; }
+    .leader-links { justify-content: center; }
+}
+
+@media (max-width: 400px) {
+    .leader-layout { --leader-photo: 140px; }
+    .leader-contact { font-size: .9rem; }
+    .leader-links a { flex: 1 1 100%; text-align: center; }
+}
+
+/* ============================================================
+   HOME PAGE — About section: image wrapped by text (desktop),
+   image placed below the text (mobile / tablet)
+   ============================================================ */
+.about-wrap {
+    display: flow-root;                 /* contain the float */
+}
+.about-wrap .about-right {
+    float: right;
+    width: clamp(260px, 36%, 420px);
+    height: auto;
+    margin: .25rem 0 1rem 1.75rem;      /* gap between image and wrapped text */
+}
+.about-wrap .image-slider { height: 360px; }
+.about-wrap .about-text p { text-align: justify; }
+
+/* ---------- Tablet & phone: text first, image below ---------- */
+@media (max-width: 900px) {
+    .about-wrap {
+        display: flex;
+        flex-direction: column;
+    }
+    .about-wrap .about-text  { order: 1; }
+    .about-wrap .about-right {
+        order: 2;
+        float: none;
+        width: 100%;
+        max-width: 560px;
+        margin: .5rem auto 0;
+    }
+    .about-wrap .image-slider { height: 260px; }
+}
+@media (max-width: 480px) {
+    .about-wrap .image-slider { height: 200px; }
+}
+
+/* About text: remove the global 75ch / 72ch paragraph cap so lines
+   below the image use the full container width */
+.about-wrap .about-text,
+.about-wrap .about-text p {
+    max-width: none;
+    width: auto;
+}
